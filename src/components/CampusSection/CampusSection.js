@@ -113,7 +113,7 @@ const CampusImage = styled.div`
 
   @media (max-width: 496px) {
     img {
-      height: 70%;
+      height: 50%;
       margin-bottom: 10%;
       margin-top: 10%;
     }

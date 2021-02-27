@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import cloud from '../../images/cloud2x.png';
+import { Link } from 'react-router-dom';
 
 const CourseBox = styled.div`
   display: flex;
@@ -105,7 +106,8 @@ const CourseCard = () => {
           >
             45+ Hours of Lecture
           </p>
-          <p
+          <Link
+            to="/course"
             style={{
               color: '#FF5400',
               fontSize: '10px',
@@ -114,10 +116,12 @@ const CourseCard = () => {
               marginLeft: 'auto',
               marginRight: '30px',
               cursor: 'pointer',
+              textDecoration: 'none',
             }}
+            onClick={() => window.scroll(0, 0)}
           >
             View Course &rarr;
-          </p>
+          </Link>
         </BoxRight>
       </CourseBox>
     </>

@@ -31,7 +31,7 @@ const SyllabusWrapper = styled.div`
   padding-bottom: 5%;
 
   @media (max-width: 496px) {
-    width: 90%;
+    width: 100%;
   }
 `;
 
