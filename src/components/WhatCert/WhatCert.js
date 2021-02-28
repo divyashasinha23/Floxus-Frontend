@@ -105,6 +105,16 @@ const ImageContainer = styled.div`
   .redhat {
     height: 40%;
   }
+
+  @media (max-width: 496px) {
+    flex-direction: column;
+    margin-top: 30px;
+
+    img {
+      width: 60%;
+      margin-bottom: 20%;
+    }
+  }
 `;
 
 const WhatCert = () => {
