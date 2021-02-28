@@ -55,7 +55,7 @@ const CourseHeroLeft = styled.div`
     color: white;
     font-size: 12px;
     font-weight: 300;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     letter-spacing: 0.5px;
   }
 `;
@@ -107,6 +107,10 @@ const CourseFeaturedata = styled.div`
     &:last-child {
       border-right: none;
     }
+  }
+
+  @media (max-width: 496px) {
+    width: 80%;
   }
 `;
 

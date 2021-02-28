@@ -28,6 +28,12 @@ const LogoWrapper = styled.div`
   align-items: center;
   color: black;
   cursor: pointer;
+
+  @media (max-width: 496px) {
+    img {
+      width: 100%;
+    }
+  }
 `;
 
 const NavItemWrapper = styled.div`

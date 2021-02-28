@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import FooterAccordion from '../FooterAccordion/FooterAccordion';
+import FloxusLogo from '../../images/floxuswhite.png';
+import * as FaIcons from 'react-icons/fa';
 
 const FooterContainer = styled.div`
   display: flex;
@@ -108,13 +110,14 @@ const InputContainer = styled.div`
 
 const FooterBottom = styled.div`
   display: flex;
+  flex-direction: column;
   width: 100%;
   height: auto;
 `;
 
 const LinksArea = styled.div`
   display: flex;
-  height: 300px;
+  height: 250px;
   width: 100%;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -134,6 +137,82 @@ const LinkContentBox = styled.div`
     font-size: 15px;
     cursor: pointer;
   }
+`;
+
+const FooterContact = styled.div`
+  display: flex;
+  width: 100%;
+  height: 10vh;
+
+  @media (max-width: 496px) {
+    flex-direction: column;
+    height: auto;
+  }
+`;
+
+const FooterContactLeft = styled.div`
+  display: flex;
+  flex-basis: 50%;
+  height: 100%;
+  align-items: center;
+
+  img {
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 496px) {
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 50%;
+    }
+  }
+`;
+
+const FooterContactRight = styled.div`
+  display: flex;
+  flex-basis: 50%;
+  height: 100%;
+  align-items: center;
+
+  p {
+    color: white;
+    margin-left: 50px;
+  }
+
+  .icon {
+    color: white;
+    margin-left: 30px;
+  }
+
+  @media (max-width: 496px) {
+    flex-direction: column;
+
+    p {
+      margin-left: 0;
+    }
+
+    .icon {
+      margin-left: 15px;
+    }
+
+    .logo_wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .copyright {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  ${'' /* background-color: red; */}
 `;
 
 const Heading = styled.div`
@@ -190,6 +269,21 @@ const Footer = () => {
                 <p>Refund and cancellation Policy</p>
               </LinkContentBox>
             </LinksArea>
+            <FooterContact>
+              <FooterContactLeft>
+                <img src={FloxusLogo} />
+              </FooterContactLeft>
+              <FooterContactRight>
+                <div className="logo_wrapper">
+                  <FaIcons.FaFacebookF className="icon" />
+                  <FaIcons.FaTwitter className="icon" />
+                  <FaIcons.FaInstagramSquare className="icon" />
+                </div>
+                <div>
+                  <p>&copy; 2021 Floxus Education pvt. Ltd.</p>
+                </div>
+              </FooterContactRight>
+            </FooterContact>
           </FooterBottom>
         </FooterWrapper>
         <FooterAccordionWrapper>
@@ -198,6 +292,24 @@ const Footer = () => {
             <button>Submit</button>
           </InputContainer>
           <FooterAccordion />
+          <FooterContact>
+            <FooterContactLeft>
+              <img src={FloxusLogo} />
+            </FooterContactLeft>
+            <FooterContactRight>
+              <div className="logo_wrapper">
+                <FaIcons.FaFacebookF
+                  className="ico"
+                  style={{ color: 'white' }}
+                />
+                <FaIcons.FaTwitter className="icon" />
+                <FaIcons.FaInstagramSquare className="icon" />
+              </div>
+              <div className="copyright">
+                <p>&copy; 2021 Floxus Education pvt. Ltd.</p>
+              </div>
+            </FooterContactRight>
+          </FooterContact>
         </FooterAccordionWrapper>
       </FooterContainer>
     </>
