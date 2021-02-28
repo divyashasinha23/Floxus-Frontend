@@ -10,6 +10,7 @@ import SyllabusCourse from './components/SyllabusCourse/SyllabusCourse';
 import FAQSection from './components/FAQs/FAQSection';
 import Footer from './components/Footer/Footer';
 import CourseOverview from './components/CourseOverview/CourseOverview';
+import WhatCert from './components/WhatCert/WhatCert';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <HeroSection />
             <Floxusfeature />
             <CampusSection />
+            <WhatCert />
             <CourseSection />
             <Footer />
           </Route>
