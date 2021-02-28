@@ -42,6 +42,8 @@ const FooterUp = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 `;
 
 const FooterUpLeft = styled.div`

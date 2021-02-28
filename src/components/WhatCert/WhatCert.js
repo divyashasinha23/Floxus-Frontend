@@ -2,6 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import EClogo from '../../images/ec_council.png';
 import MTAlogo from '../../images/microsoft.png';
+import REDlogo from '../../images/redhat.svg';
 
 const WhatCertContainer = styled.div`
   display: flex;
@@ -62,10 +63,14 @@ const WhatCertLogo = styled.div`
   display: flex;
   flex-basis: 60%;
   height: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 
   img {
+    height: 15%;
+  }
+
+  .redhat {
     height: 20%;
   }
 
@@ -82,6 +87,26 @@ const WhatCertLogo = styled.div`
   }
 `;
 
+const ImageContainer = styled.div`
+  display: flex;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  background: white;
+  border: 1px solid #cecce3;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 99px #4c4a6e26;
+
+  img {
+    height: 20%;
+  }
+
+  .redhat {
+    height: 40%;
+  }
+`;
+
 const WhatCert = () => {
   return (
     <>
@@ -95,9 +120,17 @@ const WhatCert = () => {
             </p>
           </WhatCertContent>
           <WhatCertLogo>
-            <img src={EClogo} />
-            <img src={MTAlogo} />
-            <img src={EClogo} />
+            <ImageContainer>
+              <img src={EClogo} />
+            </ImageContainer>
+
+            <ImageContainer>
+              <img src={MTAlogo} />
+            </ImageContainer>
+
+            <ImageContainer>
+              <img src={REDlogo} className="redhat" />
+            </ImageContainer>
           </WhatCertLogo>
         </WhatCertWrapper>
       </WhatCertContainer>
