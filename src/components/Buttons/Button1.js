@@ -16,7 +16,7 @@ const ButtonWrapper = styled.button`
   cursor: pointer;
 `;
 
-const Button = (props) => {
+const Buttoncomps = (props) => {
   return (
     <>
       <ButtonWrapper>{props.value}</ButtonWrapper>
@@ -24,4 +24,4 @@ const Button = (props) => {
   );
 };
 
-export default Button;
+export default Buttoncomps;

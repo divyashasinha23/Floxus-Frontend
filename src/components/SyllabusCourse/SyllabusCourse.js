@@ -50,14 +50,14 @@ const SyllabusRight = styled.div`
   align-items: center;
 `;
 
-const SyllabusCourse = () => {
+const SyllabusCourse = ({ curriculum }) => {
   return (
     <>
       <SyllabusContainer>
         <SyllabusContain>
           <SyllabusWrapper>
             <Heading>Curriculum</Heading>
-            <Syllbus_Accordion />
+            <Syllbus_Accordion curriculum={curriculum} />
           </SyllabusWrapper>
           <SyllabusRight></SyllabusRight>
         </SyllabusContain>

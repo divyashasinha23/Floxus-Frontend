@@ -11,6 +11,7 @@ import FAQSection from './components/FAQs/FAQSection';
 import Footer from './components/Footer/Footer';
 import CourseOverview from './components/CourseOverview/CourseOverview';
 import WhatCert from './components/WhatCert/WhatCert';
+import Python from './pages/PythonCourse/Python';
 
 function App() {
   return (
@@ -26,15 +27,7 @@ function App() {
             <CourseSection />
             <Footer />
           </Route>
-          <Route path="/course">
-            <Toolbar />
-            <Coursehero />
-            <CourseOverview />
-            <SyllabusCourse />
-            <FAQSection />
-            <Footer />
-            {/* <CertificationSection /> */}
-          </Route>
+          <Route path="/python-power-programming" component={Python} />
         </Switch>
       </div>
     </Router>

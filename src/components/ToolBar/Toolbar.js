@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import Button from '../Buttons/Button';
+import Buttoncomps from '../Buttons/Button1';
 import logo from '../../images/blue_logo.svg';
+import Drawerright from '../Drawer/Drawer';
 
 const ToolbarLayout = styled.div`
   display: flex;
@@ -31,8 +32,21 @@ const LogoWrapper = styled.div`
 
   @media (max-width: 496px) {
     img {
-      width: 100%;
+      width: 120%;
     }
+  }
+`;
+
+const MenuWrapper = styled.div`
+  display: none;
+  height: auto;
+  width: auto;
+
+  @media (max-width: 496px) {
+    display: flex;
+    margin-left: auto;
+    margin-right: 5px;
+    align-items: center;
   }
 `;
 
@@ -67,8 +81,11 @@ const Toolbar = () => {
             <p>Courses</p>
             <p>Become a mentor</p>
             <p>Log In</p>
-            <Button value="Signup" />
+            <Buttoncomps value="Signup" />
           </NavItemWrapper>
+          <MenuWrapper>
+            <Drawerright />
+          </MenuWrapper>
         </ToolbarWrapper>
       </ToolbarLayout>
     </>

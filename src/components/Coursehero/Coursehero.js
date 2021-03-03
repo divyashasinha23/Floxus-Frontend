@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import pythonHero from '../../images/python_hero.png';
-import Button from '../Buttons/Button';
+import Buttoncomps from '../Buttons/Button1';
 
 const CourseHeroLayout = styled.div`
   display: flex;
@@ -123,7 +123,7 @@ const RSVPSection = styled.div`
   }
 `;
 
-const Coursehero = () => {
+const Coursehero = ({ courseData }) => {
   return (
     <>
       <CourseHeroLayout>
@@ -134,37 +134,23 @@ const Coursehero = () => {
               Get hands-on Python skills and start your coding career
             </p>
 
-            <li>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy
-            </li>
+            {courseData.courseHerodata.map((data, index) => (
+              <li key={index}> {data} </li>
+            ))}
+
             <CourseFeaturedata>
-              <div>
-                <p>48+ hours</p>
-                <p>Live Classes</p>
-              </div>
-              <div>
-                <p>3</p>
-                <p>Industrial Projects</p>
-              </div>
-              <div>
-                <p>24/7</p>
-                <p>Contact Support</p>
-              </div>
+              {courseData.courseServices.map((data, index) => (
+                <div>
+                  <p> {data} </p>
+                  <p>Live Classes</p>
+                </div>
+              ))}
             </CourseFeaturedata>
             <RSVPSection>
               <p style={{ fontSize: '35px', fontWeight: 400, color: 'white' }}>
-                ₹ 3000
+                ₹ {courseData.price}
               </p>
-              <Button value="Enroll" />
+              <Buttoncomps value="Enroll" />
             </RSVPSection>
           </CourseHeroLeft>
           <CourseHeroRight>

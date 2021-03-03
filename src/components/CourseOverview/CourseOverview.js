@@ -3,6 +3,50 @@ import styled from '@emotion/styled';
 import Chips from '../Chips/Chips';
 import BatchContact from '../BatchContact/BatchContact';
 
+const CourseOverview = ({ courseObjectives, topics, prerequisite }) => {
+  return (
+    <>
+      <CourseOverviewContainer>
+        <CourseOverviewWrapper>
+          <CourseOverviewLeft>
+            <CourseOverviewDetails>
+              <p className="heading">WHAT YOU WILL LEARN</p>
+              <ul>
+                {courseObjectives.map((data, index) => {
+                  return <li key={index}> {data} </li>;
+                })}
+              </ul>
+              <p className="heading">SKILLS YOU WILL GAIN</p>
+              <div className="chipContainer">
+                {topics.map((data, index) => {
+                  return <Chips title={data} />;
+                })}
+              </div>
+            </CourseOverviewDetails>
+            <CoursePrerequisite>
+              <p className="heading">Prerequisite</p>
+              <ul>
+                {prerequisite.length != 0 ? (
+                  prerequisite.map((data, index) => {
+                    return <li key={index}> {data} </li>;
+                  })
+                ) : (
+                  <li>There is no prerequisite for this course</li>
+                )}
+              </ul>
+            </CoursePrerequisite>
+          </CourseOverviewLeft>
+          <CourseOverviewRight>
+            <BatchContact />
+          </CourseOverviewRight>
+        </CourseOverviewWrapper>
+      </CourseOverviewContainer>
+    </>
+  );
+};
+
+export default CourseOverview;
+
 const CourseOverviewContainer = styled.div`
   display: flex;
   width: 100%;
@@ -106,47 +150,3 @@ const CourseOverviewRight = styled.div`
 
   ${'' /* background-color: red; */}
 `;
-
-const CourseOverview = () => {
-  return (
-    <>
-      <CourseOverviewContainer>
-        <CourseOverviewWrapper>
-          <CourseOverviewLeft>
-            <CourseOverviewDetails>
-              <p className="heading">WHAT YOU WILL LEARN</p>
-              <ul>
-                <li>Install Python and write your first program</li>
-                <li>Describe the basics of the Python programming language</li>
-                <li>
-                  Use variables to store, retrieve and calculate information
-                </li>
-                <li>
-                  Use variables to store, retrieve and calculate information
-                </li>
-              </ul>
-              <p className="heading">SKILLS YOU WILL GAIN</p>
-              <div className="chipContainer">
-                <Chips title="Computer Programming" />
-                <Chips title="Python Programming" />
-                <Chips title="Python Syntax and Semantics" />
-                <Chips title="Object Oriented Python" />
-              </div>
-            </CourseOverviewDetails>
-            <CoursePrerequisite>
-              <p className="heading">Prerequisite</p>
-              <ul>
-                <li>There is no prerequisite for this course</li>
-              </ul>
-            </CoursePrerequisite>
-          </CourseOverviewLeft>
-          <CourseOverviewRight>
-            <BatchContact />
-          </CourseOverviewRight>
-        </CourseOverviewWrapper>
-      </CourseOverviewContainer>
-    </>
-  );
-};
-
-export default CourseOverview;

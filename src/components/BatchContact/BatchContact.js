@@ -116,7 +116,11 @@ const BatchContact = () => {
             <p className="heading">Upcoming Batch Details</p>
           </HeadWrapper>
           <FormWrapper>
-            <form className={classes.root} noValidate>
+            <form
+              className={classes.root}
+              action="https://send.pageclip.co/mqwdSHrZMOIBlny5QShCqIm74PlA5AW4/batch_detail"
+              noValidate
+            >
               <FormControl className={classes.margin}>
                 <BootstrapInput placeholder="Name" id="bootstrap-input" />
               </FormControl>
