@@ -13,6 +13,7 @@ import CourseOverview from './components/CourseOverview/CourseOverview';
 import WhatCert from './components/WhatCert/WhatCert';
 import Python from './pages/PythonCourse/Python';
 import DataAnalytics from './pages/DataAnalytics/DataAnalytics';
+import Cybersecurity from './pages/Cybersecurity/Cybersecurity';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           </Route>
           <Route path="/python-power-programming" component={Python} />
           <Route path="/data-analytics" component={DataAnalytics} />
+          <Route path="/cybersecurity-networking" component={Cybersecurity} />
         </Switch>
       </div>
     </Router>
