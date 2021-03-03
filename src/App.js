@@ -12,6 +12,7 @@ import Footer from './components/Footer/Footer';
 import CourseOverview from './components/CourseOverview/CourseOverview';
 import WhatCert from './components/WhatCert/WhatCert';
 import Python from './pages/PythonCourse/Python';
+import DataAnalytics from './pages/DataAnalytics/DataAnalytics';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Footer />
           </Route>
           <Route path="/python-power-programming" component={Python} />
+          <Route path="/data-analytics" component={DataAnalytics} />
         </Switch>
       </div>
     </Router>

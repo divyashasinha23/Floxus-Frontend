@@ -129,7 +129,7 @@ const Coursehero = ({ courseData }) => {
       <CourseHeroLayout>
         <CourseHeroWrapper>
           <CourseHeroLeft>
-            <p className="heading">Python: Novice to Expert</p>
+            <p className="heading"> {courseData.title} </p>
             <p className="description">
               Get hands-on Python skills and start your coding career
             </p>

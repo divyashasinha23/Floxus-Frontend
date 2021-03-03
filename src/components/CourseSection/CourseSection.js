@@ -87,7 +87,7 @@ const CourseSection = () => {
             description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod."
             certification="Microsoft Technical Associate"
             duration="45"
-            path="/data-anlaytics"
+            path="/data-analytics"
           />
           <CourseCard
             title="Cybersecurity and Networking"

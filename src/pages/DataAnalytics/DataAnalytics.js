@@ -7,13 +7,13 @@ import FAQSection from '../../components/FAQs/FAQSection';
 import Footer from '../../components/Footer/Footer';
 
 const CourseData = {
-  title: 'Python Power Programming',
+  title: 'Data Analytics Bootcamp',
   courseHerodata: [
     'Lorem ipsum ist non hey im isst none',
     'Lorem ipsum ist non hey im isst none',
     'Lorem ipsum ist non hey im isst none',
   ],
-  price: 3000,
+  price: 5000,
   courseServices: ['48+ hours', '3+', '24/7'],
   courseObjectives: [
     'Install Python and write your first program',
@@ -22,10 +22,11 @@ const CourseData = {
     'Use variables to store, retrieve and calculate information',
   ],
   Topics: [
-    'Python Programming',
-    'Computer Programming',
+    'Data Wrangling',
+    'Data Manipulation',
     'SQL',
-    'Object Oriented Programming',
+    'Data Pipeline',
+    'Query Language',
   ],
   prerequisite: [],
   curriculum: [
@@ -38,7 +39,7 @@ const CourseData = {
   ],
 };
 
-const Python = () => {
+const DataAnalytics = () => {
   return (
     <>
       <Toolbar />
@@ -55,4 +56,4 @@ const Python = () => {
   );
 };
 
-export default Python;
+export default DataAnalytics;
