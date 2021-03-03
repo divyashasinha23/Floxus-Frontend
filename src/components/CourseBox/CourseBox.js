@@ -72,7 +72,8 @@ const BoxHeading = styled.p`
   margin-bottom: 0px;
 `;
 
-const CourseCard = () => {
+const CourseCard = (props) => {
+  const { title, description, certification, duration, path } = props;
   return (
     <>
       <CourseBox>
@@ -80,10 +81,9 @@ const CourseCard = () => {
           <ImageContainer></ImageContainer>
         </BoxLeft>
         <BoxRight>
-          <BoxHeading>Cloud Computing</BoxHeading>
+          <BoxHeading> {title} </BoxHeading>
           <p style={{ color: '#827FA5', fontSize: '10px', fontWeight: 500 }}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod.
+            {description}
           </p>
           <p
             style={{
@@ -94,7 +94,7 @@ const CourseCard = () => {
               marginBottom: 0,
             }}
           >
-            Microsoft Technical Associate
+            {certification}
           </p>
           <p
             style={{
@@ -104,10 +104,10 @@ const CourseCard = () => {
               marginTop: 5,
             }}
           >
-            45+ Hours of Lecture
+            {duration}+ Hours of Lecture
           </p>
           <Link
-            to="/course"
+            to={path}
             style={{
               color: '#FF5400',
               fontSize: '10px',
