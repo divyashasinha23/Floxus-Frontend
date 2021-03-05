@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import CertiSample from '../../images/certisample.jpg';
 
 const CertificateWrapper = styled.div`
   display: flex;
   width: 100%;
-  height: 100%;
+  height: auto;
   background: transparent
     linear-gradient(103.88deg, #030528 17.31%, #050b7d 100%);
   justify-content: center;
@@ -13,7 +14,7 @@ const CertificateWrapper = styled.div`
 
 const CertificateContainer = styled.div`
   display: flex;
-  height: 100vh;
+  height: 70vh;
   width: 80%;
   justify-content: center;
   align-items: center;
@@ -26,17 +27,20 @@ const CertificateContainer = styled.div`
 
 const CertificateData = styled.div`
   display: flex;
-  flex-basis: 60%;
-  height: 100vh;
+  flex-basis: 50%;
+  height: 100%;
   justify-content: center;
   align-items: center;
+  ${'' /* background-color: red; */}
 `;
 
 const CertificateContent = styled.div`
   display: flex;
   flex-direction: column;
-  height: 50%;
+  height: auto;
   width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
   @media (max-width: 496px) {
     height: 80%;
@@ -80,11 +84,11 @@ const Contact = styled.div`
 const CertificateButton = styled.div`
   display: flex;
   width: 150px;
-  height: 40px;
+  height: 35px;
   background: transparent linear-gradient(85deg, #ed841f 0%, #ff5400 100%) 0% 0%
     no-repeat padding-box;
   border: none;
-  border-radius: 22.5px;
+  border-radius: 17px;
   margin-top: 20px;
   justify-content: center;
   align-items: center;
@@ -94,17 +98,28 @@ const CertificateButton = styled.div`
   cursor: pointer;
 
   @media (max-width: 496px) {
-    height: 55px;
+    height: 40px;
+    border-radius: 20px;
   }
 `;
 const CertificateImage = styled.div`
-  background-color: white;
-  width: 500px;
-  height: 230px;
-  padding: 20px;
+  display: flex;
+  flex-basis: 50%;
+  height: 100%;
   align-items: center;
   justify-content: center;
-  margin-top: 160px;
+
+  img {
+    height: 60%;
+  }
+
+  @media (max-width: 496px) {
+    margin-top: 20px;
+    img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
 `;
 
 function CertificationSection() {
@@ -124,7 +139,9 @@ function CertificationSection() {
               <CertificateButton>GET IN TOUCH</CertificateButton>
             </CertificateContent>
           </CertificateData>
-          <CertificateImage></CertificateImage>
+          <CertificateImage>
+            <img src={CertiSample} />
+          </CertificateImage>
         </CertificateContainer>
       </CertificateWrapper>
     </>
