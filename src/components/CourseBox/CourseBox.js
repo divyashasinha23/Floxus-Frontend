@@ -94,6 +94,10 @@ const BoxHeading = styled.p`
   font-weight: 700;
   color: #4c4a6e;
   margin-bottom: 0px;
+
+  @media (max-width: 496px) {
+    padding-right: 5px;
+  }
 `;
 
 const CourseCard = (props) => {

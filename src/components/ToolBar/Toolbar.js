@@ -41,12 +41,14 @@ const MenuWrapper = styled.div`
   display: none;
   height: auto;
   width: auto;
-
+  padding: 0;
   @media (max-width: 496px) {
     display: flex;
     margin-left: auto;
-    margin-right: 5px;
+    ${'' /* margin-right: 5px; */}
     align-items: center;
+    padding: 0;
+    margin-right: -15px;
   }
 `;
 
