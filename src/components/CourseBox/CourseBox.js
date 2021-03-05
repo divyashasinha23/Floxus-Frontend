@@ -41,9 +41,33 @@ const BoxRight = styled.div`
   height: 100%;
   justify-content: center;
   ${'' /* background-color: black; */}
-  @media(max-width:496px) {
+  .navLink {
+    color: #ff5400;
+    font-size: 10px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: 496px) {
     p {
       margin-left: 4%;
+    }
+
+    .navLink {
+      color: #ff5400;
+      font-size: 10px;
+      font-weight: 700;
+      margin-top: 15px;
+      margin-left: auto;
+      margin-right: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      margin-bottom: 15px;
     }
   }
 `;
@@ -108,16 +132,7 @@ const CourseCard = (props) => {
           </p>
           <Link
             to={path}
-            style={{
-              color: '#FF5400',
-              fontSize: '10px',
-              fontWeight: 700,
-              marginTop: '25px',
-              marginLeft: 'auto',
-              marginRight: '30px',
-              cursor: 'pointer',
-              textDecoration: 'none',
-            }}
+            className="navLink"
             onClick={() => window.scroll(0, 0)}
           >
             View Course &rarr;
