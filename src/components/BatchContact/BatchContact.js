@@ -4,6 +4,7 @@ import { fade, withStyles, makeStyles } from '@material-ui/core/styles';
 import InputBase from '@material-ui/core/InputBase';
 import FormControl from '@material-ui/core/FormControl';
 import Button from '@material-ui/core/Button';
+import SubmissionCard from '../SubmissionCard/SubmissionCard';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -107,44 +108,52 @@ const FormWrapper = styled.div`
 
 const BatchContact = () => {
   const classes = useStyles();
+  const [active, setActive] = React.useState(true);
 
   return (
     <>
-      <BatchContactContainer>
-        <BatchContactWrapper>
-          <HeadWrapper>
-            <p className="heading">Upcoming Batch Details</p>
-          </HeadWrapper>
-          <FormWrapper>
-            <form
-              className={classes.root}
-              action="https://send.pageclip.co/mqwdSHrZMOIBlny5QShCqIm74PlA5AW4/batch_detail"
-              noValidate
-            >
-              <FormControl className={classes.margin}>
-                <BootstrapInput placeholder="Name" id="bootstrap-input" />
-              </FormControl>
-              <FormControl className={classes.margin}>
-                <BootstrapInput id="bootstrap-input" placeholder="Email" />
-              </FormControl>
-              <FormControl className={classes.margin}>
-                <BootstrapInput
-                  placeholder="Contact No."
-                  id="bootstrap-input"
-                />
-              </FormControl>
-              <Button
-                variant="contained"
-                color="primary"
-                className="btnform"
-                disableElevation
+      {active ? (
+        <BatchContactContainer>
+          <BatchContactWrapper>
+            <HeadWrapper>
+              <p className="heading">Upcoming Batch Details</p>
+            </HeadWrapper>
+
+            <FormWrapper>
+              <form
+                className={classes.root}
+                action="https://send.pageclip.co/mqwdSHrZMOIBlny5QShCqIm74PlA5AW4/batch_detail"
+                noValidate
               >
-                Notify Me
-              </Button>
-            </form>
-          </FormWrapper>
-        </BatchContactWrapper>
-      </BatchContactContainer>
+                <FormControl className={classes.margin}>
+                  <BootstrapInput placeholder="Name" id="bootstrap-input" />
+                </FormControl>
+                <FormControl className={classes.margin}>
+                  <BootstrapInput id="bootstrap-input" placeholder="Email" />
+                </FormControl>
+                <FormControl className={classes.margin}>
+                  <BootstrapInput
+                    placeholder="Contact No."
+                    id="bootstrap-input"
+                  />
+                </FormControl>
+
+                <Button
+                  variant="contained"
+                  color="primary"
+                  className="btnform"
+                  disableElevation
+                  onClick={() => setTimeout(() => setActive(false), 2000)}
+                >
+                  Notify Me
+                </Button>
+              </form>
+            </FormWrapper>
+          </BatchContactWrapper>
+        </BatchContactContainer>
+      ) : (
+        <SubmissionCard />
+      )}
     </>
   );
 };

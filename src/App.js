@@ -15,8 +15,8 @@ import Python from './pages/PythonCourse/Python';
 import DataAnalytics from './pages/DataAnalytics/DataAnalytics';
 import Cybersecurity from './pages/Cybersecurity/Cybersecurity';
 import MachineLearning from './pages/MachineLearning/MachineLearning';
-import Testimonial from './components/Testimonial/Testimonial'
-
+import Testimonial from './components/Testimonial/Testimonial';
+import TestimonialSection from './components/Testimonial/Testimonial';
 
 function App() {
   return (
@@ -30,13 +30,14 @@ function App() {
             <CampusSection />
             <WhatCert />
             <CourseSection />
+            <TestimonialSection />
             <Footer />
           </Route>
           <Route path="/python-power-programming" component={Python} />
           <Route path="/data-analytics" component={DataAnalytics} />
           <Route path="/cybersecurity-networking" component={Cybersecurity} />
           <Route path="/machine-learning" component={MachineLearning} />
-          <Route path ='/testimonials' component={Testimonial} />
+          <Route path="/testimonials" component={Testimonial} />
         </Switch>
       </div>
     </Router>

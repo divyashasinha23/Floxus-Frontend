@@ -18,6 +18,8 @@ const ProjectWrapper = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
 `;
 
 const Header = styled.div`
@@ -53,7 +55,7 @@ const ProjectSection = () => {
       <ProjectContainer>
         <ProjectWrapper>
           <Header>
-            <Heading>Projects</Heading>
+            <Heading>Projects &rarr;</Heading>
           </Header>
           <ProjectCardWrapper>
             <ProjectCard />
