@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-
 const TestimonialFeatureCard = styled.div`
   display: flex;
   width: 270px;
@@ -15,6 +14,7 @@ const TestimonialFeatureCard = styled.div`
 
   @media (max-width: 496px) {
     margin-top: 15px;
+    width: 100%;
   }
 `;
 
@@ -23,35 +23,43 @@ const TestimonialCardContent = styled.div`
   flex-direction: column;
   width: 80%;
   height: 90%;
-  justify-content:center;
- 
-  `;
+  justify-content: center;
+`;
 
-
-
-
-
-  const TestimonialCard = (props) =>  {
-  const { name, text, description} = props;
+const TestimonialCard = (props) => {
+  const { name, text, description } = props;
   return (
-    <>    
-  
-            <TestimonialFeatureCard>
-              <TestimonialCardContent>
-                <h1 style ={{color: '#3c1361', fontSize: '18px', fontWeight: '600px', marginLeft: '30px', marginBottom: '0', marginTop: '0'}}>
-                  {name}</h1>
-                <h4 style={{ color: '#3c1361', fontSize: '10px', fontWeight: '600px', marginLeft: '33px', marginTop: '0' }}>
-                    {text}
-               </h4> 
-                  <p style={{ color: '#7c5295', fontSize: '10px' }}>
-                    {description}
-               </p>    
-              </TestimonialCardContent>
-            </TestimonialFeatureCard>
-          
+    <>
+      <TestimonialFeatureCard>
+        <TestimonialCardContent>
+          <h1
+            style={{
+              color: '#3c1361',
+              fontSize: '18px',
+              fontWeight: '600px',
+              marginLeft: '30px',
+              marginBottom: '0',
+              marginTop: '0',
+            }}
+          >
+            {name}
+          </h1>
+          <h4
+            style={{
+              color: '#3c1361',
+              fontSize: '10px',
+              fontWeight: '600px',
+              marginLeft: '33px',
+              marginTop: '0',
+            }}
+          >
+            {text}
+          </h4>
+          <p style={{ color: '#7c5295', fontSize: '10px' }}>{description}</p>
+        </TestimonialCardContent>
+      </TestimonialFeatureCard>
     </>
   );
 };
 
 export default TestimonialCard;
-

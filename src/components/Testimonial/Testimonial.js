@@ -28,6 +28,7 @@ const TestimonialContainer = styled.div`
   @media (max-width: 496px) {
     flex-direction: column;
     height: auto;
+    ${'' /* width: 100%; */}
   }
 `;
 
@@ -123,7 +124,7 @@ const TestimonialCardContainer = styled.div`
   ${'' /* align-items: flex-end; */}
 
   @media (max-width: 496px) {
-    width: 90%;
+    width: 100%;
   }
 `;
 
