@@ -18,6 +18,7 @@ const CourseBox = styled.div`
     border-radius: 10px;
     height: auto;
     width: 100%;
+    margin-left: 0;
   }
 `;
 
