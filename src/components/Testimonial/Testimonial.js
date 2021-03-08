@@ -34,7 +34,7 @@ const TestimonialContainer = styled.div`
 
 const TestimonialData = styled.div`
   display: flex;
-  flex-basis: 60%;
+  flex-basis: 40%;
   height: 100vh;
   justify-content: flex-start;
   align-items: center;

@@ -95,7 +95,7 @@ const FloxusFeatureContainer = styled.div`
 
 const FloxusFeatureCard = styled.div`
   display: flex;
-  width: 300px;
+  width: 280px;
   height: 200px;
   border: 1.5px solid #cecce3;
   border-radius: 10px;

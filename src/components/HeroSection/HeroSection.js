@@ -5,7 +5,7 @@ import Toolbar from '../ToolBar/Toolbar';
 
 const HeroWrapper = styled.div`
   display: flex;
-  height: 70vh;
+  height: autos;
   width: 100%;
   background: transparent
     linear-gradient(103.88deg, #030528 17.31%, #050b7d 100%);
@@ -38,6 +38,8 @@ const LeftContainer = styled.div`
   height: auto;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
 
   @media (max-width: 496px) {
     height: auto;

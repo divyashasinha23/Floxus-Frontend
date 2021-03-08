@@ -14,6 +14,10 @@ const ProjectCardContainer = styled.div`
   margin-top: 20px;
   margin-bottom: 20px;
 
+  @media (max-width: 1496px) {
+    width: 270px;
+    height: 230px;
+  }
   @media (max-width: 496px) {
     width: 100%;
   }
