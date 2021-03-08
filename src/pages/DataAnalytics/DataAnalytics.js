@@ -7,6 +7,7 @@ import FAQSection from '../../components/FAQs/FAQSection';
 import Footer from '../../components/Footer/Footer';
 import CertificationSection from '../../components/CertificationSection/CertificationSection';
 import ProjectSection from '../../components/ProjectSection/ProjectSection';
+import TestimonialSection from '../../components/Testimonial/Testimonial';
 
 const CourseData = {
   title: 'Data Analytics Bootcamp',
@@ -54,6 +55,7 @@ const DataAnalytics = () => {
       <SyllabusCourse curriculum={CourseData.curriculum} />
       <CertificationSection />
       <ProjectSection />
+      <TestimonialSection />
       <FAQSection />
       <Footer />
     </>

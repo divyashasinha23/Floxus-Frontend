@@ -10,7 +10,7 @@ const TestimonialWrapper = styled.div`
   background-color: #f0f0f0;
   justify-content: center;
   align-items: center;
-  box-shadow: 6px 6px 5px #c0c0c0;
+  ${'' /* box-shadow: 6px 6px 5px #c0c0c0; */}
   padding-top: 30px;
   padding-bottom: 70px;
 
