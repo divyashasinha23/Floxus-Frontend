@@ -6,6 +6,7 @@ import SyllabusCourse from '../../components/SyllabusCourse/SyllabusCourse';
 import FAQSection from '../../components/FAQs/FAQSection';
 import Footer from '../../components/Footer/Footer';
 import CertificationSection from '../../components/CertificationSection/CertificationSection';
+import TestimonialSection from '../../components/Testimonial/Testimonial';
 
 const CourseData = {
   title: 'Python Power Programming',
@@ -51,6 +52,7 @@ const Python = () => {
       />
       <SyllabusCourse curriculum={CourseData.curriculum} />
       <CertificationSection />
+      <TestimonialSection />
       <FAQSection />
       <Footer />
     </>

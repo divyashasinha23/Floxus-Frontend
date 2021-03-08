@@ -77,6 +77,7 @@ const Heading = styled.div`
     font-size: 25px;
     line-height: 35px;
     letter-spacing: 0;
+    margin-top: 15px;
   }
 `;
 
