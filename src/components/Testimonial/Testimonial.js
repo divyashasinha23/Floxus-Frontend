@@ -55,6 +55,11 @@ const TestimonialContent = styled.div`
   @media (max-width: 496px) {
     height: auto;
     margin-top: 10%;
+    margin-bottom: 20px;
+
+    .btn {
+      display: none;
+    }
     ${'' /* align-items: center; */}
   }
 `;
@@ -120,11 +125,19 @@ const TestimonialCardContainer = styled.div`
   flex-basis: 60%;
   flex-direction: row;
   flex-wrap: wrap;
-  ${'' /* justify-content: flex-end; */}
-  ${'' /* align-items: flex-end; */}
+  justify-content: center;
+  align-items: center;
+
+  .mobBtn {
+    display: none;
+  }
 
   @media (max-width: 496px) {
     width: 100%;
+
+    .mobBtn {
+      display: flex;
+    }
   }
 `;
 
@@ -148,7 +161,7 @@ function TestimonialSection() {
                 enim ad minim veniam, quis nostrud exercitation dolore magna
                 aliqua
               </Description>
-              <TestimonialButton>
+              <TestimonialButton className="btn">
                 More Stories
                 <FaIcons.FaArrowRight style={{ marginLeft: '25px' }} />
               </TestimonialButton>
@@ -175,6 +188,9 @@ function TestimonialSection() {
               text="Birla Institute Of Technology,Mesra"
               description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam."
             />
+            <TestimonialButton className="mobBtn">
+              More stories &rarr;
+            </TestimonialButton>
           </TestimonialCardContainer>
         </TestimonialContainer>
       </TestimonialWrapper>
