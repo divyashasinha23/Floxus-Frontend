@@ -18,6 +18,7 @@ import MachineLearning from './pages/MachineLearning/MachineLearning';
 import Testimonial from './components/Testimonial/Testimonial';
 import TestimonialSection from './components/Testimonial/Testimonial';
 import EventSection from './components/EventSection/EventSection';
+import DataAnalyticsEvent from './pages/DataAnalyticsEvent/DataAnalyticsEvent';
 
 function App() {
   return (
@@ -40,6 +41,10 @@ function App() {
           <Route path="/cybersecurity-networking" component={Cybersecurity} />
           <Route path="/machine-learning" component={MachineLearning} />
           <Route path="/testimonials" component={Testimonial} />
+          <Route
+            path="/data-analytics-workshop"
+            component={DataAnalyticsEvent}
+          />
         </Switch>
       </div>
     </Router>

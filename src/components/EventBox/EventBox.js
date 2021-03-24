@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import EventLogo from '../../images/dataanalyticsevent.png';
+import { Link } from 'react-router-dom';
 
 const EventBoxContainer = styled.div`
   display: flex;
@@ -163,7 +164,10 @@ const EventBox = () => {
                 <p className="text">April'03, 2021</p>
               </Left>
               <Right>
-                <p className="text"> Enroll Now </p>
+                <Link to="/data-analytics-workshop" className="text">
+                  {' '}
+                  Enroll Now{' '}
+                </Link>
               </Right>
             </ContainerWrapper>
           </EventBoxDown>
