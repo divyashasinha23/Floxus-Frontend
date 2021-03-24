@@ -132,7 +132,7 @@ const Right = styled.div`
   }
 `;
 
-const EventBox = () => {
+const EventBox = ({ title, duration, time, date }) => {
   return (
     <>
       <EventBoxContainer>
@@ -143,8 +143,8 @@ const EventBox = () => {
                 <img src={EventLogo} height="90%" />
               </EventImage>
               <EventDetailsContent>
-                <p className="heading">Data Analytics Bootcamp</p>
-                <p className="duration">Duration: 3 Days</p>
+                <p className="heading"> {title} </p>
+                <p className="duration">Duration: {duration}</p>
               </EventDetailsContent>
             </ContainerWrapper>
           </EventBoxUp>
@@ -153,7 +153,7 @@ const EventBox = () => {
             <ContainerWrapper>
               <div className="extradiv">
                 {' '}
-                <p className="text">Fri - Mon: 8:00PM - 9:00PM</p>
+                <p className="text"> {time} </p>
               </div>
             </ContainerWrapper>
           </EventBoxDown>
@@ -161,13 +161,16 @@ const EventBox = () => {
           <EventBoxDown>
             <ContainerWrapper>
               <Left>
-                <p className="text">April'03, 2021</p>
+                <p className="text"> {date} </p>
               </Left>
               <Right>
-                <Link to="/data-analytics-workshop" className="text">
-                  {' '}
-                  Enroll Now{' '}
-                </Link>
+                {date == 'Coming Soon' ? (
+                  <Link className="text">Notify Me</Link>
+                ) : (
+                  <Link to="/data-analytics-workshop" className="text">
+                    Explore
+                  </Link>
+                )}
               </Right>
             </ContainerWrapper>
           </EventBoxDown>

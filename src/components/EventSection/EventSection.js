@@ -76,9 +76,24 @@ const EventSection = () => {
       </EventHeadingWrapper>
       <EventWrapper>
         <EventBoxContainer>
-          <EventBox />
-          <EventBox />
-          <EventBox />
+          <EventBox
+            title="Data Analytics"
+            duration="3 Days"
+            time="FRI - MON: 8:00 PM - 9:30PM"
+            date="03 April, 2021"
+          />
+          <EventBox
+            title="Data Structure and Problem Solving"
+            duration="12 Days"
+            time="MON - FRI: 8:00 PM - 9:30PM"
+            date="Coming Soon"
+          />
+          <EventBox
+            title="Python Bootcamp"
+            duration="7 Days"
+            time="MON - FRI: 8:00 PM - 9:30PM"
+            date="Coming Soon"
+          />
         </EventBoxContainer>
       </EventWrapper>
     </>

@@ -169,22 +169,22 @@ function TestimonialSection() {
           </TestimonialData>
           <TestimonialCardContainer>
             <TestimonialCard
-              name="Totoro"
+              name="Diksha Krishna"
               text="Birla Institute Of Technology,Mesra"
               description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam."
             />
             <TestimonialCard
-              name="Totoro"
+              name="Sahil"
               text="Birla Institute Of Technology,Mesra"
               description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam."
             />
             <TestimonialCard
-              name="Totoro"
+              name="Anisha Agarwal"
               text="Birla Institute Of Technology,Mesra"
               description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam."
             />
             <TestimonialCard
-              name="Totoro"
+              name="Rohit Kumar"
               text="Birla Institute Of Technology,Mesra"
               description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam."
             />
