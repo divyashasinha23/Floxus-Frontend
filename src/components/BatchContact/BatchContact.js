@@ -5,6 +5,7 @@ import InputBase from '@material-ui/core/InputBase';
 import FormControl from '@material-ui/core/FormControl';
 import Button from '@material-ui/core/Button';
 import SubmissionCard from '../SubmissionCard/SubmissionCard';
+import { db } from '../../firebase';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -109,6 +110,25 @@ const FormWrapper = styled.div`
 const BatchContact = () => {
   const classes = useStyles();
   const [active, setActive] = React.useState(true);
+  const [name, setName] = React.useState('');
+  const [email, setEmail] = React.useState('');
+  const [contact, setContact] = React.useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    db.collection('contacts')
+      .add({
+        name: name,
+        email: email,
+        contact: contact,
+      })
+      .then(() => setActive(false))
+      .catch((error) => alert(error));
+
+    setName(' ');
+    setEmail(' ');
+    setContact(' ');
+  };
 
   return (
     <>
@@ -120,21 +140,29 @@ const BatchContact = () => {
             </HeadWrapper>
 
             <FormWrapper>
-              <form
-                className={classes.root}
-                action="https://send.pageclip.co/mqwdSHrZMOIBlny5QShCqIm74PlA5AW4/batch_detail"
-                noValidate
-              >
+              <form className={classes.root} onSubmit={handleSubmit}>
                 <FormControl className={classes.margin}>
-                  <BootstrapInput placeholder="Name" id="bootstrap-input" />
+                  <BootstrapInput
+                    placeholder="Name"
+                    id="bootstrap-input"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
                 </FormControl>
                 <FormControl className={classes.margin}>
-                  <BootstrapInput id="bootstrap-input" placeholder="Email" />
+                  <BootstrapInput
+                    id="bootstrap-input"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Email"
+                  />
                 </FormControl>
                 <FormControl className={classes.margin}>
                   <BootstrapInput
                     placeholder="Contact No."
                     id="bootstrap-input"
+                    value={contact}
+                    onChange={(e) => setContact(e.target.value)}
                   />
                 </FormControl>
 
@@ -142,8 +170,9 @@ const BatchContact = () => {
                   variant="contained"
                   color="primary"
                   className="btnform"
+                  type="submit"
                   disableElevation
-                  onClick={() => setTimeout(() => setActive(false), 2000)}
+                  // onClick={() => setTimeout(() => setActive(false), 2000)}
                 >
                   Notify Me
                 </Button>

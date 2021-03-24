@@ -170,7 +170,7 @@ const EventBox = ({ title, duration, time, date }) => {
                   <Link
                     to="/data-analytics-workshop"
                     className="text"
-                    onClick={window.scroll(0, 0)}
+                    onClick={() => window.scroll(0, 0)}
                   >
                     Explore
                   </Link>

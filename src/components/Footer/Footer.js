@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import FooterAccordion from '../FooterAccordion/FooterAccordion';
 import FloxusLogo from '../../images/floxuswhite.png';
 import * as FaIcons from 'react-icons/fa';
+import { db } from '../../firebase';
 
 const FooterContainer = styled.div`
   display: flex;
@@ -50,10 +51,16 @@ const FooterUp = styled.div`
 
 const FooterUpLeft = styled.div`
   display: flex;
+  flex-direction: column;
   flex-basis: 50%;
   height: 100%;
   justify-content: center;
   align-items: center;
+
+  .textContainer {
+    color: white;
+    display: flex;
+  }
 `;
 
 const InputContainer = styled.div`
@@ -62,6 +69,13 @@ const InputContainer = styled.div`
   height: 45px;
   background-color: #2b2b2b;
   align-items: center;
+
+  form {
+    display: flex;
+    height: auto;
+    width: 100%;
+    align-items: center;
+  }
 
   input {
     display: flex;
@@ -88,7 +102,7 @@ const InputContainer = styled.div`
   button {
     display: flex;
     flex-basis: 30%;
-    height: 100%;
+    height: 42px;
     justify-content: center;
     align-items: center;
     border: none;
@@ -223,6 +237,20 @@ const Heading = styled.div`
 `;
 
 const Footer = () => {
+  const [email, setEmail] = React.useState('');
+  const [subscribed, setSubscribed] = React.useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    db.collection('NewsLetter')
+      .add({
+        email: email,
+      })
+      .then(() => setSubscribed(true))
+      .catch((error) => alert(error));
+
+    setEmail(' ');
+  };
   return (
     <>
       <FooterContainer>
@@ -230,9 +258,21 @@ const Footer = () => {
           <FooterUp>
             <FooterUpLeft>
               <InputContainer>
-                <input type="text" placeholder="Email" />
-                <button>Submit</button>
+                <form onSubmit={handleSubmit}>
+                  <input
+                    type="text"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Email"
+                  />
+                  <button type="submit">Submit</button>
+                </form>
               </InputContainer>
+              {subscribed ? (
+                <div className="textContainer">
+                  <p>Thanks for subscribing!!</p>
+                </div>
+              ) : null}
             </FooterUpLeft>
           </FooterUp>
           <FooterBottom>
