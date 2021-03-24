@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import Buttoncomps from '../Buttons/Button1';
 import logo from '../../images/blue_logo.svg';
 import Drawerright from '../Drawer/Drawer';
+import { Link } from 'react-router-dom';
 
 const ToolbarLayout = styled.div`
   display: flex;
@@ -60,10 +61,12 @@ const NavItemWrapper = styled.div`
   color: black;
   justify-content: space-around;
 
-  p {
+  .text {
     font-size: 14px;
     font-weight: 400;
     cursor: pointer;
+    text-decoration: none;
+    color: #4c4a6e;
   }
 
   @media (max-width: 496px) {
@@ -80,10 +83,12 @@ const Toolbar = () => {
             <img style={{ height: '30%' }} src={logo} alt="logo" />
           </LogoWrapper>
           <NavItemWrapper>
-            <p>Courses</p>
-            <p>Become a mentor</p>
-            <p>Log In</p>
-            <Buttoncomps value="Signup" />
+            <a href="#course" className="text">
+              Courses
+            </a>
+            <Link className="text">Become a mentor</Link>
+            <Link className="text">Contact Us</Link>
+            <Buttoncomps value="Join Us" />
           </NavItemWrapper>
           <MenuWrapper>
             <Drawerright />

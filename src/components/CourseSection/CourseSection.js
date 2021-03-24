@@ -64,7 +64,7 @@ const CourseBoxContainer = styled.div`
 const CourseSection = () => {
   return (
     <>
-      <CourseHeadingWrapper>
+      <CourseHeadingWrapper id="course">
         <CourseHeadingContainer>
           <CourseHeading>Upcoming Courses</CourseHeading>
           <p style={{ marginTop: 0, color: '#827FA5', fontSize: '15px' }}>
