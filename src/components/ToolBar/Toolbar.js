@@ -79,9 +79,11 @@ const Toolbar = () => {
     <>
       <ToolbarLayout>
         <ToolbarWrapper>
-          <LogoWrapper>
-            <img style={{ height: '30%' }} src={logo} alt="logo" />
-          </LogoWrapper>
+          <Link to="/">
+            <LogoWrapper>
+              <img style={{ height: '30%' }} src={logo} alt="logo" />
+            </LogoWrapper>
+          </Link>
           <NavItemWrapper>
             <a href="/#course" className="text">
               Courses

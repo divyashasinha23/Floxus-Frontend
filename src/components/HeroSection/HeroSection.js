@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from '@emotion/styled';
 import * as FaIcons from 'react-icons/fa';
 import Toolbar from '../ToolBar/Toolbar';
+import HeroImage from '../../images/heroImage.png';
 
 const HeroWrapper = styled.div`
   display: flex;
@@ -50,6 +51,9 @@ const RightContainer = styled.div`
   display: flex;
   flex-basis: 40%;
   height: 100%;
+  img {
+    height: 60%;
+  }
 
   @media (max-width: 496px) {
     display: none;
@@ -140,7 +144,9 @@ class HeroSection extends Component {
                 </ExploreButton>
               </ContentBox>
             </LeftContainer>
-            <RightContainer></RightContainer>
+            <RightContainer>
+              <img src={HeroImage} />
+            </RightContainer>
           </HeroContainer>
         </HeroWrapper>
       </>

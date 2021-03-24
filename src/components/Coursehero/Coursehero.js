@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import pythonHero from '../../images/python_hero.png';
 import Buttoncomps from '../Buttons/Button1';
 import { Link } from 'react-router-dom';
+
 const CourseHeroLayout = styled.div`
   display: flex;
   width: 100%;
