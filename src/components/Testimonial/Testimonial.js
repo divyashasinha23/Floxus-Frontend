@@ -2,6 +2,10 @@ import React from 'react';
 import * as FaIcons from 'react-icons/fa';
 import styled from '@emotion/styled';
 import TestimonialCard from '../testimonialCard/testimonialCard';
+import Diksha from '../../images/Diksha.jpeg';
+import Anisha from '../../images/Anisha.jpeg';
+import Sahil from '../../images/Sahil.jpeg';
+import Rohit from '../../images/Rohit.jpeg';
 
 const TestimonialWrapper = styled.div`
   display: flex;
@@ -171,21 +175,25 @@ function TestimonialSection() {
             <TestimonialCard
               name="Diksha Krishna"
               text="Birla Institute Of Technology,Mesra"
+              image={Diksha}
               description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam."
             />
             <TestimonialCard
               name="Sahil"
               text="Birla Institute Of Technology,Mesra"
+              image={Sahil}
               description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam."
             />
             <TestimonialCard
               name="Anisha Agarwal"
               text="Birla Institute Of Technology,Mesra"
+              image={Anisha}
               description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam."
             />
             <TestimonialCard
               name="Rohit Kumar"
               text="Birla Institute Of Technology,Mesra"
+              image={Rohit}
               description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam."
             />
             <TestimonialButton className="mobBtn">

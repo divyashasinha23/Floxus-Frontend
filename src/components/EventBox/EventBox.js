@@ -167,7 +167,11 @@ const EventBox = ({ title, duration, time, date }) => {
                 {date == 'Coming Soon' ? (
                   <Link className="text">Notify Me</Link>
                 ) : (
-                  <Link to="/data-analytics-workshop" className="text">
+                  <Link
+                    to="/data-analytics-workshop"
+                    className="text"
+                    onClick={window.scroll(0, 0)}
+                  >
                     Explore
                   </Link>
                 )}
