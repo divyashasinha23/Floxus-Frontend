@@ -19,6 +19,7 @@ import Testimonial from './components/Testimonial/Testimonial';
 import TestimonialSection from './components/Testimonial/Testimonial';
 import EventSection from './components/EventSection/EventSection';
 import DataAnalyticsEvent from './pages/DataAnalyticsEvent/DataAnalyticsEvent';
+import JoinUs from './pages/JoinUs/JoinUs';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
             path="/data-analytics-workshop"
             component={DataAnalyticsEvent}
           />
+          <Route path="/join-us" component={JoinUs} />
         </Switch>
       </div>
     </Router>

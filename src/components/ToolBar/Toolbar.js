@@ -83,12 +83,17 @@ const Toolbar = () => {
             <img style={{ height: '30%' }} src={logo} alt="logo" />
           </LogoWrapper>
           <NavItemWrapper>
-            <a href="#course" className="text">
+            <a href="/#course" className="text">
               Courses
             </a>
             <Link className="text">Become a mentor</Link>
             <Link className="text">Contact Us</Link>
-            <Buttoncomps value="Join Us" />
+            <Link
+              to="/join-us"
+              style={{ textDecoration: 'none', color: 'white' }}
+            >
+              <Buttoncomps value="Join Us" />
+            </Link>
           </NavItemWrapper>
           <MenuWrapper>
             <Drawerright />
