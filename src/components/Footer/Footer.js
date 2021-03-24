@@ -260,7 +260,7 @@ const Footer = () => {
               <InputContainer>
                 <form onSubmit={handleSubmit}>
                   <input
-                    type="text"
+                    type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Email"
