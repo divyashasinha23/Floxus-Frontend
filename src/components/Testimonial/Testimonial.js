@@ -157,10 +157,9 @@ function TestimonialSection() {
                 learned from our classes
               </Heading>
               <Description>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation dolore magna
-                aliqua
+                Quality education and industry relevant development are the
+                values that are deeply rooted within FLOXUS and the words of our
+                learners are the living proof of it .
               </Description>
               <TestimonialButton className="btn">
                 More Stories

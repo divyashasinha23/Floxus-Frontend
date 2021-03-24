@@ -19,10 +19,12 @@ const CourseData = {
   price: 4500,
   courseServices: ['48+ hours', '3+', '24/7'],
   courseObjectives: [
-    'Install Python and write your first program',
-    'Describe the basics of the Python programming language',
-    'Use variables to store, retrieve and calculate information',
-    'Use variables to store, retrieve and calculate information',
+    'Gain knowledge about basic concepts of Machine Learning ',
+    'Identify machine learning techniques suitable for a given problem',
+    'Solve the problems using various machine learning techniques ',
+    'Apply Dimensionality reduction techniques. ',
+    'Design application using machine learning techniques. ',
+    'How to deploy your ML model on cloud ',
   ],
   Topics: [
     'Python Programming',
@@ -35,12 +37,26 @@ const CourseData = {
   ],
   prerequisite: [],
   curriculum: [
-    'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.',
-    'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.',
-    'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.',
-    'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.',
-    'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.',
-    'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.',
+    [
+      'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.',
+      'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.',
+      'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.',
+    ],
+    [
+      'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.',
+    ],
+    [
+      'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.',
+    ],
+    [
+      'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.',
+    ],
+    [
+      'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.',
+    ],
+    [
+      'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.',
+    ],
   ],
 };
 

@@ -24,6 +24,10 @@ const useStyles = makeStyles((theme) => ({
       display: 'none',
     },
   },
+  summaryContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+  },
 }));
 
 export default function Syllbus_Accordion({ curriculum }) {
@@ -37,7 +41,6 @@ export default function Syllbus_Accordion({ curriculum }) {
   return (
     <div className={classes.root}>
       {curriculum.map((data, index) => {
-        console.log(index);
         return (
           <Accordion
             expanded={expanded === `panel${index + 1}`}
@@ -53,8 +56,13 @@ export default function Syllbus_Accordion({ curriculum }) {
                 Module {index + 1}
               </Typography>
             </AccordionSummary>
-            <AccordionDetails>
-              <Typography>{data}</Typography>
+            <AccordionDetails className={classes.summaryContainer}>
+              {data.map((point) => (
+                <Typography>
+                  {' '}
+                  <li>{point}</li>{' '}
+                </Typography>
+              ))}
             </AccordionDetails>
           </Accordion>
         );

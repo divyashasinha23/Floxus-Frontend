@@ -17,6 +17,7 @@ import Cybersecurity from './pages/Cybersecurity/Cybersecurity';
 import MachineLearning from './pages/MachineLearning/MachineLearning';
 import Testimonial from './components/Testimonial/Testimonial';
 import TestimonialSection from './components/Testimonial/Testimonial';
+import EventSection from './components/EventSection/EventSection';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <HeroSection />
             <Floxusfeature />
             <CampusSection />
+            <EventSection />
             <WhatCert />
             <CourseSection />
             <TestimonialSection />

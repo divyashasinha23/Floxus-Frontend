@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import pythonHero from '../../images/python_hero.png';
 import Buttoncomps from '../Buttons/Button1';
-
+import { Link } from 'react-router-dom';
 const CourseHeroLayout = styled.div`
   display: flex;
   width: 100%;
@@ -150,6 +150,16 @@ const Coursehero = ({ courseData }) => {
               <p style={{ fontSize: '35px', fontWeight: 400, color: 'white' }}>
                 ₹ {courseData.price}
               </p>
+              {/* <a
+                href="https://nagendrakumar0032.stores.instamojo.com/product/302519/data-science-fcd39/"
+                data-store-name="nagendrakumar0032"
+                data-domain="https://nagendrakumar0032.stores.instamojo.com"
+                data-id="302519"
+                rel="im-new-checkout"
+                data-text="Pay"
+                data-css-style="background:#75c26a; color:#ffffff; width:180px; border-radius:30px"
+                data-layout="vertical"
+              ></a> */}
               <Buttoncomps value="Enroll" />
             </RSVPSection>
           </CourseHeroLeft>
