@@ -174,7 +174,7 @@ const Coursehero = ({ courseData, active, image }) => {
               ))}
             </CourseFeaturedata>
             <RSVPSection>
-              <p style={{ fontSize: '35px', fontWeight: 400, color: 'white' }}>
+              <p style={{ fontSize: '30px', fontWeight: 400, color: 'white' }}>
                 ₹ {courseData.price}
               </p>
 
