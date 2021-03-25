@@ -155,14 +155,25 @@ export default function Drawerright({ value }) {
           )}
         </ItemContainer>
         <ItemContainer>
-          <a href="#footer" className="link">
-            <div className="content">
-              <p>Contact Us</p>
-              <KeyboardArrowRightTwoToneIcon
-                style={{ color: '#FF5400', marginRight: '40px' }}
-              />
-            </div>
-          </a>
+          {value == 'true' ? (
+            <AnchorLink href="#footer" className="link">
+              <div className="content">
+                <p>Contact Us</p>
+                <KeyboardArrowRightTwoToneIcon
+                  style={{ color: '#FF5400', marginRight: '40px' }}
+                />
+              </div>
+            </AnchorLink>
+          ) : (
+            <a href="/#footer" className="link">
+              <div className="content">
+                <p>Contact Us</p>
+                <KeyboardArrowRightTwoToneIcon
+                  style={{ color: '#FF5400', marginRight: '40px' }}
+                />
+              </div>
+            </a>
+          )}
         </ItemContainer>
         <ItemContainer>
           <div className="content">

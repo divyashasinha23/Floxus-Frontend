@@ -80,6 +80,7 @@ const JobBox = styled.div`
   }
 
   &:hover {
+    background: #f8f8f8;
     .title {
       margin-left: 7px;
       transition: 0.5s ease;
@@ -102,10 +103,16 @@ const JoinUsHero = () => {
       <ContainerJoin>
         <JoinWrapper>
           <p className="heading">Open Postitions</p>
-          <JobBox>
-            <p className="title"> Growth Intern </p>
-            <Chips title="12 open roles" />
-          </JobBox>
+          <a
+            href="https://www.linkedin.com/jobs/view/2453097276/?refId=wHpGVj4F5zPUFVMOtWyRug%3D%3D&trackingId=PpXje%2BHdNcl723z%2Be3m%2BAA%3D%3D"
+            target="_blank"
+            style={{ textDecoration: 'none' }}
+          >
+            <JobBox>
+              <p className="title"> Growth Intern </p>
+              <Chips title="12 open roles" />
+            </JobBox>
+          </a>
         </JoinWrapper>
       </ContainerJoin>
       <Footer />
