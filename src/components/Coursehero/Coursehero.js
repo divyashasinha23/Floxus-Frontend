@@ -161,7 +161,7 @@ const Coursehero = ({ courseData }) => {
                 data-css-style="background:#75c26a; color:#ffffff; width:180px; border-radius:30px"
                 data-layout="vertical"
               ></a> */}
-              <Buttoncomps value="Enroll" />
+              <Buttoncomps value="Notify Me" />
             </RSVPSection>
           </CourseHeroLeft>
           <CourseHeroRight>
