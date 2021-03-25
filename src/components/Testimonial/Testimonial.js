@@ -176,25 +176,26 @@ function TestimonialSection() {
               name="Diksha Krishna"
               text="Birla Institute Of Technology,Mesra"
               image={Diksha}
-              description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam."
+              description="After attending the webinar, I decided to join the regular course on machine learning. It turned out to be indeed a great decision for me..."
             />
             <TestimonialCard
               name="Sahil"
               text="Birla Institute Of Technology,Mesra"
               image={Sahil}
-              description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam."
+              description="Machine Learning and Floxus was a wonderful amalgam that worked magically for me during the Covid-19 lockdown period..."
             />
             <TestimonialCard
               name="Anisha Agarwal"
               text="Birla Institute Of Technology,Mesra"
               image={Anisha}
-              description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam."
+              description="What worked for me the most was that we were given tasks after each class to apply in real-time what we learnt in theory. This could possibly be the best practical.."
             />
             <TestimonialCard
               name="Rohit Kumar"
               text="Birla Institute Of Technology,Mesra"
               image={Rohit}
-              description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam."
+              description="The support from the tutor was first-rate, while the course was well-paced, and pitched at a level which allowed me to learn quickly...
+"
             />
             <TestimonialButton className="mobBtn">
               More stories &rarr;

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { Link } from 'react-router-dom';
 
 const TestimonialFeatureCard = styled.div`
   display: flex;
@@ -24,6 +25,7 @@ const TestimonialCardContent = styled.div`
   width: 80%;
   height: 90%;
   justify-content: center;
+  overflow: hidden;
 `;
 
 const TestimonialCardHeader = styled.div`
@@ -79,7 +81,18 @@ const TestimonialCard = (props) => {
             </div>
           </TestimonialCardHeader>
 
-          <p style={{ color: '#7c5295', fontSize: '12px' }}>{description}</p>
+          <p style={{ color: '#7c5295', fontSize: '12px' }}>
+            {description}{' '}
+            <Link to="/" style={{ textDecoration: 'none' }}>
+              <span
+                style={{
+                  color: ' #FF5400',
+                }}
+              >
+                Read More
+              </span>
+            </Link>
+          </p>
         </TestimonialCardContent>
       </TestimonialFeatureCard>
     </>

@@ -14,6 +14,10 @@ const ToolbarLayout = styled.div`
   background-color: white;
   ${'' /* background-color: #3c378e; */}
   ${'' /* position: fixed; */}
+
+  @media(max-width:496px) {
+    height: 8vh;
+  }
 `;
 
 const ToolbarWrapper = styled.div`
@@ -33,7 +37,7 @@ const LogoWrapper = styled.div`
 
   @media (max-width: 496px) {
     img {
-      width: 120%;
+      width: 180%;
     }
   }
 `;
