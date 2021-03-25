@@ -131,9 +131,7 @@ const Coursehero = ({ courseData }) => {
         <CourseHeroWrapper>
           <CourseHeroLeft>
             <p className="heading"> {courseData.title} </p>
-            <p className="description">
-              Get hands-on Python skills and start your coding career
-            </p>
+            <p className="description">{courseData.description}</p>
 
             {courseData.courseHerodata.map((data, index) => (
               <li key={index}> {data} </li>

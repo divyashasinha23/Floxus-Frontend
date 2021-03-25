@@ -11,6 +11,8 @@ import TestimonialSection from '../../components/Testimonial/Testimonial';
 
 const CourseData = {
   title: 'Data Analytics Bootcamp',
+  description:
+    'Get hands on Python skills and accelerate your data science career',
   courseHerodata: [
     'Proficiency in statistical analysis of data ',
     'Learn trending professional statistical software to analyse data',
@@ -127,7 +129,7 @@ const DataAnalytics = () => {
       />
       <SyllabusCourse curriculum={CourseData.curriculum} />
       <CertificationSection />
-      <ProjectSection />
+      {/* <ProjectSection /> */}
       <TestimonialSection />
       <FAQSection />
       <Footer />

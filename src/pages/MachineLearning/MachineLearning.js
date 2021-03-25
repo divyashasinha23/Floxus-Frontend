@@ -11,13 +11,15 @@ import ProjectSection from '../../components/ProjectSection/ProjectSection';
 
 const CourseData = {
   title: 'Machine Learning Bootcamp',
+  description:
+    'Get hands on Python skills and accelerate your Machine Learning career',
   courseHerodata: [
-    'Lorem ipsum ist non hey im isst none',
-    'Lorem ipsum ist non hey im isst none',
-    'Lorem ipsum ist non hey im isst none',
+    'To develop skills of using recent machine learning software',
+    'To develop skills to build machine learning based product ',
+    'To gain experience of doing independent study and research.',
   ],
-  price: 4500,
-  courseServices: ['48+ hours', '3+', '24/7'],
+  price: 4900,
+  courseServices: ['90+ hours', '7+', '24/7'],
   courseObjectives: [
     'Gain knowledge about basic concepts of Machine Learning ',
     'Identify machine learning techniques suitable for a given problem',
@@ -29,33 +31,85 @@ const CourseData = {
   Topics: [
     'Python Programming',
     'Computer Programming',
-    'SQL',
+    'Numpy',
+    'Scipy',
+    'Sklearn',
+    'matplotlib',
     'Algorithms',
     'Linear Algebra',
     'Statistics',
     'Probablity',
   ],
-  prerequisite: [],
+  prerequisite: [
+    'Basic of linear algebra and statistics ',
+    'Basics of any programming language is preferred  ',
+  ],
   curriculum: [
     [
-      'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.',
-      'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.',
-      'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.',
+      'Introduction to Machine Learning',
+      'History and Evolution',
+      'Artificial Intelligence Evolution',
+      'Application of Machine Learning in Technology and Science',
     ],
     [
-      'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.',
+      'Supervised Learning, Unsupervised Learning',
+      'Difference between continuous supervised learning and discrete learning',
+      'Code a Linear Regression in Python with scikit-learn.',
+      'SciPy for Scientific Computing',
+      'Understand different error metrics such as SSE, and RSquared in the context of Linear Regressions.',
+      'K-Nearest Neighor, Linear Models, Naive Bayes Classifiers, Decision trees, Support Vector Machines.',
+      'Machine Learning Packages, Numpy, Scipy, Matplotlib, Pandas, Sklearn',
     ],
     [
-      'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.',
+      'Supervised Learning - Regression, Classification, Generalization, Overfitting and Underfitting.',
+      'Classification - Generative, Descriminative, Use of different metrices such as accuracy score, confusion matrix, classification report.',
     ],
     [
-      'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.',
+      'Unsupervised Learning and Preprocessing',
+      'Challenges in unsupervised Learning',
+      'Preprocessing and Scaling',
+      'Applying data transformations.',
+      'Scaling training and test data the same way',
+      'Clustering (K-means clustering).',
     ],
     [
-      'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.',
+      'Dimensionality Reduction, Feature Extraction and Manifold Learning.',
+      'Principal Component Analysis along with mathematical aspects.',
     ],
     [
-      'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.',
+      'Prepare your data for machine learning',
+      'Need for Data Pre-processing.',
+      'Data Transforms, Rescale Data, Standardize Data, Normalize Data and Binarize Data.',
+    ],
+    [
+      'Feature Selection for Machine Learning',
+      'Univariate Selection, Recursive Feature Elimination',
+      'Principal Component Analysis, Feature Importance.',
+    ],
+    [
+      'Evaluate the Performance of Machine Learning Algorithms with Resampling.',
+      'Split into Train and Test sets.',
+      'K-fold Cross Validation.',
+      'Leave One Out Cross Validation.',
+      'Repeated Random Test-Train Splits.',
+      'What Techniques to use When.',
+      'Machine Learning algorithm Performance Metrices.',
+      'Algorithm Evaluation Metrics, Classification Metrices, Regression Metrices.',
+      'Compare Machine Learning Algorithms',
+      'Automate Machine Learning workflows with pipelines.',
+    ],
+    [
+      'Spot-Check classification algorithms.',
+      'Linear Machine Learning Algorithms.',
+      'Non-linear Machine Learning Algorithms.',
+    ],
+    [
+      'Natural Language Processing.',
+      'Using Natural Language Toolkit(NLTK).',
+      'ChatBot using chatterbot library.',
+      'Save and load Machine Learning Models.',
+      'Finalize your Model with pickle.',
+      'Finalize your Model with joblib.',
     ],
   ],
 };
@@ -72,7 +126,7 @@ const MachineLearning = () => {
       />
       <SyllabusCourse curriculum={CourseData.curriculum} />
       <CertificationSection />
-      <ProjectSection />
+      {/* <ProjectSection /> */}
       <TestimonialSection />
       <FAQSection />
       <Footer />

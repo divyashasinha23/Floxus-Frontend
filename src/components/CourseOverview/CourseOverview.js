@@ -120,6 +120,7 @@ const CoursePrerequisite = styled.div`
   flex-basis: 30%;
   background-color: white;
   margin-top: 5%;
+  margin-bottom: 20px;
 
   .heading {
     font-size: 16px;

@@ -68,20 +68,20 @@ const CourseSection = () => {
         <CourseHeadingContainer>
           <CourseHeading>Upcoming Courses</CourseHeading>
           <p style={{ marginTop: 0, color: '#827FA5', fontSize: '15px' }}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy
+            Gets hands on experience, mentorship and internships with these
+            courses
           </p>
         </CourseHeadingContainer>
       </CourseHeadingWrapper>
       <CourseWrapper>
         <CourseBoxContainer>
-          <CourseCard
+          {/* <CourseCard
             title="Python Power Programming"
             description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod."
             certification="Microsoft Technical Associate"
             duration="45"
             path="/python-power-programming"
-          />
+          /> */}
           <CourseCard
             title="Data Analytics Masterclass"
             description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod."
@@ -89,13 +89,13 @@ const CourseSection = () => {
             duration="45"
             path="/data-analytics"
           />
-          <CourseCard
+          {/* <CourseCard
             title="Cybersecurity and Networking"
             description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod."
             certification="Microsoft Technical Associate"
             duration="45"
             path="/cybersecurity-networking"
-          />
+          /> */}
 
           <CourseCard
             title="Machine Learning Bootcamp"

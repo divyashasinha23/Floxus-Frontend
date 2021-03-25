@@ -69,8 +69,8 @@ const EventSection = () => {
         <EventHeadingContainer>
           <EventHeading>Upcoming Events</EventHeading>
           <p style={{ marginTop: 0, color: '#827FA5', fontSize: '15px' }}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy
+            Get to learn about happenings in tech world, in-demand skills & even
+            more for FREE.
           </p>
         </EventHeadingContainer>
       </EventHeadingWrapper>

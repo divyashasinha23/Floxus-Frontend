@@ -131,9 +131,8 @@ function CertificationSection() {
             <CertificateContent>
               <Heading>Certification</Heading>
               <Description>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam.
+                Get internationally recognised certifications which will give
+                the boost your career need.
               </Description>
               <Contact>We love taking your calls.</Contact>
               <CertificateButton>GET IN TOUCH</CertificateButton>
