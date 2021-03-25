@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { Link } from 'react-router-dom';
-import Portal from '../Portal/Portal';
 
 const TestimonialFeatureCard = styled.div`
   display: flex;

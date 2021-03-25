@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import CourseCard from '../CourseBox/CourseBox';
 import EventBox from '../EventBox/EventBox';
+import DataLogo from '../../images/dataanalyticsevent.png';
+import DataStructure from '../../images/datastructure.png';
+import PythonLogo from '../../images/python.png';
 
 const EventHeadingWrapper = styled.div`
   display: flex;
@@ -81,18 +83,21 @@ const EventSection = () => {
             duration="3 Days"
             time="FRI - MON: 8:00 PM - 9:30PM"
             date="03 April, 2021"
+            image={DataLogo}
           />
           <EventBox
             title="Data Structure and Problem Solving"
             duration="12 Days"
             time="MON - FRI: 8:00 PM - 9:30PM"
             date="Coming Soon"
+            image={DataStructure}
           />
           <EventBox
             title="Python Bootcamp"
             duration="7 Days"
             time="MON - FRI: 8:00 PM - 9:30PM"
             date="Coming Soon"
+            image={PythonLogo}
           />
         </EventBoxContainer>
       </EventWrapper>

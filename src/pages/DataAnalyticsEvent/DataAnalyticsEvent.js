@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from '@emotion/styled';
 import Toolbar from '../../components/ToolBar/Toolbar';
 import Coursehero from '../../components/Coursehero/Coursehero';
 import CourseOverview from '../../components/CourseOverview/CourseOverview';

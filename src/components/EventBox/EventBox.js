@@ -132,7 +132,7 @@ const Right = styled.div`
   }
 `;
 
-const EventBox = ({ title, duration, time, date }) => {
+const EventBox = ({ title, duration, time, date, image }) => {
   return (
     <>
       <EventBoxContainer>
@@ -140,7 +140,7 @@ const EventBox = ({ title, duration, time, date }) => {
           <EventBoxUp>
             <ContainerWrapper>
               <EventImage>
-                <img src={EventLogo} height="90%" />
+                <img src={image} height="90%" />
               </EventImage>
               <EventDetailsContent>
                 <p className="heading"> {title} </p>

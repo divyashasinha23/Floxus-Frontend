@@ -1,5 +1,4 @@
 import React from 'react';
-import * as FaIcons from 'react-icons/fa';
 import styled from '@emotion/styled';
 import campus from '../../images/campus.png';
 
