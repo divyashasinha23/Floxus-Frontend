@@ -150,15 +150,15 @@ const Floxusfeature = () => {
             </FloxusFeatureDescriptionLeft>
             <FloxusFeatureDescriptionRight>
               <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod. Lorem ipsum dolor sit amet, consetetur
-                sadipscing elitr.
+                Floxus imparts quality education and industry related
+                development related to the furnishing of life skills for
+                everyone. Students require a holistic and unique approach for
+                their problems.
               </p>
 
               <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod. Lorem ipsum dolor sit amet, consetetur
-                sadipscing elitr.
+                Floxus lives up to this and simulates real world problems in its
+                learning to make you the all-rounder.
               </p>
             </FloxusFeatureDescriptionRight>
           </FloxusFeatureDescription>
@@ -168,8 +168,8 @@ const Floxusfeature = () => {
                 <img src={projectIcon} />
                 <p className="title">Create Amazing Projects</p>
                 <p className="description">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod.
+                  Get to work on live projects with the support of experts to
+                  explore all realms of technology.
                 </p>
               </FloxusCardContent>
             </FloxusFeatureCard>
@@ -178,8 +178,9 @@ const Floxusfeature = () => {
                 <img src={skillIcon} />
                 <p className="title">Learn tech skills</p>
                 <p className="description">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod.
+                  Grab the opportunity to learn the skills demanded by
+                  professionals today. Deep learning, machine learning, IOT and
+                  what not, all in one forum.
                 </p>
               </FloxusCardContent>
             </FloxusFeatureCard>
@@ -188,8 +189,9 @@ const Floxusfeature = () => {
                 <img src={challengeIcon} />
                 <p className="title">Challenge based learning</p>
                 <p className="description">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod.
+                  All the courses offered come with leading edge challenges to
+                  make you know where you stand and help you get better and
+                  grow. .
                 </p>
               </FloxusCardContent>
             </FloxusFeatureCard>
