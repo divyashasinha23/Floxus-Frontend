@@ -186,14 +186,14 @@ export default function Drawerright({ value }) {
           )}
         </ItemContainer>
         <ItemContainer>
-          <Link to="#" className="link">
+          <a href="#footer" className="link">
             <div className="content">
               <p>Contact Us</p>
               <KeyboardArrowRightTwoToneIcon
                 style={{ color: '#FF5400', marginRight: '40px' }}
               />
             </div>
-          </Link>
+          </a>
         </ItemContainer>
         <ItemContainer>
           <div className="content">

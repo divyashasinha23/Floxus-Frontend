@@ -4,6 +4,7 @@ import FooterAccordion from '../FooterAccordion/FooterAccordion';
 import FloxusLogo from '../../images/floxuswhite.png';
 import * as FaIcons from 'react-icons/fa';
 import { db } from '../../firebase';
+import { Link } from 'react-router-dom';
 
 const FooterContainer = styled.div`
   display: flex;
@@ -151,6 +152,11 @@ const LinkContentBox = styled.div`
     font-size: 15px;
     cursor: pointer;
   }
+
+  .text {
+    text-decoration: none;
+    color: white;
+  }
 `;
 
 const FooterContact = styled.div`
@@ -218,6 +224,7 @@ const FooterContactRight = styled.div`
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
+      margin-right: 20px;
     }
 
     .copyright {
@@ -279,18 +286,14 @@ const Footer = () => {
             <LinksArea>
               <LinkContentBox>
                 <Heading>Company</Heading>
-                <p>About Us</p>
-                <p>Careers</p>
-                <p>Media</p>
+
+                <p onClick={() => window.scroll(0, 0)}>About Us</p>
+                <Link to="/join-uss" className="text">
+                  {' '}
+                  <p>Careers</p>
+                </Link>
               </LinkContentBox>
-              {/* <LinkContentBox>
-                <Heading>Resources</Heading>
-                <p>Blogs</p>
-                <p>Guides</p>
-                <p>Interview Questions</p>
-                <p>Webinars</p>
-                <p>Podcasts</p>
-              </LinkContentBox> */}
+
               <LinkContentBox>
                 <Heading>Partner With Us</Heading>
                 <p>Become an Instructor</p>
@@ -301,8 +304,13 @@ const Footer = () => {
               <LinkContentBox>
                 <Heading>Help & Support</Heading>
                 <p>Course Info</p>
-                <p>FAQs</p>
-                <p>Refund and cancellation Policy</p>
+                <p>Privacy Policy</p>
+                <a
+                  href="https://www.notion.so/Floxus-Refund-Policy-aa9b1acfa7784a82975e4b80f54f95eb"
+                  className="text"
+                >
+                  <p>Refund and cancellation Policy</p>
+                </a>
               </LinkContentBox>
               <LinkContentBox>
                 <Heading>Contact Us</Heading>
@@ -316,9 +324,27 @@ const Footer = () => {
               </FooterContactLeft>
               <FooterContactRight>
                 <div className="logo_wrapper">
-                  <FaIcons.FaFacebookF className="icon" />
-                  <FaIcons.FaTwitter className="icon" />
-                  <FaIcons.FaInstagramSquare className="icon" />
+                  <a
+                    href="https://www.facebook.com/floxuseducation/"
+                    target="_blank"
+                  >
+                    <FaIcons.FaFacebookF className="icon" />
+                  </a>
+                  <a href="https://twitter.com/Floxus2?s=09" target="_blank">
+                    <FaIcons.FaTwitter className="icon" />
+                  </a>
+                  <a
+                    href="https://instagram.com/floxus.education?igshid=1lr4q5r531911"
+                    target="_blank"
+                  >
+                    <FaIcons.FaInstagramSquare className="icon" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/floxusedu"
+                    target="_blank"
+                  >
+                    <FaIcons.FaLinkedin className="icon" />
+                  </a>
                 </div>
                 <div>
                   <p>&copy; 2021 Floxus Education pvt. Ltd.</p>
@@ -339,12 +365,27 @@ const Footer = () => {
             </FooterContactLeft>
             <FooterContactRight>
               <div className="logo_wrapper">
-                <FaIcons.FaFacebookF
-                  className="ico"
-                  style={{ color: 'white' }}
-                />
-                <FaIcons.FaTwitter className="icon" />
-                <FaIcons.FaInstagramSquare className="icon" />
+                <a
+                  href="https://www.facebook.com/floxuseducation/"
+                  target="_blank"
+                >
+                  <FaIcons.FaFacebookF className="icon" />
+                </a>
+                <a href="https://twitter.com/Floxus2?s=09" target="_blank">
+                  <FaIcons.FaTwitter className="icon" />
+                </a>
+                <a
+                  href="https://instagram.com/floxus.education?igshid=1lr4q5r531911"
+                  target="_blank"
+                >
+                  <FaIcons.FaInstagramSquare className="icon" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/floxusedu"
+                  target="_blank"
+                >
+                  <FaIcons.FaLinkedin className="icon" />
+                </a>
               </div>
               <div className="copyright">
                 <p>&copy; 2021 Floxus Education pvt. Ltd.</p>
