@@ -112,6 +112,27 @@ function FooterAccordion() {
           </Typography>
         </AccordionDetails>
       </Accordion>
+      <Accordion
+        style={{
+          backgroundColor: '#111111',
+          boxShadow: 'none',
+          color: 'white',
+        }}
+      >
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon style={{ color: 'white' }} />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <Typography className={classes.heading}>Contact Us</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            <p>Email : floxuseducation@gmail.com</p>
+            <p>Phone : +91 9123499293</p>
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
     </div>
   );
 }

@@ -134,8 +134,8 @@ function CertificationSection() {
                 Get internationally recognised certifications which will give
                 the boost your career need.
               </Description>
-              <Contact>We love taking your calls.</Contact>
-              <CertificateButton>GET IN TOUCH</CertificateButton>
+              {/* <Contact>We love taking your calls.</Contact>
+              <CertificateButton>GET IN TOUCH</CertificateButton> */}
             </CertificateContent>
           </CertificateData>
           <CertificateImage>

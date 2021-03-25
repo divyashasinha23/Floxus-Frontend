@@ -15,11 +15,11 @@ const TestimonialWrapper = styled.div`
   justify-content: center;
   align-items: center;
   ${'' /* box-shadow: 6px 6px 5px #c0c0c0; */}
-  padding-top: 30px;
+  ${'' /* padding-top: 30px; */}
   padding-bottom: 70px;
 
   @media (max-width: 496px) {
-    margin-top: 10%;
+    ${'' /* margin-top: 10%; */}
   }
 `;
 

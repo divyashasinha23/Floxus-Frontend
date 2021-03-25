@@ -64,6 +64,7 @@ const BatchContactContainer = styled.div`
 
   @media (max-width: 496px) {
     margin-top: 25px;
+    margin-bottom: 20px;
     width: 90%;
   }
 `;
