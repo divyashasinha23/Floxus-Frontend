@@ -124,7 +124,28 @@ const RSVPSection = styled.div`
   }
 `;
 
-const Coursehero = ({ courseData }) => {
+const ExploreButton = styled.button`
+  display: flex;
+  width: 170px;
+  height: 45px;
+  background: transparent linear-gradient(85deg, #ed841f 0%, #ff5400 100%) 0% 0%
+    no-repeat padding-box;
+  border: none;
+  border-radius: 22.5px;
+  ${'' /* margin-top: 20px; */}
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+
+  @media (max-width: 496px) {
+    margin-bottom: 20px;
+  }
+`;
+
+const Coursehero = ({ courseData, active }) => {
   return (
     <>
       <CourseHeroLayout>
@@ -149,17 +170,22 @@ const Coursehero = ({ courseData }) => {
               <p style={{ fontSize: '35px', fontWeight: 400, color: 'white' }}>
                 ₹ {courseData.price}
               </p>
-              {/* <a
-                href="https://nagendrakumar0032.stores.instamojo.com/product/302519/data-science-fcd39/"
-                data-store-name="nagendrakumar0032"
-                data-domain="https://nagendrakumar0032.stores.instamojo.com"
-                data-id="302519"
-                rel="im-new-checkout"
-                data-text="Pay"
-                data-css-style="background:#75c26a; color:#ffffff; width:180px; border-radius:30px"
-                data-layout="vertical"
-              ></a> */}
-              <Buttoncomps value="Notify Me" />
+
+              {active == 'true' ? (
+                <a
+                  href="https://floxus.typeform.com/to/PXwWi5in"
+                  style={{ textDecoration: 'none', color: 'white' }}
+                >
+                  <ExploreButton> Enroll Now </ExploreButton>
+                </a>
+              ) : (
+                <a
+                  href="https://floxus.typeform.com/to/wE9KdqrA"
+                  style={{ textDecoration: 'none', color: 'white' }}
+                >
+                  <ExploreButton> Notify Me </ExploreButton>
+                </a>
+              )}
             </RSVPSection>
           </CourseHeroLeft>
           <CourseHeroRight>

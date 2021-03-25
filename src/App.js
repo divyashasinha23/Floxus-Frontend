@@ -32,7 +32,7 @@ function App() {
             <Floxusfeature />
             <CampusSection />
             <EventSection />
-            <WhatCert />
+            {/* <WhatCert /> */}
             <CourseSection />
             <TestimonialSection />
             <Footer />

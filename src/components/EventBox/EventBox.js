@@ -165,7 +165,12 @@ const EventBox = ({ title, duration, time, date }) => {
               </Left>
               <Right>
                 {date == 'Coming Soon' ? (
-                  <Link className="text">Notify Me</Link>
+                  <a
+                    href="https://floxus.typeform.com/to/wE9KdqrA"
+                    className="text"
+                  >
+                    Notify Me
+                  </a>
                 ) : (
                   <Link
                     to="/data-analytics-workshop"

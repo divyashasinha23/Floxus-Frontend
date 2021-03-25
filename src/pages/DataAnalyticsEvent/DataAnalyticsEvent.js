@@ -58,7 +58,7 @@ const DataAnalyticsEvent = () => {
   return (
     <>
       <Toolbar />
-      <Coursehero courseData={CourseData} />
+      <Coursehero courseData={CourseData} active="true" />
       <CourseOverview
         courseObjectives={CourseData.courseObjectives}
         topics={CourseData.Topics}

@@ -253,7 +253,7 @@ const Footer = () => {
   };
   return (
     <>
-      <FooterContainer>
+      <FooterContainer id="footer">
         <FooterWrapper>
           <FooterUp>
             <FooterUpLeft>
@@ -306,8 +306,8 @@ const Footer = () => {
               </LinkContentBox>
               <LinkContentBox>
                 <Heading>Contact Us</Heading>
-                <p>Email : floxus@gmail.com</p>
-                <p>Phone : +91 8888888888</p>
+                <p>Email : floxuseducation@gmail.com</p>
+                <p>Phone : +91 9123499293</p>
               </LinkContentBox>
             </LinksArea>
             <FooterContact>

@@ -134,9 +134,9 @@ class HeroSection extends Component {
                   <HighLight>Project Based Learning</HighLight>
                 </Heading>
                 <Excerpt>
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam.
+                  We feel projects are the best way to learn something and their
+                  amalgamation with real-world problems will be your secret
+                  sauce for success.
                 </Excerpt>
                 <ExploreButton>
                   Explore

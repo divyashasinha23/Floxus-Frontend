@@ -93,7 +93,9 @@ const Toolbar = ({ value }) => {
               Courses
             </a>
             <Link className="text">Become a mentor</Link>
-            <Link className="text">Contact Us</Link>
+            <a href="#footer" className="text">
+              Contact Us
+            </a>
             <Link
               to="/join-us"
               style={{ textDecoration: 'none', color: 'white' }}
