@@ -53,6 +53,7 @@ const TestimonialContent = styled.div`
   flex-direction: column;
   height: 50%;
   width: 100%;
+  margin-bottom: 15%;
 
   ${'' /* background-color: #CBC3E3; */}
   justify-content: center;
@@ -165,10 +166,10 @@ function TestimonialSection() {
                 values that are deeply rooted within FLOXUS and the words of our
                 learners are the living proof of it .
               </Description>
-              <TestimonialButton className="btn">
+              {/* <TestimonialButton className="btn">
                 More Stories
                 <FaIcons.FaArrowRight style={{ marginLeft: '25px' }} />
-              </TestimonialButton>
+              </TestimonialButton> */}
             </TestimonialContent>
           </TestimonialData>
           <TestimonialCardContainer>
@@ -177,29 +178,32 @@ function TestimonialSection() {
               text="Birla Institute Of Technology,Mesra"
               image={Diksha}
               description="After attending the webinar, I decided to join the regular course on machine learning. It turned out to be indeed a great decision for me..."
+              detail="https://www.notion.so/Diksha-Krishna-5e155eb7b88f4ad8a78301030b129bff"
             />
             <TestimonialCard
               name="Sahil"
               text="Birla Institute Of Technology,Mesra"
               image={Sahil}
               description="Machine Learning and Floxus was a wonderful amalgam that worked magically for me during the Covid-19 lockdown period..."
+              detail="https://www.notion.so/Sahil-cd66b60963fe4eda9efbab50dfb9ab03"
             />
             <TestimonialCard
               name="Anisha Agarwal"
               text="Birla Institute Of Technology,Mesra"
               image={Anisha}
               description="What worked for me the most was that we were given tasks after each class to apply in real-time what we learnt in theory. This could possibly be the best practical.."
+              detail="https://www.notion.so/Anisha-Agarwal-8af454f1a57341f48fc092565d233ffc"
             />
             <TestimonialCard
               name="Rohit Kumar"
               text="Birla Institute Of Technology,Mesra"
               image={Rohit}
-              description="The support from the tutor was first-rate, while the course was well-paced, and pitched at a level which allowed me to learn quickly...
-"
+              description="The support from the tutor was first-rate, while the course was well-paced, and pitched at a level which allowed me to learn quickly..."
+              detail="https://www.notion.so/Rohit-Kumar-392bbbb8ead14cadb818fc9405ef0b36"
             />
-            <TestimonialButton className="mobBtn">
+            {/* <TestimonialButton className="mobBtn">
               More stories &rarr;
-            </TestimonialButton>
+            </TestimonialButton> */}
           </TestimonialCardContainer>
         </TestimonialContainer>
       </TestimonialWrapper>

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { Link } from 'react-router-dom';
+import Portal from '../Portal/Portal';
 
 const TestimonialFeatureCard = styled.div`
   display: flex;
@@ -49,7 +50,7 @@ const TestimonialCardHeader = styled.div`
 `;
 
 const TestimonialCard = (props) => {
-  const { name, text, image, description } = props;
+  const { name, text, image, description, detail } = props;
   return (
     <>
       <TestimonialFeatureCard>
@@ -83,15 +84,15 @@ const TestimonialCard = (props) => {
 
           <p style={{ color: '#7c5295', fontSize: '12px' }}>
             {description}{' '}
-            <Link to="/" style={{ textDecoration: 'none' }}>
+            <a href={detail} style={{ textDecoration: 'none' }}>
               <span
                 style={{
                   color: ' #FF5400',
                 }}
               >
-                Read More
+                Read More..
               </span>
-            </Link>
+            </a>
           </p>
         </TestimonialCardContent>
       </TestimonialFeatureCard>
