@@ -16,6 +16,8 @@ import styled from '@emotion/styled';
 import CancelTwoToneIcon from '@material-ui/icons/CancelTwoTone';
 import KeyboardArrowRightTwoToneIcon from '@material-ui/icons/KeyboardArrowRightTwoTone';
 import { Link } from 'react-router-dom';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+
 const Header = styled.div`
   display: flex;
   width: 100%;
@@ -109,7 +111,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Drawerright() {
+export default function Drawerright({ value }) {
   const classes = useStyles();
   const [state, setState] = React.useState({
     right: false,
@@ -163,14 +165,25 @@ export default function Drawerright() {
           <CancelTwoToneIcon style={{ color: 'blue', fontSize: '30px' }} />
         </Header>
         <ItemContainer>
-          <a href="/#course" className="link">
-            <div className="content">
-              <p>Courses</p>
-              <KeyboardArrowRightTwoToneIcon
-                style={{ color: '#FF5400', marginRight: '40px' }}
-              />
-            </div>
-          </a>
+          {value == 'true' ? (
+            <AnchorLink href="#course" className="link">
+              <div className="content">
+                <p>Courses</p>
+                <KeyboardArrowRightTwoToneIcon
+                  style={{ color: '#FF5400', marginRight: '40px' }}
+                />
+              </div>
+            </AnchorLink>
+          ) : (
+            <a href="/#course" className="link">
+              <div className="content">
+                <p>Courses</p>
+                <KeyboardArrowRightTwoToneIcon
+                  style={{ color: '#FF5400', marginRight: '40px' }}
+                />
+              </div>
+            </a>
+          )}
         </ItemContainer>
         <ItemContainer>
           <Link to="#" className="link">

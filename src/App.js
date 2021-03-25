@@ -27,7 +27,7 @@ function App() {
       <div>
         <Switch>
           <Route path="/" exact>
-            <Toolbar />
+            <Toolbar value="true" />
             <HeroSection />
             <Floxusfeature />
             <CampusSection />

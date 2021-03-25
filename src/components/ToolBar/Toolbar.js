@@ -78,7 +78,7 @@ const NavItemWrapper = styled.div`
   }
 `;
 
-const Toolbar = () => {
+const Toolbar = ({ value }) => {
   return (
     <>
       <ToolbarLayout>
@@ -102,7 +102,11 @@ const Toolbar = () => {
             </Link>
           </NavItemWrapper>
           <MenuWrapper>
-            <Drawerright />
+            {value == 'true' ? (
+              <Drawerright value={value} />
+            ) : (
+              <Drawerright value="false" />
+            )}
           </MenuWrapper>
         </ToolbarWrapper>
       </ToolbarLayout>
