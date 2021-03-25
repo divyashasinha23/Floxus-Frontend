@@ -75,33 +75,19 @@ const CourseSection = () => {
       </CourseHeadingWrapper>
       <CourseWrapper>
         <CourseBoxContainer>
-          {/* <CourseCard
-            title="Python Power Programming"
-            description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod."
-            certification="Microsoft Technical Associate"
-            duration="45"
-            path="/python-power-programming"
-          /> */}
           <CourseCard
             title="Data Analytics Masterclass"
-            description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod."
+            description="Get hands on Python skills and accelerate your data science career"
             certification="Microsoft Technical Associate"
-            duration="45"
+            duration="90"
             path="/data-analytics"
           />
-          {/* <CourseCard
-            title="Cybersecurity and Networking"
-            description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod."
-            certification="Microsoft Technical Associate"
-            duration="45"
-            path="/cybersecurity-networking"
-          /> */}
 
           <CourseCard
             title="Machine Learning Bootcamp"
-            description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod."
+            description="    'Get hands on Python skills and accelerate your Machine Learning career',"
             certification="Microsoft Technical Associate"
-            duration="45"
+            duration="90"
             path="/machine-learning"
           />
         </CourseBoxContainer>

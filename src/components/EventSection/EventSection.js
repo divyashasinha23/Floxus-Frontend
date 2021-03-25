@@ -67,7 +67,7 @@ const EventBoxContainer = styled.div`
 const EventSection = () => {
   return (
     <>
-      <EventHeadingWrapper>
+      <EventHeadingWrapper id="event">
         <EventHeadingContainer>
           <EventHeading>Upcoming Events</EventHeading>
           <p style={{ marginTop: 0, color: '#827FA5', fontSize: '15px' }}>

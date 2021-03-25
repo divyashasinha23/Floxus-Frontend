@@ -38,7 +38,7 @@ function FooterAccordion() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            <p onClick={window.scroll(0, 0)}>About Us</p>
+            <p onClick={() => window.scroll(0, 0)}>About Us</p>
             <Link
               to="/join-us"
               style={{ textDecoration: 'none', color: 'white' }}
@@ -65,9 +65,25 @@ function FooterAccordion() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            <p>Become an Instructor</p>
-            <p>Become Training Associate</p>
-            <p>Become Certification Partner</p>
+            <a
+              href="mailto:floxuseducation@gmail.com?subject=%20Interested%20to%20become%20an%20instructor%20at%20Floxus&body=%20Interested%20to%20become%20an%20instructor%20at%20Floxus"
+              style={{ textDecoration: 'none', color: 'white' }}
+            >
+              <p>Become an Instructor</p>
+            </a>
+
+            <a
+              href="mailto:floxuseducation@gmail.com?subject=%20Interested%20to%20become%20a%20training%20associate%20at%20Floxus&body=%20Interested%20to%20become%20a%20training%20associate%20at%20Floxus"
+              style={{ textDecoration: 'none', color: 'white' }}
+            >
+              <p>Become Training Associate</p>
+            </a>
+            <a
+              href="mailto:floxuseducation@gmail.com?subject=%20Interested%20to%20become%20Certification%20Partner&body=Please%20attach%20your%20company%20brochure%20and%20also%20explain%20the%20terms%20for%20this%20collaboration."
+              style={{ textDecoration: 'none', color: 'white' }}
+            >
+              <p>Become Certification Partner</p>
+            </a>
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -87,7 +103,6 @@ function FooterAccordion() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            <p>Course Info</p>
             <a
               href="https://www.notion.so/Floxus-Refund-Policy-aa9b1acfa7784a82975e4b80f54f95eb"
               style={{ textDecoration: 'none', color: 'white' }}

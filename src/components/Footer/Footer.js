@@ -288,7 +288,7 @@ const Footer = () => {
                 <Heading>Company</Heading>
 
                 <p onClick={() => window.scroll(0, 0)}>About Us</p>
-                <Link to="/join-uss" className="text">
+                <Link to="/join-us" className="text">
                   {' '}
                   <p>Careers</p>
                 </Link>
@@ -319,10 +319,9 @@ const Footer = () => {
 
               <LinkContentBox>
                 <Heading>Help & Support</Heading>
-                <p>Course Info</p>
-                <p>Privacy Policy</p>
                 <a
                   href="https://www.notion.so/Floxus-Refund-Policy-aa9b1acfa7784a82975e4b80f54f95eb"
+                  target="_blank"
                   className="text"
                 >
                   <p>Refund and cancellation Policy</p>

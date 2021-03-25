@@ -139,7 +139,10 @@ class HeroSection extends Component {
                   amalgamation with real-world problems will be your secret
                   sauce for success.
                 </Excerpt>
-                <AnchorLink href="#event">
+                <AnchorLink
+                  href="#event"
+                  style={{ textDecoration: 'none', color: 'white' }}
+                >
                   <ExploreButton>
                     Explore
                     <FaIcons.FaArrowRight style={{ marginLeft: '10px' }} />
