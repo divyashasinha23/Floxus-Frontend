@@ -179,8 +179,7 @@ const Floxusfeature = () => {
                 <p className="title">Learn tech skills</p>
                 <p className="description">
                   Grab the opportunity to learn the skills demanded by
-                  professionals today. Deep learning, machine learning, IOT and
-                  what not, all in one forum.
+                  professionals today.
                 </p>
               </FloxusCardContent>
             </FloxusFeatureCard>

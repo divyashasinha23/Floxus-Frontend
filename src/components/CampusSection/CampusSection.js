@@ -139,7 +139,7 @@ function CampusSection() {
                 in india.
               </Heading>
               <Description>
-                With the online education paving its way into India, students
+                With online education paving its way into India, students
                 require a holistic and unique approach to their problems. FLOXUS
                 has been able to solve these problems of students coming from
                 different background and all across the country.

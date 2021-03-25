@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import * as FaIcons from 'react-icons/fa';
 import Toolbar from '../ToolBar/Toolbar';
 import HeroImage from '../../images/heroImage.png';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const HeroWrapper = styled.div`
   display: flex;
@@ -138,10 +139,12 @@ class HeroSection extends Component {
                   amalgamation with real-world problems will be your secret
                   sauce for success.
                 </Excerpt>
-                <ExploreButton>
-                  Explore
-                  <FaIcons.FaArrowRight style={{ marginLeft: '10px' }} />
-                </ExploreButton>
+                <AnchorLink href="#event">
+                  <ExploreButton>
+                    Explore
+                    <FaIcons.FaArrowRight style={{ marginLeft: '10px' }} />
+                  </ExploreButton>{' '}
+                </AnchorLink>
               </ContentBox>
             </LeftContainer>
             <RightContainer>

@@ -92,7 +92,12 @@ const Toolbar = ({ value }) => {
             <a href="/#course" className="text">
               Courses
             </a>
-            <Link className="text">Become a mentor</Link>
+            <a
+              href="mailto:floxuseducation@gmail.com?subject=%20Interested%20to%20become%20an%20instructor%20at%20Floxus&body=%20Interested%20to%20become%20an%20instructor%20at%20Floxus"
+              className="text"
+            >
+              Become a mentor
+            </a>
             <a href="#footer" className="text">
               Contact Us
             </a>

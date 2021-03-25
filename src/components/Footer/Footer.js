@@ -296,9 +296,25 @@ const Footer = () => {
 
               <LinkContentBox>
                 <Heading>Partner With Us</Heading>
-                <p>Become an Instructor</p>
-                <p>Become Training Associate</p>
-                <p>Become Certification Partner</p>
+                <a
+                  href="mailto:floxuseducation@gmail.com?subject=%20Interested%20to%20become%20an%20instructor%20at%20Floxus&body=%20Interested%20to%20become%20an%20instructor%20at%20Floxus"
+                  className="text"
+                >
+                  <p>Become an Instructor</p>
+                </a>
+
+                <a
+                  href="mailto:floxuseducation@gmail.com?subject=%20Interested%20to%20become%20a%20training%20associate%20at%20Floxus&body=%20Interested%20to%20become%20a%20training%20associate%20at%20Floxus"
+                  className="text"
+                >
+                  <p>Become Training Associate</p>
+                </a>
+                <a
+                  href="mailto:floxuseducation@gmail.com?subject=%20Interested%20to%20become%20Certification%20Partner&body=Please%20attach%20your%20company%20brochure%20and%20also%20explain%20the%20terms%20for%20this%20collaboration."
+                  className="text"
+                >
+                  <p>Become Certification Partner</p>
+                </a>
               </LinkContentBox>
 
               <LinkContentBox>
