@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import CertiSample from '../../images/certisample.jpg';
+import CertiSample from '../../images/ai9002.jpg';
 
 const CertificateWrapper = styled.div`
   display: flex;

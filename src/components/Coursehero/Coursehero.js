@@ -69,7 +69,8 @@ const CourseHeroRight = styled.div`
   align-items: center;
 
   img {
-    height: 95%;
+    height: 60%;
+    border-radius: 10px;
   }
 
   @media (max-width: 496px) {
@@ -145,7 +146,7 @@ const ExploreButton = styled.button`
   }
 `;
 
-const Coursehero = ({ courseData, active }) => {
+const Coursehero = ({ courseData, active, image }) => {
   return (
     <>
       <CourseHeroLayout>
@@ -189,7 +190,7 @@ const Coursehero = ({ courseData, active }) => {
             </RSVPSection>
           </CourseHeroLeft>
           <CourseHeroRight>
-            <img src={pythonHero} />
+            <img src={image} />
           </CourseHeroRight>
         </CourseHeroWrapper>
       </CourseHeroLayout>

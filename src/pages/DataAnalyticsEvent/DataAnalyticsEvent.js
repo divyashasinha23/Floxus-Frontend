@@ -5,6 +5,7 @@ import CourseOverview from '../../components/CourseOverview/CourseOverview';
 import TestimonialSection from '../../components/Testimonial/Testimonial';
 import FAQSection from '../../components/FAQs/FAQSection';
 import Footer from '../../components/Footer/Footer';
+import DataEvent from '../../images/dataevent.jpg';
 
 const CourseData = {
   title: 'Data Analytics Bootcamp',
@@ -57,14 +58,14 @@ const DataAnalyticsEvent = () => {
   return (
     <>
       <Toolbar />
-      <Coursehero courseData={CourseData} active="true" />
+      <Coursehero courseData={CourseData} active="true" image={DataEvent} />
       <CourseOverview
         courseObjectives={CourseData.courseObjectives}
         topics={CourseData.Topics}
         prerequisite={CourseData.prerequisite}
       />
       <TestimonialSection />
-      <FAQSection />
+      {/* <FAQSection /> */}
       <Footer />
     </>
   );

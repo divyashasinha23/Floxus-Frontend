@@ -3,10 +3,10 @@ import Toolbar from '../../components/ToolBar/Toolbar';
 import Coursehero from '../../components/Coursehero/Coursehero';
 import CourseOverview from '../../components/CourseOverview/CourseOverview';
 import SyllabusCourse from '../../components/SyllabusCourse/SyllabusCourse';
-import FAQSection from '../../components/FAQs/FAQSection';
 import Footer from '../../components/Footer/Footer';
 import CertificationSection from '../../components/CertificationSection/CertificationSection';
 import TestimonialSection from '../../components/Testimonial/Testimonial';
+import MachineImage from '../../images/MachineLearning.jpg';
 
 const CourseData = {
   title: 'Machine Learning Bootcamp',
@@ -117,7 +117,7 @@ const MachineLearning = () => {
   return (
     <>
       <Toolbar />
-      <Coursehero courseData={CourseData} />
+      <Coursehero courseData={CourseData} image={MachineImage} />
       <CourseOverview
         courseObjectives={CourseData.courseObjectives}
         topics={CourseData.Topics}
@@ -127,7 +127,7 @@ const MachineLearning = () => {
       <CertificationSection />
       {/* <ProjectSection /> */}
       <TestimonialSection />
-      <FAQSection />
+      {/* <FAQSection /> */}
       <Footer />
     </>
   );
