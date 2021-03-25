@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import styled from '@emotion/styled';
 import * as FaIcons from 'react-icons/fa';
-import Toolbar from '../ToolBar/Toolbar';
-import HeroImage from '../../images/heroImage.png';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const HeroWrapper = styled.div`
@@ -151,7 +149,10 @@ class HeroSection extends Component {
               </ContentBox>
             </LeftContainer>
             <RightContainer>
-              <img src={HeroImage} />
+              <img
+                src="https://cdn.jsdelivr.net/gh/totorodev0032/floxus-cdn-assets@main/heroImage.png"
+                alt="hero Image"
+              />
             </RightContainer>
           </HeroContainer>
         </HeroWrapper>

@@ -6,7 +6,6 @@ import SyllabusCourse from '../../components/SyllabusCourse/SyllabusCourse';
 import Footer from '../../components/Footer/Footer';
 import CertificationSection from '../../components/CertificationSection/CertificationSection';
 import TestimonialSection from '../../components/Testimonial/Testimonial';
-import DataAnalyticsImage from '../../images/dataanlaytics.jpg';
 
 const CourseData = {
   title: 'Data Analytics Bootcamp',
@@ -120,7 +119,10 @@ const DataAnalytics = () => {
   return (
     <>
       <Toolbar />
-      <Coursehero courseData={CourseData} image={DataAnalyticsImage} />
+      <Coursehero
+        courseData={CourseData}
+        image="https://cdn.jsdelivr.net/gh/totorodev0032/floxus-cdn-assets@main/dataanlaytics.jpg"
+      />
       <CourseOverview
         courseObjectives={CourseData.courseObjectives}
         topics={CourseData.Topics}

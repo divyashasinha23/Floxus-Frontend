@@ -5,29 +5,30 @@ import CourseOverview from '../../components/CourseOverview/CourseOverview';
 import TestimonialSection from '../../components/Testimonial/Testimonial';
 import FAQSection from '../../components/FAQs/FAQSection';
 import Footer from '../../components/Footer/Footer';
-import DataEvent from '../../images/dataevent.jpg';
 
 const CourseData = {
-  title: 'Data Analytics Bootcamp',
+  title: 'Data Analytics Workshop',
   courseHerodata: [
-    'Lorem ipsum ist non hey im isst none',
-    'Lorem ipsum ist non hey im isst none',
-    'Lorem ipsum ist non hey im isst none',
+    '3 days live workshop.',
+    'Get certified by Microsoft.',
+    'Become a part of Floxus Community',
   ],
   price: 'FREE',
-  courseServices: ['48+ hours', '3+', '24/7'],
+  courseServices: ['3 Days', '3+', 'Community'],
   courseObjectives: [
-    'Install Python and write your first program',
-    'Describe the basics of the Python programming language',
-    'Use variables to store, retrieve and calculate information',
-    'Use variables to store, retrieve and calculate information',
+    'Learn about data analytics tools.',
+    'Learn about Tableau, Power BI and Advanced Excel.',
+    'Learn how to take data driven decisions.',
+    'Make projects to showcase to the world.',
   ],
   Topics: [
     'Data Wrangling',
     'Data Manipulation',
-    'SQL',
-    'Data Pipeline',
-    'Query Language',
+    'Decision Making',
+    'Forcasting',
+    'Tableau',
+    'MS Excel',
+    'Power BI',
   ],
   prerequisite: [],
   curriculum: [
@@ -58,7 +59,11 @@ const DataAnalyticsEvent = () => {
   return (
     <>
       <Toolbar />
-      <Coursehero courseData={CourseData} active="true" image={DataEvent} />
+      <Coursehero
+        courseData={CourseData}
+        active="true"
+        image="https://cdn.jsdelivr.net/gh/totorodev0032/floxus-cdn-assets@main/dataevent.jpg"
+      />
       <CourseOverview
         courseObjectives={CourseData.courseObjectives}
         topics={CourseData.Topics}

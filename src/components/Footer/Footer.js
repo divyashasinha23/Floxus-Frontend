@@ -370,9 +370,21 @@ const Footer = () => {
         </FooterWrapper>
         <FooterAccordionWrapper>
           <InputContainer>
-            <input type="text" placeholder="Email" />
-            <button>Submit</button>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Email"
+              />
+              <button type="submit">Submit</button>
+            </form>
           </InputContainer>
+          {subscribed ? (
+            <div className="textContainer">
+              <p style={{ color: 'white' }}>Thanks for subscribing!!</p>
+            </div>
+          ) : null}
           <FooterAccordion />
           <FooterContact>
             <FooterContactLeft>

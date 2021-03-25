@@ -129,30 +129,7 @@ export default function Drawerright({ value }) {
         role="presentation"
         onClick={toggleDrawer(anchor, false)}
         onKeyDown={toggleDrawer(anchor, false)}
-        // style={{
-        //   display: 'flex',
-        //   justifyContent: 'center',
-        //   flexDirection: 'column',
-        // }}
       >
-        {/* <IoIcons.IoMdCloseCircle
-          style={{
-            fontSize: '30px',
-            color: 'purple',
-            marginTop: '15px',
-            marginLeft: '5px',
-          }}
-        />
-        <List>
-          {['Courses', 'Contact Us', 'Become a Mentor'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List> */}
         <Header>
           <CancelTwoToneIcon style={{ color: 'blue', fontSize: '30px' }} />
         </Header>
@@ -189,7 +166,12 @@ export default function Drawerright({ value }) {
         </ItemContainer>
         <ItemContainer>
           <div className="content">
-            <p>Become a Mentor</p>
+            <a
+              href="mailto:floxuseducation@gmail.com?subject=%20Interested%20to%20become%20an%20instructor%20at%20Floxus&body=%20Interested%20to%20become%20an%20instructor%20at%20Floxus"
+              style={{ textDecoration: 'none', color: '#212121' }}
+            >
+              <p>Become a Mentor</p>
+            </a>
             <KeyboardArrowRightTwoToneIcon
               style={{ color: '#FF5400', marginRight: '40px' }}
             />

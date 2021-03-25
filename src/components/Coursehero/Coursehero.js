@@ -127,7 +127,7 @@ const RSVPSection = styled.div`
 
 const ExploreButton = styled.button`
   display: flex;
-  width: 170px;
+  width: 150px;
   height: 45px;
   background: transparent linear-gradient(85deg, #ed841f 0%, #ff5400 100%) 0% 0%
     no-repeat padding-box;
@@ -163,7 +163,13 @@ const Coursehero = ({ courseData, active, image }) => {
               {courseData.courseServices.map((data, index) => (
                 <div>
                   <p> {data} </p>
-                  <p>Live Classes</p>
+                  {index === 0 ? (
+                    <p>Live Classes</p>
+                  ) : index === 1 ? (
+                    <p>Projects</p>
+                  ) : (
+                    <p>Support</p>
+                  )}
                 </div>
               ))}
             </CourseFeaturedata>
@@ -190,7 +196,7 @@ const Coursehero = ({ courseData, active, image }) => {
             </RSVPSection>
           </CourseHeroLeft>
           <CourseHeroRight>
-            <img src={image} />
+            <img src={image} alt="course image" />
           </CourseHeroRight>
         </CourseHeroWrapper>
       </CourseHeroLayout>

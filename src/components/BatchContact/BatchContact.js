@@ -113,9 +113,11 @@ const BatchContact = () => {
   const [name, setName] = React.useState('');
   const [email, setEmail] = React.useState('');
   const [contact, setContact] = React.useState('');
+  const [warning, setWarning] = React.useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     db.collection('contacts')
       .add({
         name: name,
@@ -144,6 +146,7 @@ const BatchContact = () => {
                 <FormControl className={classes.margin}>
                   <BootstrapInput
                     placeholder="Name"
+                    type="text"
                     id="bootstrap-input"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
@@ -152,6 +155,7 @@ const BatchContact = () => {
                 <FormControl className={classes.margin}>
                   <BootstrapInput
                     id="bootstrap-input"
+                    type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Email"
@@ -160,6 +164,7 @@ const BatchContact = () => {
                 <FormControl className={classes.margin}>
                   <BootstrapInput
                     placeholder="Contact No."
+                    type="text"
                     id="bootstrap-input"
                     value={contact}
                     onChange={(e) => setContact(e.target.value)}

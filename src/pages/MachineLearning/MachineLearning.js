@@ -6,7 +6,6 @@ import SyllabusCourse from '../../components/SyllabusCourse/SyllabusCourse';
 import Footer from '../../components/Footer/Footer';
 import CertificationSection from '../../components/CertificationSection/CertificationSection';
 import TestimonialSection from '../../components/Testimonial/Testimonial';
-import MachineImage from '../../images/MachineLearning.jpg';
 
 const CourseData = {
   title: 'Machine Learning Bootcamp',
@@ -117,7 +116,10 @@ const MachineLearning = () => {
   return (
     <>
       <Toolbar />
-      <Coursehero courseData={CourseData} image={MachineImage} />
+      <Coursehero
+        courseData={CourseData}
+        image="https://cdn.jsdelivr.net/gh/totorodev0032/floxus-cdn-assets@main/MachineLearning.jpg"
+      />
       <CourseOverview
         courseObjectives={CourseData.courseObjectives}
         topics={CourseData.Topics}
