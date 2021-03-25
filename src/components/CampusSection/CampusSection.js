@@ -77,6 +77,10 @@ const Description = styled.div`
   padding-right: 20%;
   line-height: 25px;
   letter-spacing: 0.5px;
+
+  @media (max-width: 496px) {
+    padding-right: 3%;
+  }
 `;
 
 const CampusButton = styled.button`
@@ -135,13 +139,15 @@ function CampusSection() {
                 in india.
               </Heading>
               <Description>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy
+                With the online education paving its way into India, students
+                require a holistic and unique approach to their problems. FLOXUS
+                has been able to solve these problems of students coming from
+                different background and all across the country.
               </Description>
-              <CampusButton>
+              {/* <CampusButton>
                 Book Demo
                 <FaIcons.FaArrowRight style={{ marginLeft: '10px' }} />
-              </CampusButton>
+              </CampusButton> */}
             </CampusContent>
           </CampusData>
           <CampusImage>

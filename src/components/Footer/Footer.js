@@ -282,31 +282,32 @@ const Footer = () => {
                 <p>About Us</p>
                 <p>Careers</p>
                 <p>Media</p>
-                <p>Contact Us</p>
               </LinkContentBox>
-              <LinkContentBox>
+              {/* <LinkContentBox>
                 <Heading>Resources</Heading>
                 <p>Blogs</p>
                 <p>Guides</p>
                 <p>Interview Questions</p>
                 <p>Webinars</p>
                 <p>Podcasts</p>
-              </LinkContentBox>
+              </LinkContentBox> */}
               <LinkContentBox>
                 <Heading>Partner With Us</Heading>
                 <p>Become an Instructor</p>
                 <p>Become Training Associate</p>
                 <p>Become Certification Partner</p>
-                <p>Become Community Partner</p>
               </LinkContentBox>
 
               <LinkContentBox>
                 <Heading>Help & Support</Heading>
                 <p>Course Info</p>
                 <p>FAQs</p>
-                <p>Terms and Conditions</p>
-                <p>Privacy Policy</p>
                 <p>Refund and cancellation Policy</p>
+              </LinkContentBox>
+              <LinkContentBox>
+                <Heading>Contact Us</Heading>
+                <p>Email : floxus@gmail.com</p>
+                <p>Phone : +91 8888888888</p>
               </LinkContentBox>
             </LinksArea>
             <FooterContact>
