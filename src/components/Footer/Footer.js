@@ -143,7 +143,7 @@ const LinkContentBox = styled.div`
   display: flex;
   flex-direction: column;
   ${'' /* justify-content:center; */}
-  flex-basis: 25%;
+  flex-basis: 30%;
   color: white;
 
   p {
@@ -151,11 +151,13 @@ const LinkContentBox = styled.div`
     margin-bottom: 4px;
     font-size: 15px;
     cursor: pointer;
+    padding-right: 5px;
   }
 
   .text {
     text-decoration: none;
     color: white;
+    padding-right: 10px;
   }
 `;
 
@@ -205,7 +207,7 @@ const FooterContactRight = styled.div`
 
   .icon {
     color: white;
-    margin-left: 30px;
+    margin-left: 20px;
   }
 
   @media (max-width: 496px) {
