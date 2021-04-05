@@ -101,12 +101,13 @@ const Toolbar = ({ value }) => {
             <a href="#footer" className="text">
               Contact Us
             </a>
-            <Link
-              to="/join-us"
+            <a
+              href="https://discord.gg/PV5f6aqA2w"
+              target="_blank"
               style={{ textDecoration: 'none', color: 'white' }}
             >
-              <Buttoncomps value="Join Us" />
-            </Link>
+              <Buttoncomps value="Join Community" />
+            </a>
           </NavItemWrapper>
           <MenuWrapper>
             {value == 'true' ? (

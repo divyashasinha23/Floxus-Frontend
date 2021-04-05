@@ -81,7 +81,7 @@ const EventSection = () => {
           <EventBox
             title="Data Analytics"
             duration="3 Days"
-            time="FRI - MON: 8:00 PM - 9:30PM"
+            time="SAT - MON: 8:00 PM - 9:30PM"
             date="03 April, 2021"
             image={DataLogo}
           />

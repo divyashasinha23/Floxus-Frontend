@@ -190,9 +190,9 @@ export default function Drawerright({ value }) {
         </ItemContainer>
         <HorizontalLine />
         <ButtonContainer>
-          <Link to="/join-us" className="link">
-            <JoinUsButton>Join Us</JoinUsButton>
-          </Link>
+          <a href="https://discord.gg/PV5f6aqA2w" className="link">
+            <JoinUsButton>Join Community</JoinUsButton>
+          </a>
         </ButtonContainer>
       </div>
     </>
