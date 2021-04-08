@@ -140,13 +140,14 @@ const ExploreButton = styled.button`
   font-size: 17px;
   font-weight: 500;
   cursor: pointer;
+  margin-top: 10px;
 
   @media (max-width: 496px) {
     margin-bottom: 20px;
   }
 `;
 
-const Coursehero = ({ courseData, active, image }) => {
+const Coursehero = ({ courseData, active, image, status }) => {
   return (
     <>
       <CourseHeroLayout>
@@ -174,16 +175,28 @@ const Coursehero = ({ courseData, active, image }) => {
               ))}
             </CourseFeaturedata>
             <RSVPSection>
-              <p style={{ fontSize: '30px', fontWeight: 400, color: 'white' }}>
-                ₹ {courseData.price}
-              </p>
+              {status === 'finished' ? (
+                <p
+                  style={{ fontSize: '20px', fontWeight: 400, color: 'white' }}
+                >
+                  {' '}
+                  Finished
+                </p>
+              ) : (
+                <p
+                  style={{ fontSize: '30px', fontWeight: 400, color: 'white' }}
+                >
+                  {' '}
+                  ₹ {courseData.price}
+                </p>
+              )}
 
               {active == 'true' ? (
                 <a
-                  href="https://floxus.typeform.com/to/PXwWi5in"
+                  href="https://www.youtube.com/channel/UC1ZPrl9xMMdBusNXoK3Gf4w/playlists"
                   style={{ textDecoration: 'none', color: 'white' }}
                 >
-                  <ExploreButton> Enroll Now </ExploreButton>
+                  <ExploreButton> Watch Playlist </ExploreButton>
                 </a>
               ) : (
                 <a

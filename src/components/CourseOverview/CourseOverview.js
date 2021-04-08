@@ -2,8 +2,9 @@ import React from 'react';
 import styled from '@emotion/styled';
 import Chips from '../Chips/Chips';
 import BatchContact from '../BatchContact/BatchContact';
+import WorkshopResource from '../WorkshopResources/WorkshopResource';
 
-const CourseOverview = ({ courseObjectives, topics, prerequisite }) => {
+const CourseOverview = ({ courseObjectives, topics, prerequisite, status }) => {
   return (
     <>
       <CourseOverviewContainer>
@@ -37,7 +38,8 @@ const CourseOverview = ({ courseObjectives, topics, prerequisite }) => {
             </CoursePrerequisite>
           </CourseOverviewLeft>
           <CourseOverviewRight>
-            <BatchContact />
+            {/* <BatchContact /> */}
+            {status === 'finished' ? <WorkshopResource /> : <BatchContact />}
           </CourseOverviewRight>
         </CourseOverviewWrapper>
       </CourseOverviewContainer>

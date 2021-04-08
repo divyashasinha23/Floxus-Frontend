@@ -12,7 +12,11 @@ const EventBoxContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  margin-left: 5%;
   ${'' /* flex-direction: column; */}
+  @media(max-width:496px) {
+    margin-left: 0;
+  }
 `;
 
 const EventBoxWrapper = styled.div`

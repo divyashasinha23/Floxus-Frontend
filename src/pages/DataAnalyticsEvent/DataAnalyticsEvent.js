@@ -13,6 +13,7 @@ const CourseData = {
     'Get certified by Microsoft.',
     'Become a part of Floxus Community',
   ],
+  status: 'finished',
   price: 'FREE',
   courseServices: ['3 Days', '3+', 'Community'],
   courseObjectives: [
@@ -63,11 +64,13 @@ const DataAnalyticsEvent = () => {
         courseData={CourseData}
         active="true"
         image="https://cdn.jsdelivr.net/gh/totorodev0032/floxus-cdn-assets@main/dataevent.jpg"
+        status={CourseData.status}
       />
       <CourseOverview
         courseObjectives={CourseData.courseObjectives}
         topics={CourseData.Topics}
         prerequisite={CourseData.prerequisite}
+        status={CourseData.status}
       />
       <TestimonialSection />
       {/* <FAQSection /> */}

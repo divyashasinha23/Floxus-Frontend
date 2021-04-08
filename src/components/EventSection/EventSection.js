@@ -56,7 +56,7 @@ const EventBoxContainer = styled.div`
   width: 80%;
   margin-top: 5%;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: start;
   margin-bottom: 10%;
 
   @media (max-width: 496px) {
@@ -69,7 +69,7 @@ const EventSection = () => {
     <>
       <EventHeadingWrapper id="event">
         <EventHeadingContainer>
-          <EventHeading>Upcoming Events</EventHeading>
+          <EventHeading>Challenge Based Events</EventHeading>
           <p style={{ marginTop: 0, color: '#827FA5', fontSize: '15px' }}>
             Get to learn about happenings in tech world, in-demand skills & even
             more for FREE.
