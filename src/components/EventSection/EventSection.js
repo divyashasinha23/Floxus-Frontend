@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import EventBox from '../EventBox/EventBox';
 import DataLogo from '../../images/dataanalyticsevent.png';
@@ -7,7 +7,8 @@ import PythonLogo from '../../images/python.png';
 
 const EventHeadingWrapper = styled.div`
   display: flex;
-  height: 10vh;
+  flex-direction: column;
+  height: auto;
   width: 100%;
   background-color: #f9f9f9;
   justify-content: center;
@@ -18,7 +19,7 @@ const EventHeadingWrapper = styled.div`
 const EventHeadingContainer = styled.div`
   display: flex;
   flex-direction: column;
-  height: 10vh;
+  height: auto;
   width: 80%;
   background-color: #f9f9f9;
 
@@ -28,6 +29,41 @@ const EventHeadingContainer = styled.div`
       margin-top: 10%;
     }
   }
+`;
+
+const TabSection = styled.div`
+  display: flex;
+  width: 30%;
+  height: 50px;
+  margin-top: 5px;
+  ${'' /* background-color: black; */}
+
+  @media(max-width:496px) {
+    width: 100%;
+    font-size: 13px;
+  }
+`;
+
+const ActiveTabElement = styled.div`
+  display: flex;
+  width: 170px;
+  height: 70%;
+  justify-content: center;
+  align-items: center;
+  background-color: #050b75;
+  color: white;
+  cursor: pointer;
+`;
+
+const InactiveTabElement = styled.div`
+  display: flex;
+  width: 170px;
+  height: 70%;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #4c4a6e;
+  cursor: pointer;
 `;
 
 const EventHeading = styled.p`
@@ -65,6 +101,18 @@ const EventBoxContainer = styled.div`
 `;
 
 const EventSection = () => {
+  const [pastActive, setPastActive] = useState(false);
+  const [upcomingActive, setUpcomingActive] = useState(true);
+
+  const handleClick1 = () => {
+    setUpcomingActive(!upcomingActive);
+    setPastActive(!pastActive);
+  };
+
+  const handleClick2 = () => {
+    setUpcomingActive(!upcomingActive);
+    setPastActive(!pastActive);
+  };
   return (
     <>
       <EventHeadingWrapper id="event">
@@ -75,31 +123,61 @@ const EventSection = () => {
             more for FREE.
           </p>
         </EventHeadingContainer>
+        <EventHeadingContainer>
+          <TabSection>
+            {upcomingActive ? (
+              <ActiveTabElement>Upcoming Events</ActiveTabElement>
+            ) : (
+              <InactiveTabElement onClick={handleClick1}>
+                Upcoming Events
+              </InactiveTabElement>
+            )}
+            {pastActive ? (
+              <ActiveTabElement>Past Events</ActiveTabElement>
+            ) : (
+              <InactiveTabElement onClick={handleClick2}>
+                Past Events
+              </InactiveTabElement>
+            )}
+          </TabSection>
+        </EventHeadingContainer>
       </EventHeadingWrapper>
       <EventWrapper>
-        <EventBoxContainer>
-          <EventBox
+        {upcomingActive ? (
+          <EventBoxContainer>
+            {/* <EventBox
             title="Data Analytics"
             duration="3 Days"
             time="SAT - MON: 8:00 PM - 9:30PM"
             date="03 April, 2021"
             image={DataLogo}
-          />
-          <EventBox
-            title="Data Structure and Problem Solving"
-            duration="12 Days"
-            time="MON - FRI: 8:00 PM - 9:30PM"
-            date="Coming Soon"
-            image={DataStructure}
-          />
-          <EventBox
-            title="Python Bootcamp"
-            duration="7 Days"
-            time="MON - FRI: 8:00 PM - 9:30PM"
-            date="Coming Soon"
-            image={PythonLogo}
-          />
-        </EventBoxContainer>
+          /> */}
+            <EventBox
+              title="Data Structure and Problem Solving"
+              duration="12 Days"
+              time="MON - FRI: 8:00 PM - 9:30PM"
+              date="Coming Soon"
+              image={DataStructure}
+            />
+            <EventBox
+              title="Python Bootcamp"
+              duration="7 Days"
+              time="MON - FRI: 8:00 PM - 9:30PM"
+              date="Coming Soon"
+              image={PythonLogo}
+            />
+          </EventBoxContainer>
+        ) : (
+          <EventBoxContainer>
+            <EventBox
+              title="Data Analytics"
+              duration="3 Days"
+              time="SAT - MON: 8:00 PM - 9:30PM"
+              date="03 April, 2021"
+              image={DataLogo}
+            />
+          </EventBoxContainer>
+        )}
       </EventWrapper>
     </>
   );

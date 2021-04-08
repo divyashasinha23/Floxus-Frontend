@@ -11,6 +11,7 @@ const CampusWrapper = styled.div`
   ${'' /* background-color: #3c378e; */}
   justify-content: center;
   align-items: center;
+  ${'' /* padding-bottom: 10px; */}
 
   @media (max-width: 496px) {
     margin-top: 10%;
@@ -24,6 +25,7 @@ const CampusContainer = styled.div`
   height: 70vh;
   width: 80%;
   align-items: center;
+  ${'' /* padding-bottom: 10px; */}
 
   @media (max-width: 496px) {
     flex-direction: column;
