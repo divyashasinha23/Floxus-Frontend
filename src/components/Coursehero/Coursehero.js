@@ -180,7 +180,7 @@ const Coursehero = ({ courseData, active, image, status }) => {
                   style={{ fontSize: '20px', fontWeight: 400, color: 'white' }}
                 >
                   {' '}
-                  Finished
+                  ₹ {courseData.price}
                 </p>
               ) : (
                 <p

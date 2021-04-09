@@ -16,7 +16,7 @@ const CourseData = {
     'Learn trending professional statistical software to analyse data',
     'Ability to create and evaluate data-driven models.',
   ],
-  price: 5500,
+  price: '12,999',
   courseServices: ['90+ hours', '6+', '24/7'],
   courseObjectives: [
     'Python programming ',

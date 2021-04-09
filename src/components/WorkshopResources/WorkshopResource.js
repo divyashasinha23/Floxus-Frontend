@@ -11,6 +11,10 @@ const ResourceContainer = styled.div`
   background-color: white;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 496px) {
+    margin-bottom: 20px;
+  }
 `;
 
 const ResourceWrapper = styled.div`
