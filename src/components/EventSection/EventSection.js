@@ -4,6 +4,7 @@ import EventBox from '../EventBox/EventBox';
 import DataLogo from '../../images/dataanalyticsevent.png';
 import DataStructure from '../../images/datastructure.png';
 import PythonLogo from '../../images/python.png';
+import CyberLogo from '../../images/cyber.png';
 
 const EventHeadingWrapper = styled.div`
   display: flex;
@@ -145,13 +146,14 @@ const EventSection = () => {
       <EventWrapper>
         {upcomingActive ? (
           <EventBoxContainer>
-            {/* <EventBox
-            title="Data Analytics"
-            duration="3 Days"
-            time="SAT - MON: 8:00 PM - 9:30PM"
-            date="03 April, 2021"
-            image={DataLogo}
-          /> */}
+            <EventBox
+              title="Linux and Cybersecurity"
+              duration="3 Days"
+              time="FRI - SUN: 8:00 PM - 9:30PM"
+              date="23 April, 2021"
+              image={CyberLogo}
+              path="/cybersecurity-workshop"
+            />
             <EventBox
               title="Data Structure and Problem Solving"
               duration="12 Days"
@@ -175,6 +177,7 @@ const EventSection = () => {
               time="SAT - MON: 8:00 PM - 9:30PM"
               date="03 April, 2021"
               image={DataLogo}
+              path="/data-analytics-workshop"
             />
           </EventBoxContainer>
         )}

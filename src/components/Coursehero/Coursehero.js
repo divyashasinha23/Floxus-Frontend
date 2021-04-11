@@ -198,12 +198,19 @@ const Coursehero = ({ courseData, active, image, status }) => {
                 >
                   <ExploreButton> Watch Playlist </ExploreButton>
                 </a>
-              ) : (
+              ) : active == 'false' ? (
                 <a
                   href="https://floxus.typeform.com/to/wE9KdqrA"
                   style={{ textDecoration: 'none', color: 'white' }}
                 >
                   <ExploreButton> Notify Me </ExploreButton>
+                </a>
+              ) : (
+                <a
+                  href="https://floxus.typeform.com/to/wE9KdqrA"
+                  style={{ textDecoration: 'none', color: 'white' }}
+                >
+                  <ExploreButton> Enroll Now </ExploreButton>
                 </a>
               )}
             </RSVPSection>

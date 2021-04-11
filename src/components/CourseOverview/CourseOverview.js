@@ -4,7 +4,16 @@ import Chips from '../Chips/Chips';
 import BatchContact from '../BatchContact/BatchContact';
 import WorkshopResource from '../WorkshopResources/WorkshopResource';
 
-const CourseOverview = ({ courseObjectives, topics, prerequisite, status }) => {
+const CourseOverview = ({
+  courseObjectives,
+  topics,
+  prerequisite,
+  status,
+  logo,
+  description,
+  linkto,
+  btnText,
+}) => {
   return (
     <>
       <CourseOverviewContainer>
@@ -39,7 +48,23 @@ const CourseOverview = ({ courseObjectives, topics, prerequisite, status }) => {
           </CourseOverviewLeft>
           <CourseOverviewRight>
             {/* <BatchContact /> */}
-            {status === 'finished' ? <WorkshopResource /> : <BatchContact />}
+            {status === 'finished' ? (
+              <WorkshopResource
+                logo={logo}
+                description={description}
+                linkto={linkto}
+                btnText={btnText}
+              />
+            ) : status === 'Inprogress' ? (
+              <WorkshopResource
+                logo={logo}
+                description={description}
+                linkto={linkto}
+                btnText={btnText}
+              />
+            ) : (
+              <BatchContact />
+            )}
           </CourseOverviewRight>
         </CourseOverviewWrapper>
       </CourseOverviewContainer>

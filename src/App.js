@@ -15,6 +15,7 @@ import TestimonialSection from './components/Testimonial/Testimonial';
 import EventSection from './components/EventSection/EventSection';
 import DataAnalyticsEvent from './pages/DataAnalyticsEvent/DataAnalyticsEvent';
 import JoinUs from './pages/JoinUs/JoinUs';
+import CyberSecurityEvent from './pages/CyberSecurityEvent/CyberSecurityEvent';
 
 function App() {
   return (
@@ -40,6 +41,10 @@ function App() {
           <Route
             path="/data-analytics-workshop"
             component={DataAnalyticsEvent}
+          />
+          <Route
+            path="/cybersecurity-workshop"
+            component={CyberSecurityEvent}
           />
           <Route path="/join-us" component={JoinUs} />
         </Switch>

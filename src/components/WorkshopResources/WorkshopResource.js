@@ -67,20 +67,18 @@ const ExploreButton = styled.button`
   }
 `;
 
-const WorkshopResource = () => {
+const WorkshopResource = ({ logo, description, linkto, btnText }) => {
   return (
     <>
       <ResourceContainer>
         <ResourceWrapper>
-          <MdAccountBalance className="icon" />
-          <p className="lite">
-            Access all the learning and project materials from floxus community.
-          </p>
+          {logo}
+          <p className="lite">{description}</p>
           <ExploreButton>
             {' '}
-            <a href="https://discord.gg/nyZnWRM7z8" target="_blank">
+            <a href={linkto} target="_blank">
               {' '}
-              Join the Community
+              {btnText}
             </a>{' '}
           </ExploreButton>
         </ResourceWrapper>

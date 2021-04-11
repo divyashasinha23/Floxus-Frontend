@@ -136,7 +136,7 @@ const Right = styled.div`
   }
 `;
 
-const EventBox = ({ title, duration, time, date, image }) => {
+const EventBox = ({ title, duration, time, date, image, path }) => {
   return (
     <>
       <EventBoxContainer>
@@ -177,7 +177,7 @@ const EventBox = ({ title, duration, time, date, image }) => {
                   </a>
                 ) : (
                   <Link
-                    to="/data-analytics-workshop"
+                    to={path}
                     className="text"
                     onClick={() => window.scroll(0, 0)}
                   >

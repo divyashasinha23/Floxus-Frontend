@@ -5,32 +5,32 @@ import CourseOverview from '../../components/CourseOverview/CourseOverview';
 import TestimonialSection from '../../components/Testimonial/Testimonial';
 import FAQSection from '../../components/FAQs/FAQSection';
 import Footer from '../../components/Footer/Footer';
-import { MdAccountBalance } from 'react-icons/md';
+import { FcGoogle } from 'react-icons/fc';
 
 const CourseData = {
-  title: 'Data Analytics Workshop',
+  title: 'Linux and Cybersecurity Workshop',
   courseHerodata: [
     '3 days live workshop.',
     'Get certified by Microsoft.',
     'Become a part of Floxus Community',
   ],
-  status: 'finished',
+  status: 'Inprogress',
   price: 'FREE',
   courseServices: ['3 Days', '3+', 'Community'],
   courseObjectives: [
-    'Learn about data analytics tools.',
-    'Learn about Tableau, Power BI and Advanced Excel.',
-    'Learn how to take data driven decisions.',
-    'Make projects to showcase to the world.',
+    'Learn about Linux distributions',
+    'Learn about hacking tools and networking',
+    'Learn how to find security vulnerability',
+    'Learn how to do bug bounty.',
   ],
   Topics: [
-    'Data Wrangling',
-    'Data Manipulation',
-    'Decision Making',
-    'Forcasting',
-    'Tableau',
-    'MS Excel',
-    'Power BI',
+    'Linux',
+    'Terminal',
+    'Networking',
+    'API Pentesting',
+    'Web Application Pentesting',
+    'Securtiy',
+    'Bug Bounty',
   ],
   prerequisite: [],
   curriculum: [
@@ -57,14 +57,14 @@ const CourseData = {
   ],
 };
 
-const DataAnalyticsEvent = () => {
+const CyberSecurityEvent = () => {
   return (
     <>
       <Toolbar />
       <Coursehero
         courseData={CourseData}
-        active="true"
-        image="https://cdn.jsdelivr.net/gh/totorodev0032/floxus-cdn-assets@main/dataevent.jpg"
+        active="inprogress"
+        image="https://cdn.jsdelivr.net/gh/totorodev0032/floxus-cdn-assets@main/cyberHero.jpg"
         status={CourseData.status}
       />
       <CourseOverview
@@ -72,10 +72,10 @@ const DataAnalyticsEvent = () => {
         topics={CourseData.Topics}
         prerequisite={CourseData.prerequisite}
         status={CourseData.status}
-        logo={<MdAccountBalance fontSize="45px" color="#050b75" />}
-        description=" Access all the learning and project materials from floxus community."
+        logo={<FcGoogle fontSize="45px" />}
+        description=" Learn by Google Hall of Fame"
         linkto="https://discord.gg/nyZnWRM7z8"
-        btnText=" Join the Community"
+        btnText="Enroll Now"
       />
       <TestimonialSection />
       {/* <FAQSection /> */}
@@ -84,4 +84,4 @@ const DataAnalyticsEvent = () => {
   );
 };
 
-export default DataAnalyticsEvent;
+export default CyberSecurityEvent;
