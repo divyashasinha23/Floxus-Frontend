@@ -122,6 +122,7 @@ const DataAnalytics = () => {
       <Coursehero
         courseData={CourseData}
         image="https://cdn.jsdelivr.net/gh/totorodev0032/floxus-cdn-assets@main/dataanlaytics.jpg"
+        active="false"
       />
       <CourseOverview
         courseObjectives={CourseData.courseObjectives}

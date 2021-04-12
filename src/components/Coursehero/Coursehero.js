@@ -200,7 +200,7 @@ const Coursehero = ({ courseData, active, image, status }) => {
                 </a>
               ) : active == 'false' ? (
                 <a
-                  href="https://floxus.typeform.com/to/wE9KdqrA"
+                  href="https://airtable.com/shrSSNJjWPt2kTktv"
                   style={{ textDecoration: 'none', color: 'white' }}
                 >
                   <ExploreButton> Notify Me </ExploreButton>
