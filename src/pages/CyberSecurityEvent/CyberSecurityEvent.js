@@ -11,7 +11,7 @@ const CourseData = {
   title: 'Linux and Cybersecurity Workshop',
   courseHerodata: [
     '3 days live workshop.',
-    'Get certified by Microsoft.',
+    'Get certified.',
     'Become a part of Floxus Community',
   ],
   status: 'Inprogress',
@@ -73,8 +73,8 @@ const CyberSecurityEvent = () => {
         prerequisite={CourseData.prerequisite}
         status={CourseData.status}
         logo={<FcGoogle fontSize="45px" />}
-        description=" Learn by Google Hall of Fame"
-        linkto="https://discord.gg/nyZnWRM7z8"
+        description=" Learn by a Google Hall of Fame"
+        linkto="https://airtable.com/shrxHQHYdcnhetSH7"
         btnText="Enroll Now"
       />
       <TestimonialSection />

@@ -207,7 +207,7 @@ const Coursehero = ({ courseData, active, image, status }) => {
                 </a>
               ) : (
                 <a
-                  href="https://floxus.typeform.com/to/wE9KdqrA"
+                  href="https://airtable.com/shrxHQHYdcnhetSH7"
                   style={{ textDecoration: 'none', color: 'white' }}
                 >
                   <ExploreButton> Enroll Now </ExploreButton>

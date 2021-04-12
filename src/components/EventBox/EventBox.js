@@ -170,7 +170,7 @@ const EventBox = ({ title, duration, time, date, image, path }) => {
               <Right>
                 {date == 'Coming Soon' ? (
                   <a
-                    href="https://floxus.typeform.com/to/wE9KdqrA"
+                    href="https://airtable.com/shrSSNJjWPt2kTktv"
                     className="text"
                   >
                     Notify Me
