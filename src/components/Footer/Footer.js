@@ -328,6 +328,20 @@ const Footer = () => {
                 >
                   <p>Refund and cancellation Policy</p>
                 </a>
+                <a
+                  href="https://www.notion.so/Floxus-Privacy-Policy-6ae1775c1c1143b9b468e94538b282e5"
+                  target="_blank"
+                  className="text"
+                >
+                  <p>Privacy Policy</p>
+                </a>
+                <a
+                  href="https://www.notion.so/Floxus-Terms-and-Conditions-c8f5345457c6490887caa9e5a60689bb"
+                  target="_blank"
+                  className="text"
+                >
+                  <p>Terms and Conditions</p>
+                </a>
               </LinkContentBox>
               <LinkContentBox>
                 <Heading>Contact Us</Heading>

@@ -1,4 +1,5 @@
 import CampusSection from './components/CampusSection/CampusSection';
+import ReactGA from 'react-ga';
 import CertificationSection from './components/CertificationSection/CertificationSection';
 import CourseSection from './components/CourseSection/CourseSection';
 import HeroSection from './components/HeroSection/HeroSection';
@@ -16,6 +17,8 @@ import EventSection from './components/EventSection/EventSection';
 import DataAnalyticsEvent from './pages/DataAnalyticsEvent/DataAnalyticsEvent';
 import JoinUs from './pages/JoinUs/JoinUs';
 import CyberSecurityEvent from './pages/CyberSecurityEvent/CyberSecurityEvent';
+
+ReactGA.initialize('G-DL76B4YQZL');
 
 function App() {
   return (

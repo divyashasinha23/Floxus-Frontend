@@ -109,6 +109,18 @@ function FooterAccordion() {
             >
               <p>Refund and cancellation Policy</p>
             </a>
+            <a
+              href="https://www.notion.so/Floxus-Privacy-Policy-6ae1775c1c1143b9b468e94538b282e5"
+              style={{ textDecoration: 'none', color: 'white' }}
+            >
+              <p>Privacy Policy</p>
+            </a>
+            <a
+              href="https://www.notion.so/Floxus-Terms-and-Conditions-c8f5345457c6490887caa9e5a60689bb"
+              style={{ textDecoration: 'none', color: 'white' }}
+            >
+              <p>Terms and Conditions</p>
+            </a>
           </Typography>
         </AccordionDetails>
       </Accordion>
