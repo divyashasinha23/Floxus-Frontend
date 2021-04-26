@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Syllbus_Accordion from '../Syllbus_Accordion/Syllbus_Accordion';
+import WorkshopResource from '../WorkshopResources/WorkshopResource';
 
 const SyllabusContainer = styled.div`
   display: flex;
@@ -45,12 +46,13 @@ const Heading = styled.div`
 const SyllabusRight = styled.div`
   display: flex;
   flex-basis: 40%;
-  height: 100%;
+  height: 700px;
   justify-content: center;
   align-items: center;
+  ${'' /* background-color: black; */}
 `;
 
-const SyllabusCourse = ({ curriculum }) => {
+const SyllabusCourse = ({ curriculum, description, linkto, btnText, logo }) => {
   return (
     <>
       <SyllabusContainer>
@@ -59,7 +61,14 @@ const SyllabusCourse = ({ curriculum }) => {
             <Heading>Curriculum</Heading>
             <Syllbus_Accordion curriculum={curriculum} />
           </SyllabusWrapper>
-          <SyllabusRight></SyllabusRight>
+          <SyllabusRight>
+            <WorkshopResource
+              description={description}
+              linkto={linkto}
+              btnText={btnText}
+              logo={logo}
+            />
+          </SyllabusRight>
         </SyllabusContain>
       </SyllabusContainer>
     </>

@@ -31,7 +31,7 @@ const ResourceWrapper = styled.div`
   }
 
   .lite {
-    font-size: 12px;
+    font-size: 15px;
     color: #827fa5;
     text-align: center;
   }

@@ -7,6 +7,7 @@ import Footer from '../../components/Footer/Footer';
 import CertificationSection from '../../components/CertificationSection/CertificationSection';
 import TestimonialSection from '../../components/Testimonial/Testimonial';
 import ProjectSection from '../../components/ProjectSection/ProjectSection';
+import { MdAccountBalance } from 'react-icons/md';
 
 const CourseData = {
   title: 'Data Analytics Bootcamp',
@@ -18,12 +19,13 @@ const CourseData = {
     'Ability to create and evaluate data-driven models.',
   ],
   price: '6,999',
-  courseServices: ['90+ hours', '6+', '24/7'],
+  courseServices: ['60+ hours', '6+', '24/7'],
   courseObjectives: [
     'Python programming ',
     'Various python libraries like Numpy ,Scipy,Matplotlib and so on.',
     'Learn to use softwares like Tableau, PowerBI and Advanced Excel',
-    'Analysing Big data using Pig and Hive',
+    'Data management',
+    'Business Analytics tools',
   ],
   Topics: [
     'Data Wrangling',
@@ -147,7 +149,13 @@ const DataAnalytics = () => {
         BtnText="Contact Us"
         FormTitle="Have a Query?"
       />
-      <SyllabusCourse curriculum={CourseData.curriculum} />
+      <SyllabusCourse
+        curriculum={CourseData.curriculum}
+        description="Batch Start date : 15/05/2021"
+        linkto="https://rzp.io/l/7vNaZ8D"
+        btnText="Enroll Now"
+        logo={<MdAccountBalance fontSize="45px" color="#050b75" />}
+      />
       <CertificationSection image="https://cdn.jsdelivr.net/gh/totorodev0032/floxus-cdn-assets@main/msexcel.png" />
       <ProjectSection projects={CourseData.projects} />
       {/* <ProjectSection /> */}
