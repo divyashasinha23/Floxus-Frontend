@@ -119,9 +119,21 @@ const CourseFeaturedata = styled.div`
 const RSVPSection = styled.div`
   display: flex;
   align-items: center;
+  width: 100%;
+  ${'' /* background-color: white; */}
 
   Button {
     margin-left: 20px;
+  }
+
+  @media (max-width: 496px) {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+
+    Button {
+      margin-left: 0;
+    }
   }
 `;
 
@@ -147,7 +159,7 @@ const ExploreButton = styled.button`
   }
 `;
 
-const Coursehero = ({ courseData, active, image, status }) => {
+const Coursehero = ({ courseData, active, image, status, type, watchlist }) => {
   return (
     <>
       <CourseHeroLayout>
@@ -180,20 +192,37 @@ const Coursehero = ({ courseData, active, image, status }) => {
                   style={{ fontSize: '20px', fontWeight: 400, color: 'white' }}
                 >
                   {' '}
-                  ₹ {courseData.price}
+                  ₹ {courseData.price}{' '}
                 </p>
               ) : (
-                <p
-                  style={{ fontSize: '30px', fontWeight: 400, color: 'white' }}
-                >
-                  {' '}
-                  ₹ {courseData.price}
-                </p>
+                <div className="priceContainer">
+                  <p
+                    style={{
+                      fontSize: '25px',
+                      fontWeight: 400,
+                      color: 'white',
+                    }}
+                  >
+                    {' '}
+                    ₹ {courseData.price}
+                    <span
+                      style={{
+                        fontSize: '20px',
+                        fontWeight: 400,
+                        color: 'white',
+                        textDecoration: 'line-through',
+                        marginLeft: '10px',
+                      }}
+                    >
+                      ₹ 12,999
+                    </span>
+                  </p>
+                </div>
               )}
 
               {active == 'true' ? (
                 <a
-                  href="https://www.youtube.com/channel/UC1ZPrl9xMMdBusNXoK3Gf4w/playlists"
+                  href={watchlist}
                   style={{ textDecoration: 'none', color: 'white' }}
                 >
                   <ExploreButton> Watch Playlist </ExploreButton>
@@ -204,6 +233,13 @@ const Coursehero = ({ courseData, active, image, status }) => {
                   style={{ textDecoration: 'none', color: 'white' }}
                 >
                   <ExploreButton> Notify Me </ExploreButton>
+                </a>
+              ) : type === 'course' ? (
+                <a
+                  href="https://rzp.io/l/7vNaZ8D"
+                  style={{ textDecoration: 'none', color: 'white' }}
+                >
+                  <ExploreButton> Enroll Now </ExploreButton>
                 </a>
               ) : (
                 <a

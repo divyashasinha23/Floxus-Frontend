@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import CertiSample from '../../images/ai9002.jpg';
 
 const CertificateWrapper = styled.div`
   display: flex;
@@ -122,7 +121,7 @@ const CertificateImage = styled.div`
   }
 `;
 
-function CertificationSection() {
+function CertificationSection({ image }) {
   return (
     <>
       <CertificateWrapper>
@@ -139,7 +138,7 @@ function CertificationSection() {
             </CertificateContent>
           </CertificateData>
           <CertificateImage>
-            <img src={CertiSample} />
+            <img src={image} />
           </CertificateImage>
         </CertificateContainer>
       </CertificateWrapper>

@@ -5,7 +5,7 @@ import CourseOverview from '../../components/CourseOverview/CourseOverview';
 import TestimonialSection from '../../components/Testimonial/Testimonial';
 import FAQSection from '../../components/FAQs/FAQSection';
 import Footer from '../../components/Footer/Footer';
-import { FcGoogle } from 'react-icons/fc';
+import { MdAccountBalance } from 'react-icons/md';
 
 const CourseData = {
   title: 'Linux and Cybersecurity Workshop',
@@ -14,7 +14,7 @@ const CourseData = {
     'Get certified.',
     'Become a part of Floxus Community',
   ],
-  status: 'Inprogress',
+  status: 'finished',
   price: 'FREE',
   courseServices: ['3 Days', '3+', 'Community'],
   courseObjectives: [
@@ -63,19 +63,20 @@ const CyberSecurityEvent = () => {
       <Toolbar />
       <Coursehero
         courseData={CourseData}
-        active="inprogress"
+        active="true"
         image="https://cdn.jsdelivr.net/gh/totorodev0032/floxus-cdn-assets@main/cyberHero.jpg"
         status={CourseData.status}
+        watchlist="https://www.youtube.com/watch?v=w0ZKuyOyt50&list=PLJOROP7Jw1kpCWzslEeISHiQhsRqkLZ3Q"
       />
       <CourseOverview
         courseObjectives={CourseData.courseObjectives}
         topics={CourseData.Topics}
         prerequisite={CourseData.prerequisite}
         status={CourseData.status}
-        logo={<FcGoogle fontSize="45px" />}
-        description=" Learn by a Google Hall of Fame"
-        linkto="https://airtable.com/shrxHQHYdcnhetSH7"
-        btnText="Enroll Now"
+        logo={<MdAccountBalance fontSize="45px" color="#050b75" />}
+        description=" Access all the learning and project materials from floxus community."
+        linkto="https://discord.gg/nyZnWRM7z8"
+        btnText=" Join the Community"
       />
       <TestimonialSection />
       {/* <FAQSection /> */}

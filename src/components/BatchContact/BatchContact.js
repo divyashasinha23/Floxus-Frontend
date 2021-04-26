@@ -108,7 +108,7 @@ const FormWrapper = styled.div`
   }
 `;
 
-const BatchContact = () => {
+const BatchContact = ({ BtnText, FormTitle }) => {
   const classes = useStyles();
   const [active, setActive] = React.useState(true);
   const [name, setName] = React.useState('');
@@ -139,7 +139,7 @@ const BatchContact = () => {
         <BatchContactContainer>
           <BatchContactWrapper>
             <HeadWrapper>
-              <p className="heading">Upcoming Batch Details</p>
+              <p className="heading">{FormTitle}</p>
             </HeadWrapper>
 
             <FormWrapper>
@@ -180,7 +180,7 @@ const BatchContact = () => {
                   disableElevation
                   // onClick={() => setTimeout(() => setActive(false), 2000)}
                 >
-                  Notify Me
+                  {BtnText}
                 </Button>
               </form>
             </FormWrapper>

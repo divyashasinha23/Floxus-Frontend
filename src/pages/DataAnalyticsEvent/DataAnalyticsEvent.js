@@ -66,6 +66,7 @@ const DataAnalyticsEvent = () => {
         active="true"
         image="https://cdn.jsdelivr.net/gh/totorodev0032/floxus-cdn-assets@main/dataevent.jpg"
         status={CourseData.status}
+        watchlist="https://www.youtube.com/channel/UC1ZPrl9xMMdBusNXoK3Gf4w/playlists"
       />
       <CourseOverview
         courseObjectives={CourseData.courseObjectives}

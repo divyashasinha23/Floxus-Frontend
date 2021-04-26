@@ -147,14 +147,6 @@ const EventSection = () => {
         {upcomingActive ? (
           <EventBoxContainer>
             <EventBox
-              title="Linux and Cybersecurity"
-              duration="3 Days"
-              time="FRI - SUN: 8:00 PM - 9:30PM"
-              date="23 April, 2021"
-              image={CyberLogo}
-              path="/cybersecurity-workshop"
-            />
-            <EventBox
               title="Data Structure and Problem Solving"
               duration="12 Days"
               time="MON - FRI: 8:00 PM - 9:30PM"
@@ -171,6 +163,14 @@ const EventSection = () => {
           </EventBoxContainer>
         ) : (
           <EventBoxContainer>
+            <EventBox
+              title="Linux and Cybersecurity"
+              duration="3 Days"
+              time="FRI - SUN: 8:00 PM - 9:30PM"
+              date="23 April, 2021"
+              image={CyberLogo}
+              path="/cybersecurity-workshop"
+            />
             <EventBox
               title="Data Analytics"
               duration="3 Days"

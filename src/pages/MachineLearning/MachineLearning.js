@@ -125,9 +125,11 @@ const MachineLearning = () => {
         courseObjectives={CourseData.courseObjectives}
         topics={CourseData.Topics}
         prerequisite={CourseData.prerequisite}
+        BtnText="Notify Me"
+        FormTitle="Upcoming Batch Details"
       />
       <SyllabusCourse curriculum={CourseData.curriculum} />
-      <CertificationSection />
+      <CertificationSection image="https://cdn.jsdelivr.net/gh/totorodev0032/floxus-cdn-assets@main/ai9002.jpg" />
       {/* <ProjectSection /> */}
       <TestimonialSection />
       {/* <FAQSection /> */}

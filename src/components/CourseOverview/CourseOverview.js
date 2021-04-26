@@ -13,6 +13,8 @@ const CourseOverview = ({
   description,
   linkto,
   btnText,
+  FormTitle,
+  BtnText,
 }) => {
   return (
     <>
@@ -63,7 +65,7 @@ const CourseOverview = ({
                 btnText={btnText}
               />
             ) : (
-              <BatchContact />
+              <BatchContact BtnText={BtnText} FormTitle={FormTitle} />
             )}
           </CourseOverviewRight>
         </CourseOverviewWrapper>

@@ -16,13 +16,13 @@ const CourseData = {
     'Learn trending professional statistical software to analyse data',
     'Ability to create and evaluate data-driven models.',
   ],
-  price: '12,999',
+  price: '6,999',
   courseServices: ['90+ hours', '6+', '24/7'],
   courseObjectives: [
     'Python programming ',
-    'Various python libraries like numpy ,scipy,matplotlib and so on.',
-    'Learn to use softwares like tableau, powerbi and advanced excel',
-    'Analysing big data using pig and hive',
+    'Various python libraries like Numpy ,Scipy,Matplotlib and so on.',
+    'Learn to use softwares like Tableau, PowerBI and Advanced Excel',
+    'Analysing Big data using Pig and Hive',
   ],
   Topics: [
     'Data Wrangling',
@@ -30,6 +30,10 @@ const CourseData = {
     'SQL',
     'Data Pipeline',
     'Query Language',
+    'Tableau',
+    'PowerBI',
+    'Excel',
+    'Data Driven Approach',
   ],
   prerequisite: [
     'Basic of linear algebra and statistics ',
@@ -122,15 +126,17 @@ const DataAnalytics = () => {
       <Coursehero
         courseData={CourseData}
         image="https://cdn.jsdelivr.net/gh/totorodev0032/floxus-cdn-assets@main/dataanlaytics.jpg"
-        active="false"
+        type="course"
       />
       <CourseOverview
         courseObjectives={CourseData.courseObjectives}
         topics={CourseData.Topics}
         prerequisite={CourseData.prerequisite}
+        BtnText="Contact Us"
+        FormTitle="Have a Query?"
       />
       <SyllabusCourse curriculum={CourseData.curriculum} />
-      <CertificationSection />
+      <CertificationSection image="https://cdn.jsdelivr.net/gh/totorodev0032/floxus-cdn-assets@main/msexcel.png" />
       {/* <ProjectSection /> */}
       <TestimonialSection />
       {/* <FAQSection /> */}
