@@ -49,7 +49,7 @@ const ProjectCardWrapper = styled.div`
   }
 `;
 
-const ProjectSection = () => {
+const ProjectSection = ({ projects }) => {
   return (
     <>
       <ProjectContainer>
@@ -58,9 +58,9 @@ const ProjectSection = () => {
             <Heading>Projects &rarr;</Heading>
           </Header>
           <ProjectCardWrapper>
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+            {projects.map((project) => (
+              <ProjectCard project={project} />
+            ))}
           </ProjectCardWrapper>
         </ProjectWrapper>
       </ProjectContainer>

@@ -6,6 +6,7 @@ import SyllabusCourse from '../../components/SyllabusCourse/SyllabusCourse';
 import Footer from '../../components/Footer/Footer';
 import CertificationSection from '../../components/CertificationSection/CertificationSection';
 import TestimonialSection from '../../components/Testimonial/Testimonial';
+import ProjectSection from '../../components/ProjectSection/ProjectSection';
 
 const CourseData = {
   title: 'Data Analytics Bootcamp',
@@ -99,23 +100,34 @@ const CourseData = {
       'Various Techniques of Charting',
       'Pivot Tables in Excel VBA',
     ],
-    [
-      'Installation , Architecture',
-      'Data Types (scalar , complex)',
-      'Running Pig (interactive , Batch)',
-      'Pig Operators – Local, Store,Dump,Distinct, Filter, ForEach, generate , Limit, Union , join, order by, Describe ',
-      'Group by , Avg Default UDFs available ( Built in function ) REGEX EXPLAIN Parallel processing ',
-      'Custom UDF, How to use your custom UDF in your script',
-    ],
-    [
-      'Installation , Hive Services , Architecture , Comparing Hive to traditional Databases',
-      'Relational Data Analysis – (data types (primitive,complex)database tables,create,alter,delete)',
-      'Hive Schema & Data storage Loading data into Hive views Storing query results (store)',
-      'Text processing - Built in functions , string functions , regular expressions',
-      'Managed vs External Tables',
-      'Optimization : Partitioning , bucketing , indexing data • Extending Hive : Custom UDFs,Custom SerDes',
-    ],
+
     ['Project Time'],
+  ],
+  projects: [
+    [
+      'Predicting the price of a House(Linear Regression).',
+      'Create a Linear Regression model in Python from the ground up using a test-driven approach. You will expand your qualified model to a multivariate Linear Regression to forecast house selling prices.',
+    ],
+    [
+      'Predict if a player is going to be churned or not from a Gaming Application (Logistic Regression)',
+      'The first step in retaining customers and enhancing the company products is to understand and detect churn.',
+    ],
+    [
+      'Customer Segmentation using K-Means Algorithm(Clustering)',
+      'This technique can be used by companies to outperform the competition by developing uniquely appealing products and services.',
+    ],
+    [
+      'Human Resource Dashboard using Power BI',
+      'The dashboard utilizes the human asset information from sources like Microsoft Excel, any ERP or human asset application to introduce it on a Power BI dashboard.',
+    ],
+    [
+      'Sentiment Analysis of IMDB movie Dataset',
+      ' Feeling examination is regularly performed on text based information to help organizations screen brand and item conclusion in client criticism, and comprehend client needs.',
+    ],
+    [
+      'Human Resource Dashboard using Excel',
+      'The dashboard utilizes the human asset information from sources like Microsoft Excel, any ERP or human asset application to introduce it on a Power BI dashboard.',
+    ],
   ],
 };
 
@@ -137,6 +149,7 @@ const DataAnalytics = () => {
       />
       <SyllabusCourse curriculum={CourseData.curriculum} />
       <CertificationSection image="https://cdn.jsdelivr.net/gh/totorodev0032/floxus-cdn-assets@main/msexcel.png" />
+      <ProjectSection projects={CourseData.projects} />
       {/* <ProjectSection /> */}
       <TestimonialSection />
       {/* <FAQSection /> */}

@@ -4,11 +4,13 @@ import styled from '@emotion/styled';
 
 const ProjectCardContainer = styled.div`
   display: flex;
+  flex-direction: column;
   width: 300px;
-  height: 200px;
+  height: 300px;
   box-shadow: 0px 10px 99px #4c4a6e26;
   border: 1px solid #cecce3;
-  border-radius: 10px;
+  border-top: 4px solid green;
+  border-radius: 5px;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
@@ -27,7 +29,7 @@ const ProjectCardWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 80%;
-  height: 80%;
+  height: auto;
 
   .description {
     font-size: 13px;
@@ -48,7 +50,7 @@ const ProjectCardWrapper = styled.div`
 `;
 
 const Heading = styled.p`
-  font-size: 20px;
+  font-size: 17px;
   color: #4c4a6e;
   ${'' /* color:#030528; */}
   font-weight: 600;
@@ -62,19 +64,14 @@ const Heading = styled.p`
   }
 `;
 
-const ProjectCard = () => {
+const ProjectCard = ({ project }) => {
   return (
     <>
       <ProjectCardContainer>
+        {/* <div className="line"></div> */}
         <ProjectCardWrapper>
-          <Heading>Web scraping Python</Heading>
-          <p className="description">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod.
-          </p>
-          <Link to="#" className="navLink">
-            View Details &rarr;
-          </Link>
+          <Heading>{project[0]}</Heading>
+          <p className="description">{project[1]}</p>
         </ProjectCardWrapper>
       </ProjectCardContainer>
     </>
