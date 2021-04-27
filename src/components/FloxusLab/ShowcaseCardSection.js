@@ -65,7 +65,7 @@ const ShowcaseCardSection = () => {
             <Heading>Get Premium membership of Floxus Lab &rarr;</Heading>
             <p>
               A one of a kind initiative by Floxus to train and make people
-              job-ready while making them{' '}
+              job-ready while making them a brand.
             </p>
           </Header>
           <ShowcaseCardWrapper>
