@@ -81,6 +81,7 @@ const CourseSection = () => {
             certification="Microsoft Office Specialist"
             duration="60+"
             path="/data-analytics"
+            image="https://cdn.jsdelivr.net/gh/totorodev0032/floxus-cdn-assets@main/datathumb.png"
           />
 
           <CourseCard
@@ -89,6 +90,7 @@ const CourseSection = () => {
             certification="Microsoft Technical Associate"
             duration="90"
             path="/machine-learning"
+            image="https://cdn.jsdelivr.net/gh/totorodev0032/floxus-cdn-assets@main/machinethumb.png"
           />
         </CourseBoxContainer>
       </CourseWrapper>

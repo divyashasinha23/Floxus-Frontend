@@ -17,6 +17,7 @@ import EventSection from './components/EventSection/EventSection';
 import DataAnalyticsEvent from './pages/DataAnalyticsEvent/DataAnalyticsEvent';
 import JoinUs from './pages/JoinUs/JoinUs';
 import CyberSecurityEvent from './pages/CyberSecurityEvent/CyberSecurityEvent';
+import FloatingActionButtons from './components/FloatingActionButton/FloatingActionButton';
 
 ReactGA.initialize('G-DL76B4YQZL');
 
@@ -31,6 +32,7 @@ function App() {
             <Floxusfeature />
             <CampusSection />
             <EventSection />
+            {/* <FloatingActionButtons /> */}
             {/* <WhatCert /> */}
             <CourseSection />
             <TestimonialSection />

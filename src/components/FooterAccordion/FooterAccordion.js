@@ -142,6 +142,10 @@ function FooterAccordion() {
           <Typography>
             <p>Email : floxuseducation@gmail.com</p>
             <p>Phone : +91 9123499293</p>
+            <p>
+              Address : House no:-24, Madhukam lane, Sastri Chowk, Ratu Rd,
+              Ranchi, 834005
+            </p>
           </Typography>
         </AccordionDetails>
       </Accordion>

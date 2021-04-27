@@ -79,15 +79,21 @@ const ImageContainer = styled.div`
   background: #3c378e;
   border-radius: 8px;
   margin-left: -30%;
-  background-image: url(${cloud});
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 40%;
+  }
   @media (max-width: 496px) {
     margin-left: 0;
     margin-top: 5%;
     height: 100%;
     width: 95%;
+
+    img {
+      height: 60%;
+    }
   }
 `;
 const BoxHeading = styled.p`
@@ -102,12 +108,14 @@ const BoxHeading = styled.p`
 `;
 
 const CourseCard = (props) => {
-  const { title, description, certification, duration, path } = props;
+  const { title, description, certification, duration, path, image } = props;
   return (
     <>
       <CourseBox>
         <BoxLeft>
-          <ImageContainer></ImageContainer>
+          <ImageContainer>
+            <img src={image} alt="image" />
+          </ImageContainer>
         </BoxLeft>
         <BoxRight>
           <BoxHeading> {title} </BoxHeading>
