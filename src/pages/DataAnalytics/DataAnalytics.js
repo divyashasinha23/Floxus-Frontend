@@ -8,9 +8,10 @@ import CertificationSection from '../../components/CertificationSection/Certific
 import TestimonialSection from '../../components/Testimonial/Testimonial';
 import ProjectSection from '../../components/ProjectSection/ProjectSection';
 import { MdAccountBalance } from 'react-icons/md';
+import ShowcaseCardSection from '../../components/FloxusLab/ShowcaseCardSection';
 
 const CourseData = {
-  title: 'Data Analytics Bootcamp',
+  title: 'Data Analytics Master Programme',
   description:
     'Get hands on Python skills and accelerate your data science career',
   courseHerodata: [
@@ -157,7 +158,9 @@ const DataAnalytics = () => {
         logo={<MdAccountBalance fontSize="45px" color="#050b75" />}
       />
       <CertificationSection image="https://cdn.jsdelivr.net/gh/totorodev0032/floxus-cdn-assets@main/msexcel.png" />
+      <ShowcaseCardSection />
       <ProjectSection projects={CourseData.projects} />
+
       {/* <ProjectSection /> */}
       <TestimonialSection />
       {/* <FAQSection /> */}

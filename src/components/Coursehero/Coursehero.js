@@ -42,7 +42,7 @@ const CourseHeroLeft = styled.div`
     font-weight: 500;
     color: white;
     letter-spacing: 1px;
-    margin-bottom: 0;
+    margin-bottom: 5px;
   }
 
   .description {

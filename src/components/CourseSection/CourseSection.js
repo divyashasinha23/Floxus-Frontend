@@ -76,10 +76,10 @@ const CourseSection = () => {
       <CourseWrapper>
         <CourseBoxContainer>
           <CourseCard
-            title="Data Analytics Masterclass"
+            title="Data Analytics Master Programme"
             description="Get hands on Python skills and accelerate your data science career"
-            certification="Microsoft Technical Associate"
-            duration="90"
+            certification="Microsoft Office Specialist"
+            duration="60+"
             path="/data-analytics"
           />
 
