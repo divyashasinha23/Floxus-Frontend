@@ -18,6 +18,7 @@ import DataAnalyticsEvent from './pages/DataAnalyticsEvent/DataAnalyticsEvent';
 import JoinUs from './pages/JoinUs/JoinUs';
 import CyberSecurityEvent from './pages/CyberSecurityEvent/CyberSecurityEvent';
 import FloatingActionButtons from './components/FloatingActionButton/FloatingActionButton';
+import CouponSection from './components/CouponSection/CouponSection';
 
 ReactGA.initialize('G-DL76B4YQZL');
 
@@ -52,6 +53,7 @@ function App() {
             component={CyberSecurityEvent}
           />
           <Route path="/join-us" component={JoinUs} />
+          <Route path="/enroll" component={CouponSection} />
         </Switch>
       </div>
     </Router>

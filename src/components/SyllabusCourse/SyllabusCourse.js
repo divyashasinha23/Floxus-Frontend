@@ -52,7 +52,14 @@ const SyllabusRight = styled.div`
   ${'' /* background-color: black; */}
 `;
 
-const SyllabusCourse = ({ curriculum, description, linkto, btnText, logo }) => {
+const SyllabusCourse = ({
+  curriculum,
+  description,
+  linkto,
+  btnText,
+  logo,
+  type,
+}) => {
   return (
     <>
       <SyllabusContainer>
@@ -62,12 +69,16 @@ const SyllabusCourse = ({ curriculum, description, linkto, btnText, logo }) => {
             <Syllbus_Accordion curriculum={curriculum} />
           </SyllabusWrapper>
           <SyllabusRight>
-            <WorkshopResource
-              description={description}
-              linkto={linkto}
-              btnText={btnText}
-              logo={logo}
-            />
+            {type == 'course' ? (
+              <WorkshopResource
+                description={description}
+                linkto={linkto}
+                btnText={btnText}
+                logo={logo}
+              />
+            ) : (
+              ''
+            )}
           </SyllabusRight>
         </SyllabusContain>
       </SyllabusContainer>

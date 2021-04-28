@@ -236,7 +236,7 @@ const Coursehero = ({ courseData, active, image, status, type, watchlist }) => {
                 </a>
               ) : type === 'course' ? (
                 <a
-                  href="https://rzp.io/l/7vNaZ8D"
+                  href="/enroll"
                   style={{ textDecoration: 'none', color: 'white' }}
                 >
                   <ExploreButton> Enroll Now </ExploreButton>

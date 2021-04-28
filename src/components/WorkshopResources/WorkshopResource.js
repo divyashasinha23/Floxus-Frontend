@@ -76,10 +76,7 @@ const WorkshopResource = ({ logo, description, linkto, btnText }) => {
           <p className="lite">{description}</p>
           <ExploreButton>
             {' '}
-            <a href={linkto} target="_blank">
-              {' '}
-              {btnText}
-            </a>{' '}
+            <a href={linkto}> {btnText}</a>{' '}
           </ExploreButton>
         </ResourceWrapper>
       </ResourceContainer>

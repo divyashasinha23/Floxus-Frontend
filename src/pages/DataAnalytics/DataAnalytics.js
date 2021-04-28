@@ -153,7 +153,8 @@ const DataAnalytics = () => {
       <SyllabusCourse
         curriculum={CourseData.curriculum}
         description="Batch Start date : 15/05/2021"
-        linkto="https://rzp.io/l/7vNaZ8D"
+        type="course"
+        linkto="/enroll"
         btnText="Enroll Now"
         logo={<MdAccountBalance fontSize="45px" color="#050b75" />}
       />
