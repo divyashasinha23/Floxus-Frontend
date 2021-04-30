@@ -103,24 +103,27 @@ function FooterAccordion() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            <a
-              href="https://www.notion.so/Floxus-Refund-Policy-aa9b1acfa7784a82975e4b80f54f95eb"
+            <Link
+              to="/refund-cancellation-policy"
               style={{ textDecoration: 'none', color: 'white' }}
+              onClick={() => window.scroll(0, 0)}
             >
               <p>Refund and cancellation Policy</p>
-            </a>
-            <a
-              href="https://www.notion.so/Floxus-Privacy-Policy-6ae1775c1c1143b9b468e94538b282e5"
+            </Link>
+            <Link
+              to="/privacy-policy"
               style={{ textDecoration: 'none', color: 'white' }}
+              onClick={() => window.scroll(0, 0)}
             >
               <p>Privacy Policy</p>
-            </a>
-            <a
-              href="https://www.notion.so/Floxus-Terms-and-Conditions-c8f5345457c6490887caa9e5a60689bb"
+            </Link>
+            <Link
+              to="/terms-and-conditions"
               style={{ textDecoration: 'none', color: 'white' }}
+              onClick={() => window.scroll(0, 0)}
             >
               <p>Terms and Conditions</p>
-            </a>
+            </Link>
           </Typography>
         </AccordionDetails>
       </Accordion>

@@ -79,7 +79,7 @@ const CourseSection = () => {
             title="Data Analytics Master Programme"
             description="Get hands on Python skills and accelerate your data science career"
             certification="Microsoft Office Specialist"
-            duration="60+"
+            duration="60"
             path="/data-analytics"
             image="https://cdn.jsdelivr.net/gh/totorodev0032/floxus-cdn-assets@main/datathumb.png"
           />

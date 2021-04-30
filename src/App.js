@@ -19,6 +19,9 @@ import JoinUs from './pages/JoinUs/JoinUs';
 import CyberSecurityEvent from './pages/CyberSecurityEvent/CyberSecurityEvent';
 import FloatingActionButtons from './components/FloatingActionButton/FloatingActionButton';
 import CouponSection from './components/CouponSection/CouponSection';
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
+import RefundPolicy from './pages/RefundPolicy/RefundPolicy';
+import TermsAndConditions from './pages/TermsAndConditions/TermsAndConditions';
 
 ReactGA.initialize('G-DL76B4YQZL');
 
@@ -54,6 +57,9 @@ function App() {
           />
           <Route path="/join-us" component={JoinUs} />
           <Route path="/enroll" component={CouponSection} />
+          <Route path="/privacy-policy" component={PrivacyPolicy} />
+          <Route path="/refund-cancellation-policy" component={RefundPolicy} />
+          <Route path="/terms-and-conditions" component={TermsAndConditions} />
         </Switch>
       </div>
     </Router>

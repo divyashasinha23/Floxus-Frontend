@@ -16,7 +16,7 @@ const CourseBox = styled.div`
   @media (max-width: 496px) {
     flex-direction: column;
     border-radius: 10px;
-    height: auto;
+    height: 390px;
     width: 100%;
     margin-left: 0;
   }
@@ -104,6 +104,7 @@ const BoxHeading = styled.p`
 
   @media (max-width: 496px) {
     padding-right: 5px;
+    ${'' /* margin-top: 5px; */}
   }
 `;
 

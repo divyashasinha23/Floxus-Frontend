@@ -16,7 +16,7 @@ const CourseData = {
     'To develop skills to build machine learning based product ',
     'To gain experience of doing independent study and research.',
   ],
-  price: '12,999',
+  price: '9,999',
   courseServices: ['90+ hours', '7+', '24/7'],
   courseObjectives: [
     'Gain knowledge about basic concepts of Machine Learning ',
