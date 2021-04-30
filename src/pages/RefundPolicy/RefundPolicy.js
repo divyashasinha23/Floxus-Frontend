@@ -42,7 +42,7 @@ const RefundContent = styled.div`
 const RefundPolicy = () => {
   return (
     <>
-      <Toolbar value="true" />
+      <Toolbar />
       <RefundContainer>
         <RefundWrapper>
           <RefundContent>

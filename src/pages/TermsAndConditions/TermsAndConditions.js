@@ -48,7 +48,7 @@ const TermsContent = styled.div`
 const TermsAndConditions = () => {
   return (
     <>
-      <Toolbar value="true" />
+      <Toolbar />
       <TermsContainer>
         <TermsWrapper>
           <TermsContent>

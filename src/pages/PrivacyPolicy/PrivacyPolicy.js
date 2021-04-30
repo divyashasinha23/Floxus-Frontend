@@ -41,7 +41,7 @@ const PrivacyContent = styled.div`
 const PrivacyPolicy = () => {
   return (
     <>
-      <Toolbar value="true" />
+      <Toolbar />
       <PrivacyContainer>
         <PrivacyWrapper>
           <PrivacyContent>
