@@ -119,7 +119,7 @@ const BatchContact = ({ BtnText, FormTitle }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    db.collection('contacts')
+    db.collection('data')
       .add({
         name: name,
         email: email,
