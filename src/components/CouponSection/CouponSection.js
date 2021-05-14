@@ -135,6 +135,10 @@ const CouponSection = () => {
               <ExploreButton href="https://rzp.io/l/zzvW9pROB">
                 Proceed &rarr;
               </ExploreButton>
+            ) : value == 'FLOXUS10' ? (
+              <ExploreButton href="https://rzp.io/l/zzvW9pROB">
+                Proceed &rarr;
+              </ExploreButton>
             ) : (
               <ExploreButton href="https://rzp.io/l/7vNaZ8D">
                 Proceed &rarr;
