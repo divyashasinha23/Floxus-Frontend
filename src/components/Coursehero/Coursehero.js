@@ -243,7 +243,7 @@ const Coursehero = ({ courseData, active, image, status, type, watchlist }) => {
                 </a>
               ) : (
                 <a
-                  href="https://airtable.com/shrxHQHYdcnhetSH7"
+                  href="https://airtable.com/shrjC0NjNCVRs87Vn"
                   style={{ textDecoration: 'none', color: 'white' }}
                 >
                   <ExploreButton> Enroll Now </ExploreButton>

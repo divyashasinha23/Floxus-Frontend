@@ -22,6 +22,7 @@ import CouponSection from './components/CouponSection/CouponSection';
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
 import RefundPolicy from './pages/RefundPolicy/RefundPolicy';
 import TermsAndConditions from './pages/TermsAndConditions/TermsAndConditions';
+import WebDevWorkshop from './pages/WebDevWorkshop/WebDevWorkshop';
 
 ReactGA.initialize('G-DL76B4YQZL');
 
@@ -55,6 +56,8 @@ function App() {
             path="/cybersecurity-workshop"
             component={CyberSecurityEvent}
           />
+
+          <Route path="/web-development-workshop" component={WebDevWorkshop} />
           <Route path="/join-us" component={JoinUs} />
           <Route path="/enroll" component={CouponSection} />
           <Route path="/privacy-policy" component={PrivacyPolicy} />

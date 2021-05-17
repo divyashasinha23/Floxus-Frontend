@@ -48,7 +48,7 @@ const PrivacyPolicy = () => {
             <p className="heading">Privacy Policy</p>
             <p>
               This privacy policy governs your use of the website
-              https://www.floxus.tech/ ('Website') and the other associated
+              https://www.floxus.co/ ('Website') and the other associated
               websites and services managed by the Company. Please read this
               privacy policy ('Policy') carefully before using the Website, our
               services and products.  Accessing the website and providing your

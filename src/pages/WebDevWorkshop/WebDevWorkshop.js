@@ -6,31 +6,31 @@ import TestimonialSection from '../../components/Testimonial/Testimonial';
 import FAQSection from '../../components/FAQs/FAQSection';
 import Footer from '../../components/Footer/Footer';
 import { MdAccountBalance } from 'react-icons/md';
+import PaytmLogo from '../../images/paytm.png';
 
 const CourseData = {
-  title: 'Linux and Cybersecurity Workshop',
+  title: 'Web Development Workshop',
   courseHerodata: [
     '3 days live workshop.',
     'Get certified.',
     'Become a part of Floxus Community',
   ],
-  status: 'finished',
+  status: 'Inprogress',
   price: 'FREE',
   courseServices: ['3 Days', '3+', 'Community'],
   courseObjectives: [
-    'Learn about Linux distributions',
-    'Learn about hacking tools and networking',
-    'Learn how to find security vulnerability',
-    'Learn how to do bug bounty.',
+    'Learn about Web Development Basics',
+    'Learn about Web Developer Tools',
+    'Learn how to make responsive Web page',
+    'Learn HTML, CSS and Javascript',
   ],
   Topics: [
-    'Linux',
-    'Terminal',
-    'Networking',
-    'API Pentesting',
-    'Web Application Pentesting',
-    'Securtiy',
-    'Bug Bounty',
+    'HTML',
+    'CSS',
+    'JAVASCRIPT',
+    'UI DEVELOPMENT',
+    'RESPONSIVE DESIGN',
+    'DEVEOPER TOOLS',
   ],
   prerequisite: [],
   curriculum: [
@@ -57,26 +57,27 @@ const CourseData = {
   ],
 };
 
-const CyberSecurityEvent = () => {
+const WebDevWorkshop = () => {
   return (
     <>
       <Toolbar />
       <Coursehero
         courseData={CourseData}
-        active="true"
-        image="https://cdn.jsdelivr.net/gh/totorodev0032/floxus-cdn-assets@main/cyberHero.jpg"
+        // active="true"
+        image="https://cdn.jsdelivr.net/gh/totorodev0032/floxus-cdn-assets@main/webDev.jpg"
         status={CourseData.status}
-        watchlist="https://youtube.com/playlist?list=PLJOROP7Jw1kpCWzslEeISHiQhsRqkLZ3Q"
+        watchlist="https://www.youtube.com/watch?v=w0ZKuyOyt50&list=PLJOROP7Jw1kpCWzslEeISHiQhsRqkLZ3Q"
       />
       <CourseOverview
         courseObjectives={CourseData.courseObjectives}
         topics={CourseData.Topics}
         prerequisite={CourseData.prerequisite}
         status={CourseData.status}
-        logo={<MdAccountBalance fontSize="45px" color="#050b75" />}
-        description=" Access all the learning and project materials from floxus community."
-        linkto="https://discord.gg/nyZnWRM7z8"
-        btnText=" Join the Community"
+        logo={<img src={PaytmLogo} alt="paytm" height="30%" />}
+        description=" Learn By an Paytm Engineer"
+        linkto="https://airtable.com/shrjC0NjNCVRs87Vn"
+        btnText="Enroll Know"
+        // FormTitle = "Have an Query?"
       />
       <TestimonialSection />
       {/* <FAQSection /> */}
@@ -85,4 +86,4 @@ const CyberSecurityEvent = () => {
   );
 };
 
-export default CyberSecurityEvent;
+export default WebDevWorkshop;

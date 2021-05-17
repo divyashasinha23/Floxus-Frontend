@@ -5,6 +5,7 @@ import DataLogo from '../../images/dataanalyticsevent.png';
 import DataStructure from '../../images/datastructure.png';
 import PythonLogo from '../../images/python.png';
 import CyberLogo from '../../images/cyber.png';
+import DevLogo from '../../images/dev.png';
 
 const EventHeadingWrapper = styled.div`
   display: flex;
@@ -146,6 +147,14 @@ const EventSection = () => {
       <EventWrapper>
         {upcomingActive ? (
           <EventBoxContainer>
+            <EventBox
+              title="Web Development"
+              duration="3 Days"
+              time="SAT - MON: 8:00 PM - 9:30PM"
+              date="22nd May 2021"
+              image={DevLogo}
+              path="/web-development-workshop"
+            />
             <EventBox
               title="Data Structure and Problem Solving"
               duration="12 Days"
