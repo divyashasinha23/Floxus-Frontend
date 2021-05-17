@@ -74,7 +74,7 @@ const WebDevWorkshop = () => {
         prerequisite={CourseData.prerequisite}
         status={CourseData.status}
         logo={<img src={PaytmLogo} alt="paytm" height="30%" />}
-        description=" Learn By an Paytm Engineer"
+        description=" Learn By a Paytm Engineer"
         linkto="https://airtable.com/shrjC0NjNCVRs87Vn"
         btnText="Enroll Know"
         // FormTitle = "Have an Query?"
