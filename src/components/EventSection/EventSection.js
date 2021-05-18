@@ -6,6 +6,7 @@ import DataStructure from '../../images/datastructure.png';
 import PythonLogo from '../../images/python.png';
 import CyberLogo from '../../images/cyber.png';
 import DevLogo from '../../images/dev.png';
+import ExcelLogo from '../../images/dataexcel.png';
 
 const EventHeadingWrapper = styled.div`
   display: flex;
@@ -152,7 +153,7 @@ const EventSection = () => {
               duration="3 Days"
               time="FRI - SUN: 8:00 PM - 9:30PM"
               date="5th June 2021"
-              image={DevLogo}
+              image={ExcelLogo}
               path="/data-analytics-with-excel"
             />
             <EventBox

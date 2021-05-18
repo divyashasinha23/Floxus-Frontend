@@ -66,6 +66,7 @@ const WebDevWorkshop = () => {
         image="https://cdn.jsdelivr.net/gh/totorodev0032/floxus-cdn-assets@main/webDev.jpg"
         status={CourseData.status}
         watchlist="https://www.youtube.com/watch?v=w0ZKuyOyt50&list=PLJOROP7Jw1kpCWzslEeISHiQhsRqkLZ3Q"
+        linkto="https://airtable.com/shrjC0NjNCVRs87Vn"
       />
       <CourseOverview
         courseObjectives={CourseData.courseObjectives}

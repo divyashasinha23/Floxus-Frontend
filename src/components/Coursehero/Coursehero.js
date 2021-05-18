@@ -159,7 +159,15 @@ const ExploreButton = styled.button`
   }
 `;
 
-const Coursehero = ({ courseData, active, image, status, type, watchlist }) => {
+const Coursehero = ({
+  courseData,
+  active,
+  image,
+  status,
+  type,
+  watchlist,
+  linkto,
+}) => {
   return (
     <>
       <CourseHeroLayout>
@@ -257,7 +265,7 @@ const Coursehero = ({ courseData, active, image, status, type, watchlist }) => {
                 </a>
               ) : (
                 <a
-                  href="https://airtable.com/shrjC0NjNCVRs87Vn"
+                  href={linkto}
                   style={{ textDecoration: 'none', color: 'white' }}
                 >
                   <ExploreButton> Enroll Now </ExploreButton>

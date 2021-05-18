@@ -20,10 +20,10 @@ const CourseData = {
   price: '499',
   courseServices: ['3 Days', '3+', 'Community'],
   courseObjectives: [
-    'Learn about Web Development Basics',
-    'Learn about Web Developer Tools',
-    'Learn how to make responsive Web page',
-    'Learn HTML, CSS and Javascript',
+    'Learn about Data Analytics',
+    'Learn how Excel is used in Corporates',
+    'Learn about Advanced Excel Functions, Making Interactive Dashboards',
+    'Learn about concepts like VBA, Macros, Solver, What-If Analysis and a lot more',
   ],
   Topics: [
     'Advanced Excel',
@@ -111,6 +111,7 @@ const DataAnalyticsExcel = () => {
         image="https://cdn.jsdelivr.net/gh/totorodev0032/floxus-cdn-assets@main/excel.jpg"
         status={CourseData.status}
         watchlist="https://www.youtube.com/watch?v=w0ZKuyOyt50&list=PLJOROP7Jw1kpCWzslEeISHiQhsRqkLZ3Q"
+        linkto="https://rzp.io/l/dataanalyticsFloxus"
       />
 
       <CourseOverview
@@ -120,7 +121,7 @@ const DataAnalyticsExcel = () => {
         status={CourseData.status}
         logo={<img src={RazorpayLogo} alt="paytm" height="40%" />}
         description=" Learn By a Razorpay Analyst"
-        linkto="https://airtable.com/shrjC0NjNCVRs87Vn"
+        linkto="https://rzp.io/l/dataanalyticsFloxus"
         btnText="Enroll Know"
         // FormTitle = "Have an Query?"
       />
