@@ -148,6 +148,14 @@ const EventSection = () => {
         {upcomingActive ? (
           <EventBoxContainer>
             <EventBox
+              title="Data Analytics with Excel"
+              duration="3 Days"
+              time="FRI - SUN: 8:00 PM - 9:30PM"
+              date="5th June 2021"
+              image={DevLogo}
+              path="/data-analytics-with-excel"
+            />
+            <EventBox
               title="Web Development"
               duration="3 Days"
               time="SAT - MON: 8:00 PM - 9:30PM"

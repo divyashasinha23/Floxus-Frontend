@@ -135,7 +135,7 @@ function CampusSection() {
               <Heading>
                 Trusted across<br></br>
                 <span style={{ color: ' #ed841f', fontWeight: 600 }}>
-                  5+ College Campus
+                  20+ College Campus
                 </span>{' '}
                 in india.
               </Heading>

@@ -23,6 +23,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
 import RefundPolicy from './pages/RefundPolicy/RefundPolicy';
 import TermsAndConditions from './pages/TermsAndConditions/TermsAndConditions';
 import WebDevWorkshop from './pages/WebDevWorkshop/WebDevWorkshop';
+import DataAnalyticsExcel from './pages/DataAnalyticsExcel/DataAnalyticsExcel';
 
 ReactGA.initialize('G-DL76B4YQZL');
 
@@ -58,6 +59,11 @@ function App() {
           />
 
           <Route path="/web-development-workshop" component={WebDevWorkshop} />
+
+          <Route
+            path="/data-analytics-with-excel"
+            component={DataAnalyticsExcel}
+          />
           <Route path="/join-us" component={JoinUs} />
           <Route path="/enroll" component={CouponSection} />
           <Route path="/privacy-policy" component={PrivacyPolicy} />

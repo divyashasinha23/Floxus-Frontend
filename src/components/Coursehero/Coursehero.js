@@ -205,17 +205,31 @@ const Coursehero = ({ courseData, active, image, status, type, watchlist }) => {
                   >
                     {' '}
                     ₹ {courseData.price}
-                    <span
-                      style={{
-                        fontSize: '20px',
-                        fontWeight: 400,
-                        color: 'white',
-                        textDecoration: 'line-through',
-                        marginLeft: '10px',
-                      }}
-                    >
-                      ₹ 12,999
-                    </span>
+                    {status === 'Inprogress' ? (
+                      <span
+                        style={{
+                          fontSize: '20px',
+                          fontWeight: 400,
+                          color: 'white',
+                          textDecoration: 'line-through',
+                          marginLeft: '10px',
+                        }}
+                      >
+                        ₹ 1,599
+                      </span>
+                    ) : (
+                      <span
+                        style={{
+                          fontSize: '20px',
+                          fontWeight: 400,
+                          color: 'white',
+                          textDecoration: 'line-through',
+                          marginLeft: '10px',
+                        }}
+                      >
+                        ₹ 12,999
+                      </span>
+                    )}
                   </p>
                 </div>
               )}

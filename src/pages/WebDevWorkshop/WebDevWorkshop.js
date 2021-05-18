@@ -5,7 +5,6 @@ import CourseOverview from '../../components/CourseOverview/CourseOverview';
 import TestimonialSection from '../../components/Testimonial/Testimonial';
 import FAQSection from '../../components/FAQs/FAQSection';
 import Footer from '../../components/Footer/Footer';
-import { MdAccountBalance } from 'react-icons/md';
 import PaytmLogo from '../../images/paytm.png';
 
 const CourseData = {
