@@ -8,6 +8,7 @@ import Footer from '../../components/Footer/Footer';
 import RazorpayLogo from '../../images/razorpay.png';
 import Syllbus_AccordionWorkshop from '../../components/Syllbus_Accordion_Workshop/Syllbus_Accordion_Workshop';
 import SyllabusCourseWorkshop from '../../components/SyllabusCourseWorkshop/SyllabusCourseWorkshop';
+import WhoForSection from '../../components/WhoForSection/WhoForSection';
 
 const CourseData = {
   title: 'Data Analytics with Excel',
@@ -126,6 +127,7 @@ const DataAnalyticsExcel = () => {
         // FormTitle = "Have an Query?"
       />
       <SyllabusCourseWorkshop curriculum={CourseData.curriculum} />
+      <WhoForSection />
 
       <TestimonialSection />
       {/* <FAQSection /> */}
