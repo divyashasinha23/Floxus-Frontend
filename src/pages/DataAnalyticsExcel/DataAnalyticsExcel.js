@@ -9,6 +9,8 @@ import RazorpayLogo from '../../images/razorpay.png';
 import Syllbus_AccordionWorkshop from '../../components/Syllbus_Accordion_Workshop/Syllbus_Accordion_Workshop';
 import SyllabusCourseWorkshop from '../../components/SyllabusCourseWorkshop/SyllabusCourseWorkshop';
 import WhoForSection from '../../components/WhoForSection/WhoForSection';
+import { MdAccountBalance } from 'react-icons/md';
+import GetSection from '../../components/GetSection/GetSection';
 
 const CourseData = {
   title: 'Data Analytics with Excel',
@@ -120,14 +122,17 @@ const DataAnalyticsExcel = () => {
         topics={CourseData.Topics}
         prerequisite={CourseData.prerequisite}
         status={CourseData.status}
-        logo={<img src={RazorpayLogo} alt="paytm" height="40%" />}
-        description=" Learn By a Razorpay Analyst"
+        logo={
+          <MdAccountBalance style={{ color: '#040A6E', fontSize: '40px' }} />
+        }
+        description="Batch starts from 4th June 2021"
         linkto="https://rzp.io/l/dataanalyticsFloxus"
         btnText="Enroll Know"
         // FormTitle = "Have an Query?"
       />
       <SyllabusCourseWorkshop curriculum={CourseData.curriculum} />
       <WhoForSection />
+      <GetSection />
 
       <TestimonialSection />
       {/* <FAQSection /> */}

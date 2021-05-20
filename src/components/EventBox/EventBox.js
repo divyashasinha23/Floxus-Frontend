@@ -11,8 +11,9 @@ const EventBoxContainer = styled.div`
   border-radius: 5px;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 35px;
   margin-left: 5%;
+  box-shadow: 15px 31px 63px #cecece, -15px -31px 63px #f2f2f2;
   ${'' /* flex-direction: column; */}
   @media(max-width:496px) {
     margin-left: 0;

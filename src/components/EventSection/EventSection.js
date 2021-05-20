@@ -93,7 +93,7 @@ const EventBoxContainer = styled.div`
   display: flex;
   height: 100%;
   width: 80%;
-  margin-top: 5%;
+  ${'' /* margin-top: 1%; */}
   flex-wrap: wrap;
   justify-content: start;
   margin-bottom: 10%;
@@ -152,7 +152,7 @@ const EventSection = () => {
               title="Data Analytics with Excel"
               duration="3 Days"
               time="FRI - SUN: 8:00 PM - 9:30PM"
-              date="5th June 2021"
+              date="4th June 2021"
               image={ExcelLogo}
               path="/data-analytics-with-excel"
             />
