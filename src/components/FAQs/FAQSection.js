@@ -8,6 +8,7 @@ const FAQContainer = styled.div`
   height: auto;
   justify-content: center;
   align-items: center;
+  margin-top: 15px;
 `;
 
 const FAQWrapper = styled.div`

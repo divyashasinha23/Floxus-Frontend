@@ -346,7 +346,7 @@ const Footer = () => {
               </LinkContentBox>
               <LinkContentBox>
                 <Heading>Contact Us</Heading>
-                <p>Email : floxuseducation@gmail.com</p>
+                <p>Email : connect@floxus.co</p>
                 <p>Phone : +91 9123499293</p>
                 <p>
                   Address : House no:-24, Madhukam lane, Sastri Chowk, Ratu Rd,

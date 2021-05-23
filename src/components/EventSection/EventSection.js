@@ -151,7 +151,7 @@ const EventSection = () => {
             <EventBox
               title="Data Analytics with Excel"
               duration="3 Days"
-              time="FRI - SUN: 8:00 PM - 9:30PM"
+              time="FRI - SUN"
               date="4th June 2021"
               image={ExcelLogo}
               path="/data-analytics-with-excel"

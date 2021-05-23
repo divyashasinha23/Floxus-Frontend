@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     fontSize: theme.typography.pxToRem(15),
-    fontWeight: theme.typography.fontWeightRegular,
+    fontWeight: theme.typography.fontWeightBold,
   },
 }));
 
@@ -28,17 +28,27 @@ function FAQAccorion() {
           id="panel1a-header"
         >
           <Typography className={classes.heading}>
-            Who is the mentor of the course?
+            When does the workshop start?{' '}
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>Monday, June 4th.</Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion style={{ backgroundColor: '#F9F9F9', boxShadow: 'none' }}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <Typography className={classes.heading}>
+            What is the duration of the workshop?{' '}
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            The course will be taught by Mr Ashish Misra, who is a Microsoft
-            Innovate Trainer and also an Oracle Certified Professional. He has a
-            teaching experience of over 12 years and has taught more than 10000
-            students. He has also been constantly conducting Faculty Development
-            Programs in IITs and various corporate employee training for many
-            MNC’s.
+            The workshop is for 3 days, starting on 4th June and concluding on
+            6th June.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -49,15 +59,13 @@ function FAQAccorion() {
           id="panel2a-header"
         >
           <Typography className={classes.heading}>
-            Is there any demo class for the course?
+            Will this be live or pre-recorded?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Yes, we will be organizing a two day online live webinar in which
-            you will be introduced to python, its scope and its application in
-            the real world. A few live projects of real time applications based
-            on python will be demonstrated.
+            No, the session will be live. After the session, recording of the
+            session will be shared.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -68,16 +76,13 @@ function FAQAccorion() {
           id="panel2a-header"
         >
           <Typography className={classes.heading}>
-            What if I pay for the course but later don't like the teacher's
-            methodology of teaching?
+            What are the timings?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            It is absolutely not a problem. If you don’t like the teaching
-            methodology, we will refund you the amount fully. Although, this may
-            be assured that the money will be refunded fully. This can be
-            availed after 2-3 classes.
+            Live sessions would be at 8.00 PM on Friday and 10.00 AM on Saturday
+            and Sunday.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -88,16 +93,13 @@ function FAQAccorion() {
           id="panel2a-header"
         >
           <Typography className={classes.heading}>
-            Why should I pay the full amount if I just want to learn and don't
-            want any certificate?
+            I have a full time job, not sure if I can make it. Will you be
+            sharing recordings?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            If you don’t need the Microsoft Technology Associate Certificate, it
-            is fine. We will deduct the amount of the certificate from the price
-            of the course. Nevertheless, you will still get the certificate from
-            Floxus.
+            Yes! You’ll receive recordings of all the live sessions.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -108,17 +110,18 @@ function FAQAccorion() {
           id="panel2a-header"
         >
           <Typography className={classes.heading}>
-            What if I can't attend live classes at a given time?
+            Is this workshop only for advanced excel features?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            The class time will be decided such that everyone can attend. Even
-            after that, if you miss the class, we will provide you with the
-            recorded session of the respective class.
+            It’s for people getting started and have some basic knowledge of
+            excel. You will be taught the most common and powerful features of
+            excel used for data analysis and storytelling using data.
           </Typography>
         </AccordionDetails>
       </Accordion>
+
       <Accordion style={{ backgroundColor: '#F9F9F9', boxShadow: 'none' }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -126,18 +129,66 @@ function FAQAccorion() {
           id="panel2a-header"
         >
           <Typography className={classes.heading}>
-            As heard by many, major companies hire only by seeing the talent at
-            the time of the interview, how will MTA certificate help me at time
-            of placement?
+            Would there be any certificate on completion?{' '}
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            It is a highly competitive space out there, massive shortlisting is
-            done based on certificates only. Certificates are used to
-            differentiate between candidates having similar skillset, and it
-            also acts as a filter for different companies while applying through
-            recruiting platforms like LinkedIn.
+            Yes! You will receive a certificate on completion only if you
+            complete the tasks given after each session. (The task will be
+            solely based on the topics covered in the session on the same day).
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+      <Accordion style={{ backgroundColor: '#F9F9F9', boxShadow: 'none' }}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <Typography className={classes.heading}>
+            I made the payment but didn’t receive any email. What should I do?
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            I made the payment but didn’t receive any email. What should I do?
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+      <Accordion style={{ backgroundColor: '#F9F9F9', boxShadow: 'none' }}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <Typography className={classes.heading}>
+            Will I get lifetime access to the videos?{' '}
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            No, videos link will expire after one week of the workshop.{' '}
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+      <Accordion style={{ backgroundColor: '#F9F9F9', boxShadow: 'none' }}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <Typography className={classes.heading}>
+            Is there any discount for bulk registration?
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Yes, if you join the workshop in a group of five from the same
+            college, ₹100 will be off for each candidate.{' '}
           </Typography>
         </AccordionDetails>
       </Accordion>

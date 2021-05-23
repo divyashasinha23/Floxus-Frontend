@@ -135,7 +135,8 @@ const DataAnalyticsExcel = () => {
       <GetSection />
 
       <TestimonialSection />
-      {/* <FAQSection /> */}
+
+      <FAQSection />
       <Footer />
     </>
   );
