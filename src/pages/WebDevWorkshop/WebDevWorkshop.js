@@ -5,7 +5,7 @@ import CourseOverview from '../../components/CourseOverview/CourseOverview';
 import TestimonialSection from '../../components/Testimonial/Testimonial';
 import FAQSection from '../../components/FAQs/FAQSection';
 import Footer from '../../components/Footer/Footer';
-import PaytmLogo from '../../images/paytm.png';
+import { MdAccountBalance } from 'react-icons/md';
 
 const CourseData = {
   title: 'Web Development Workshop',
@@ -14,7 +14,7 @@ const CourseData = {
     'Get certified.',
     'Become a part of Floxus Community',
   ],
-  status: 'Inprogress',
+  status: 'finished',
   price: 'FREE',
   courseServices: ['3 Days', '3+', 'Community'],
   courseObjectives: [
@@ -62,21 +62,20 @@ const WebDevWorkshop = () => {
       <Toolbar />
       <Coursehero
         courseData={CourseData}
-        // active="true"
+        active="true"
         image="https://cdn.jsdelivr.net/gh/totorodev0032/floxus-cdn-assets@main/webDev.jpg"
         status={CourseData.status}
-        watchlist="https://www.youtube.com/watch?v=w0ZKuyOyt50&list=PLJOROP7Jw1kpCWzslEeISHiQhsRqkLZ3Q"
-        linkto="https://airtable.com/shrjC0NjNCVRs87Vn"
+        watchlist="https://youtube.com/playlist?list=PLJOROP7Jw1kqBFnyX5IYfXAJsubEeq0Ln"
       />
       <CourseOverview
         courseObjectives={CourseData.courseObjectives}
         topics={CourseData.Topics}
         prerequisite={CourseData.prerequisite}
         status={CourseData.status}
-        logo={<img src={PaytmLogo} alt="paytm" height="30%" />}
-        description=" Learn By a Paytm Engineer"
-        linkto="https://airtable.com/shrjC0NjNCVRs87Vn"
-        btnText="Enroll Know"
+        logo={<MdAccountBalance fontSize="45px" color="#050b75" />}
+        description=" Access all the learning and project materials from floxus community."
+        linkto="https://discord.gg/nyZnWRM7z8"
+        btnText=" Join the Community"
         // FormTitle = "Have an Query?"
       />
       <TestimonialSection />

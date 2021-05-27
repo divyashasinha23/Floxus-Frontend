@@ -13,7 +13,7 @@ import { MdAccountBalance } from 'react-icons/md';
 import GetSection from '../../components/GetSection/GetSection';
 
 const CourseData = {
-  title: 'Data Analytics with Excel',
+  title: 'Data Analytics with Advanced Excel',
   courseHerodata: [
     '3 days live workshop.',
     'Get certified.',
@@ -125,7 +125,7 @@ const DataAnalyticsExcel = () => {
         logo={
           <MdAccountBalance style={{ color: '#040A6E', fontSize: '40px' }} />
         }
-        description="Batch starts from 4th June 2021"
+        description="Batch starts from 11th June 2021"
         linkto="https://rzp.io/l/dataanalyticsFloxus"
         btnText="Enroll Know"
         // FormTitle = "Have an Query?"

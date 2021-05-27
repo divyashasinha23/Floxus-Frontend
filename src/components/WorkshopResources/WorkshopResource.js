@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { MdAccountBalance } from 'react-icons/md';
+import * as AiIcons from 'react-icons/ai';
 
 const ResourceContainer = styled.div`
   display: flex;
@@ -67,6 +68,36 @@ const ExploreButton = styled.button`
   }
 `;
 
+const WhatButton = styled.button`
+  display: flex;
+  width: 80%;
+  height: 45px;
+  background-color: white;
+  ${
+    '' /* background: transparent linear-gradient(85deg, #ed841f 0%, #ff5400 100%) 0% 0%
+    no-repeat padding-box; */
+  }
+  border: 1px solid #cecece;
+  border-radius: 22.5px;
+  ${'' /* margin-top: 20px; */}
+  justify-content: center;
+  align-items: center;
+  color: #050b75;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 15px;
+
+  a {
+    text-decoration: none;
+    color: #050b75;
+  }
+
+  @media (max-width: 496px) {
+    margin-bottom: 20px;
+  }
+`;
+
 const WorkshopResource = ({ logo, description, linkto, btnText }) => {
   return (
     <>
@@ -78,6 +109,12 @@ const WorkshopResource = ({ logo, description, linkto, btnText }) => {
             {' '}
             <a href={linkto}> {btnText}</a>{' '}
           </ExploreButton>
+          <WhatButton>
+            <AiIcons.AiOutlineWhatsApp
+              style={{ fontSize: '25px', marginRight: '10px', color: 'green' }}
+            />
+            <a href="https://wa.me/918674960047">Contact Us</a>
+          </WhatButton>
         </ResourceWrapper>
       </ResourceContainer>
     </>
