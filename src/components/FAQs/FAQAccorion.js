@@ -32,7 +32,7 @@ function FAQAccorion() {
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>Monday, June 4th.</Typography>
+          <Typography>Friday, June 11th.</Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion style={{ backgroundColor: '#F9F9F9', boxShadow: 'none' }}>
@@ -47,8 +47,8 @@ function FAQAccorion() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            The workshop is for 3 days, starting on 4th June and concluding on
-            6th June.
+            The workshop is for 3 days, starting on 11th June and concluding on
+            13th June.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -69,23 +69,7 @@ function FAQAccorion() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion style={{ backgroundColor: '#F9F9F9', boxShadow: 'none' }}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
-        >
-          <Typography className={classes.heading}>
-            What are the timings?
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Live sessions would be at 8.00 PM on Friday and 10.00 AM on Saturday
-            and Sunday.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
+
       <Accordion style={{ backgroundColor: '#F9F9F9', boxShadow: 'none' }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
