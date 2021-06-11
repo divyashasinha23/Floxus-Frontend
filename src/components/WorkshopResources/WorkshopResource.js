@@ -86,7 +86,7 @@ const WhatButton = styled.button`
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
-  margin-top: 15px;
+  margin-top: 8px;
 
   a {
     text-decoration: none;

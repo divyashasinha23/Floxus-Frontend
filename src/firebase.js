@@ -9,5 +9,6 @@ var firebaseApp = firebase.initializeApp({
 });
 
 var db = firebaseApp.firestore();
+export const analytics = firebase.analytics();
 
 export { db };

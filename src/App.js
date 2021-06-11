@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Floxusfeature from './components/FloxusUSP/Floxusfeature';
 import Toolbar from './components/ToolBar/Toolbar';
 import Footer from './components/Footer/Footer';
-import Python from './pages/PythonCourse/Python';
+import Python from './pages/PythonCourse/PythonCourse';
 import DataAnalytics from './pages/DataAnalytics/DataAnalytics';
 import Cybersecurity from './pages/Cybersecurity/Cybersecurity';
 import MachineLearning from './pages/MachineLearning/MachineLearning';
@@ -24,6 +24,7 @@ import RefundPolicy from './pages/RefundPolicy/RefundPolicy';
 import TermsAndConditions from './pages/TermsAndConditions/TermsAndConditions';
 import WebDevWorkshop from './pages/WebDevWorkshop/WebDevWorkshop';
 import DataAnalyticsExcel from './pages/DataAnalyticsExcel/DataAnalyticsExcel';
+import PythonCourse from './pages/PythonCourse/PythonCourse';
 
 ReactGA.initialize('G-DL76B4YQZL');
 
@@ -64,6 +65,8 @@ function App() {
             path="/data-analytics-with-excel"
             component={DataAnalyticsExcel}
           />
+
+          <Route path="/python-course" component={PythonCourse} />
           <Route path="/join-us" component={JoinUs} />
           <Route path="/enroll" component={CouponSection} />
           <Route path="/privacy-policy" component={PrivacyPolicy} />
