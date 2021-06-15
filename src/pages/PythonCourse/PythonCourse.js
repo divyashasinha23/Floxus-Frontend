@@ -11,7 +11,7 @@ import TestimonialSection from '../../components/Testimonial/Testimonial';
 import { MdAccountBalance } from 'react-icons/md';
 
 const CourseData = {
-  title: 'Python Power Programming',
+  title: 'Python Bootcamp 101',
   status: 'Inprogress',
   courseHerodata: [
     '3 days live workshop.',
@@ -19,7 +19,7 @@ const CourseData = {
     'Become a part of Floxus Community',
   ],
   price: 'FREE',
-  courseServices: ['48+ hours', '3+', '24/7'],
+  courseServices: ['30+ hours', '3+', 'Community'],
   courseObjectives: [
     'Install Python and write your first program',
     'Describe the basics of the Python programming language',

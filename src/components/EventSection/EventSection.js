@@ -148,14 +148,14 @@ const EventSection = () => {
       <EventWrapper>
         {upcomingActive ? (
           <EventBoxContainer>
-            <EventBox
+            {/* <EventBox
               title="Data Analytics with Excel"
               duration="3 Days"
               time="FRI - SUN"
               date="11th June 2021"
               image={ExcelLogo}
               path="/data-analytics-with-excel"
-            />
+            /> */}
 
             <EventBox
               title="Python Bootcamp"
