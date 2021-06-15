@@ -152,10 +152,30 @@ const EventSection = () => {
               title="Data Analytics with Excel"
               duration="3 Days"
               time="FRI - SUN"
-              date="4th June 2021"
+              date="11th June 2021"
               image={ExcelLogo}
               path="/data-analytics-with-excel"
             />
+
+            <EventBox
+              title="Python Bootcamp"
+              duration="7 Days"
+              time="MON - FRI: 8:00 PM - 9:30PM"
+              date="15th June 2021"
+              image={PythonLogo}
+              path="/python-course"
+            />
+
+            <EventBox
+              title="Data Structure and Problem Solving"
+              duration="12 Days"
+              time="MON - FRI: 8:00 PM - 9:30PM"
+              date="Coming Soon"
+              image={DataStructure}
+            />
+          </EventBoxContainer>
+        ) : (
+          <EventBoxContainer>
             <EventBox
               title="Web Development"
               duration="3 Days"
@@ -164,23 +184,6 @@ const EventSection = () => {
               image={DevLogo}
               path="/web-development-workshop"
             />
-            <EventBox
-              title="Data Structure and Problem Solving"
-              duration="12 Days"
-              time="MON - FRI: 8:00 PM - 9:30PM"
-              date="Coming Soon"
-              image={DataStructure}
-            />
-            <EventBox
-              title="Python Bootcamp"
-              duration="7 Days"
-              time="MON - FRI: 8:00 PM - 9:30PM"
-              date="Coming Soon"
-              image={PythonLogo}
-            />
-          </EventBoxContainer>
-        ) : (
-          <EventBoxContainer>
             <EventBox
               title="Linux and Cybersecurity"
               duration="3 Days"
