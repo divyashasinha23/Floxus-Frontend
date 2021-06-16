@@ -185,7 +185,7 @@ const Coursehero = ({
                 <div>
                   <p> {data} </p>
                   {index === 0 ? (
-                    <p>Live Classes</p>
+                    <p>Classes</p>
                   ) : index === 1 ? (
                     <p>Projects</p>
                   ) : (

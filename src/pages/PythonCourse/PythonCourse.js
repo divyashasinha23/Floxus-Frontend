@@ -123,13 +123,13 @@ const PythonCourse = () => {
         }
         description="Batch starts from 27th June 2021"
         linkto="https://airtable.com/shrvynC6nUFRA6Snj"
-        btnText="Enroll Know"
+        btnText="Enroll now"
       />
       <SyllabusCourseWorkshop curriculum={CourseData.curriculum} />
       {/* <CertificationSection /> */}
       {/* <ProjectSection /> */}
       <TestimonialSection />
-      <FAQSection />
+      {/* <FAQSection /> */}
       <Footer />
     </>
   );
