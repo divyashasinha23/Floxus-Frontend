@@ -159,8 +159,8 @@ const EventSection = () => {
 
             <EventBox
               title="Python Bootcamp"
-              duration="7 Days"
-              time="MON - FRI: 8:00 PM - 9:30PM"
+              duration="15 Days"
+              time="SUN - MON: 8:00 PM - 9:30PM"
               date="15th June 2021"
               image={PythonLogo}
               path="/python-course"

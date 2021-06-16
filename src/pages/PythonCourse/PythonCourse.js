@@ -14,12 +14,12 @@ const CourseData = {
   title: 'Python Bootcamp 101',
   status: 'Inprogress',
   courseHerodata: [
-    '3 days live workshop.',
+    '15 days workshop.',
     'Get certified.',
     'Become a part of Floxus Community',
   ],
   price: 'FREE',
-  courseServices: ['30+ hours', '3+', 'Community'],
+  courseServices: ['15+ hours', '3+', 'Community'],
   courseObjectives: [
     'Install Python and write your first program',
     'Describe the basics of the Python programming language',
