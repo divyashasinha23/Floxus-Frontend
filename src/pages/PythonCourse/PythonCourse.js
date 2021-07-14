@@ -121,12 +121,12 @@ const PythonCourse = () => {
         logo={
           <MdAccountBalance style={{ color: '#040A6E', fontSize: '40px' }} />
         }
-        description="Batch starts from 27th June 2021"
+        description="Batch starts from 28th June 2021"
         linkto="https://airtable.com/shrvynC6nUFRA6Snj"
         btnText="Enroll now"
       />
       <SyllabusCourseWorkshop curriculum={CourseData.curriculum} />
-      {/* <CertificationSection /> */}
+      <CertificationSection image="https://cdn.jsdelivr.net/gh/totorodev0032/floxus-cdn-assets@main/Python Bootcamp.png" />
       {/* <ProjectSection /> */}
       <TestimonialSection />
       {/* <FAQSection /> */}

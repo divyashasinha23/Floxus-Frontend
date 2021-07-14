@@ -7,6 +7,7 @@ import PythonLogo from '../../images/python.png';
 import CyberLogo from '../../images/cyber.png';
 import DevLogo from '../../images/dev.png';
 import ExcelLogo from '../../images/dataexcel.png';
+import JavaLogo from '../../images/javaroad.png';
 
 const EventHeadingWrapper = styled.div`
   display: flex;
@@ -157,13 +158,22 @@ const EventSection = () => {
               path="/data-analytics-with-excel"
             /> */}
 
-            <EventBox
-              title="Python Bootcamp"
+            {/* <EventBox
+              title="Python Bootcamp 101"
               duration="15 Days"
-              time="SUN - MON: 8:00 PM - 9:30PM"
-              date="15th June 2021"
+              time="MON - MON: 8:00 PM - 9:30PM"
+              date="28th June 2021"
               image={PythonLogo}
               path="/python-course"
+            /> */}
+
+            <EventBox
+              title="The Road to Java"
+              duration="7 Days"
+              time="WED - TUE: 8:00 PM - 9:30PM"
+              date="28th July 2021"
+              image={JavaLogo}
+              path="/road-to-java"
             />
 
             <EventBox

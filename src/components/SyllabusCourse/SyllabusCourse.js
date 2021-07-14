@@ -46,7 +46,7 @@ const Heading = styled.div`
 const SyllabusRight = styled.div`
   display: flex;
   flex-basis: 40%;
-  height: 700px;
+  ${'' /* height: 700px; */}
   justify-content: center;
   align-items: center;
   ${'' /* background-color: black; */}

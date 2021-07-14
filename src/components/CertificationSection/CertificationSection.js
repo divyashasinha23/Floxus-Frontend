@@ -130,8 +130,7 @@ function CertificationSection({ image }) {
             <CertificateContent>
               <Heading>Certification</Heading>
               <Description>
-                Get internationally recognised certifications which will give
-                the boost your career need.
+                Get certifications which will give the boost your career need.
               </Description>
               {/* <Contact>We love taking your calls.</Contact>
               <CertificateButton>GET IN TOUCH</CertificateButton> */}

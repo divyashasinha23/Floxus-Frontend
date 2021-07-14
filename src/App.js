@@ -25,6 +25,7 @@ import TermsAndConditions from './pages/TermsAndConditions/TermsAndConditions';
 import WebDevWorkshop from './pages/WebDevWorkshop/WebDevWorkshop';
 import DataAnalyticsExcel from './pages/DataAnalyticsExcel/DataAnalyticsExcel';
 import PythonCourse from './pages/PythonCourse/PythonCourse';
+import RoadtoJava from './pages/RoadtoJava/RoadtoJava';
 
 ReactGA.initialize('G-DL76B4YQZL');
 
@@ -67,6 +68,7 @@ function App() {
           />
 
           <Route path="/python-course" component={PythonCourse} />
+          <Route path="/road-to-java" component={RoadtoJava} />
           <Route path="/join-us" component={JoinUs} />
           <Route path="/enroll" component={CouponSection} />
           <Route path="/privacy-policy" component={PrivacyPolicy} />

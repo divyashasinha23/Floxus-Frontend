@@ -109,12 +109,12 @@ const WorkshopResource = ({ logo, description, linkto, btnText }) => {
             {' '}
             <a href={linkto}> {btnText}</a>{' '}
           </ExploreButton>
-          <WhatButton>
+          {/* <WhatButton>
             <AiIcons.AiOutlineWhatsApp
               style={{ fontSize: '25px', marginRight: '10px', color: 'green' }}
             />
-            {/* <a href="https://wa.me/918674960047">Contact Us</a> */}
-          </WhatButton>
+            <a href="https://wa.me/918674960047">Contact Us</a>
+          </WhatButton> */}
         </ResourceWrapper>
       </ResourceContainer>
     </>
